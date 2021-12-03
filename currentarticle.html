@@ -1,0 +1,1883 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/Styles/Style.css">
+    <link rel="stylesheet" href="/Styles/font-face.css">
+    <link rel="shortcut icon" href="/Img/favicon.svg">
+    <title>Как в бухучете отразить возмещение покупателю НДС по системе tax free</title>
+</head>
+<body>
+<header>
+    <!-- TOP-HEADER -->
+    <section class="top-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8 col-md-8 col-lg-3 col-xl-3">
+                    <a class="header-adress" href="https://goo.gl/maps/va3B1hSnr2of3sj78" target="_blank">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15.75 7.5C15.75 12.75 9 17.25 9 17.25C9 17.25 2.25 12.75 2.25 7.5C2.25 5.70979 2.96116 3.9929 4.22703 2.72703C5.4929 1.46116 7.20979 0.75 9 0.75C10.7902 0.75 12.5071 1.46116 13.773 2.72703C15.0388 3.9929 15.75 5.70979 15.75 7.5Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9 9.75C10.2426 9.75 11.25 8.74264 11.25 7.5C11.25 6.25736 10.2426 5.25 9 5.25C7.75736 5.25 6.75 6.25736 6.75 7.5C6.75 8.74264 7.75736 9.75 9 9.75Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>МО, Пушкино, Надсоновская 24</span>  
+                    </a>
+                </div>
+
+                <div class="col-sm-4 col-md-4 col-lg-3 col-xl-3">
+                    <div class="social-icons">
+                        <div class="social-icon">
+                            <a href="#">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                        <div class="social-icon">
+                            <a href="#">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </div>
+                        <div class="social-icon">
+                            <a href="#">
+                                <i class="fab fa-vk"></i>
+                            </a>
+                        </div>
+                        <div class="social-icon">
+                            <a href="#">
+                                <i class="fab fa-odnoklassniki"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-lg-6 col-xl-6">
+                    <div class="header-aside-links">
+                        <a href="#">Заказать обратный звонок</a>
+                        <a href="#">Калькулятор и расчет стоимости</a>
+                        <a href=""><i class="fas fa-search"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- MIDDLE-HEADER -->
+    <section class="middle-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <a href="/">
+                        <img src="/Img/Toplogo.png" alt="">
+                    </a>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="header-contacts">
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="contacts-svg-center">
+                                        <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M15.0835 11.6072V13.6395C15.0843 13.8282 15.0455 14.0149 14.9698 14.1878C14.8941 14.3607 14.783 14.5158 14.6437 14.6434C14.5044 14.7709 14.34 14.868 14.1609 14.9285C13.9818 14.9889 13.792 15.0114 13.6038 14.9944C11.5151 14.7679 9.50871 14.0556 7.74593 12.9147C6.10589 11.8746 4.71543 10.4869 3.67328 8.85008C2.52613 7.08279 1.81224 5.07068 1.58943 2.97674C1.57247 2.78941 1.59478 2.60061 1.65493 2.42235C1.71509 2.24409 1.81178 2.08029 1.93884 1.94137C2.06591 1.80245 2.22056 1.69146 2.39296 1.61546C2.56536 1.53946 2.75173 1.50012 2.9402 1.49994H3.97653C5.30594 1.49671 5.6253 1.61313 5.87506 1.8275C6.12483 2.04188 6.28797 2.33958 6.33408 2.66513C6.42003 3.3155 6.57942 3.95409 6.80922 4.56871C6.90055 4.81118 6.92031 5.07469 6.86618 5.32803C6.81204 5.58136 6.68627 5.8139 6.50377 5.99809L5.64173 6.85843C6.608 8.55441 8.01504 9.95865 9.71438 10.923L10.5764 10.0627C10.761 9.88054 10.994 9.75502 11.2478 9.70099C11.5017 9.64696 11.7657 9.66669 12.0086 9.75783C12.6245 9.98718 13.2643 10.1463 13.916 10.232C14.2457 10.2785 14.5469 10.4442 14.7621 10.6978C14.9774 10.9513 15.0918 11.275 15.0835 11.6072Z" stroke="#009846" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+
+                                        <a href="tel:89099933773">+ 7 (909) 993-37-73</a>
+                                </div>                                    
+                            </div>
+
+                            <div class="col-xl-12">
+                                <div>
+                                    с 9.00 до 18.00
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="header-contacts">
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="contacts-svg-center">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M3 3H15C15.825 3 16.5 3.675 16.5 4.5V13.5C16.5 14.325 15.825 15 15 15H3C2.175 15 1.5 14.325 1.5 13.5V4.5C1.5 3.675 2.175 3 3 3Z" stroke="#009846" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M16.5 4.5L9 9.75L1.5 4.5" stroke="#009846" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+
+                                        <a href="mailto:info@buhassistent.ru">info@buhassistent.ru</a>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-12">
+                                <div class="middle-social-icons">
+                                    <a href="#">
+                                        <i class="fab fa-whatsapp"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fab fa-viber"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fab fa-telegram-plane"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-12 col-xl-3">
+                    <div class="header-consult-buttons">
+                        <a class="btn header-consult-button" href="freeconsultation.html">Консультация бухгалтера</a>
+                        <a class="btn header-consult-button" href="freeconsultation.html">Консультация юриста</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- NAVIGATION -->
+    <section class="header-navigation">
+        <div class="container">
+            <nav class="nav navbar-expand-lg">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarToggler">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item dropdown">
+                                <a href="buhuslugi.html" class="nav-link dropdown-toggle" id="navbarDropdown" aria-expanded="false">
+                                    Бухгалтерские услуги
+                                </a>
+                                <ul class="dropdown-custom" aria-labelledby="navbarDropdown">
+                                    <li><a href="catalog.html" class="dropdown-item">Каталог бухгалтерских услуг</a></li>
+                                    <li><a href="buhuslugi.html" class="dropdown-item">Бухгалтерские услуги</a></li>
+                                    <li><a href="#" class="dropdown-item">12345</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown1" aria-expanded="false">
+                                    Юридические услуги
+                                </a>
+                                <ul class="dropdown-custom" aria-labelledby="navbarDropdown1">
+                                    <li><a href="#" class="dropdown-item">1234567890</a></li>
+                                    <li><a href="#" class="dropdown-item">12345</a></li>
+                                    <li><a href="#" class="dropdown-item">12345</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a href="aboutcompany.html" class="nav-link dropdown-toggle" id="navbarDropdown2" aria-expanded="false">
+                                    О компании
+                                </a>
+                                <ul class="dropdown-custom" aria-labelledby="navbarDropdown2">
+                                    <li><a href="aboutcompany.html" class="dropdown-item">О компании</a></li>
+                                    <li><a href="companyhistory.html" class="dropdown-item">История компании</a></li>
+                                    <li><a href="reviews.html" class="dropdown-item">Отзывы</a></li>
+                                    <li><a href="collective.html" class="dropdown-item">Коллектив</a></li>
+                                    <li><a href="license.html" class="dropdown-item">Лицензии</a></li>
+                                    <li><a href="technology.html" class="dropdown-item">Технологии</a></li>
+                                    <li><a href="clients.html" class="dropdown-item">Клиенты</a></li>
+                                    <li><a href="partners.html" class="dropdown-item">Партнеры</a></li>
+                                    <li><a href="questions.html" class="dropdown-item">Вопросы и ответы</a></li>
+                                    <li><a href="requisits.html" class="dropdown-item">Реквизиты</a></li>
+                                    <li><a href="vacansy.html" class="dropdown-item">Вакансии</a></li>
+                                    <li><a href="benefits.html" class="dropdown-item">Преимущетва</a></li>
+                                    <li><a href="onlinepay.html" class="dropdown-item">Оплата услуг онлайн</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="portfolio.html" class="nav-link">Портфолио</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="price.html" class="nav-link">Прайс-лист</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="reviews.html" class="nav-link">Отзывы</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Акции</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="blog.html" class="nav-link">Блог</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="contacts.html" class="nav-link">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="strip">
+            </div>
+        </div>
+    </section>
+    <!-- MOBILE-STICKY-NAVIGATION -->
+    <section class="mobile-navigation">
+        <div class="mobile-menu collapse d-lg-none" id="mobMenu">
+            <ul class="mobile-nav-list">
+                <li class="mobile-nav-item dropdown">
+                    <a class="direct-dropdown-link" href="buhuslugi.html">Бухгалтерские услуги</a>
+
+                    <a class="btn dropdown-toggler" href="#" role="button" id="dropdownMenuLink">
+                        ▼
+                    </a>
+
+                    <ul class="dropdowned-menu" role="menu">
+                        <li class="back-menu-wrapper"><a class="back-menu-btn" href="#">Назад</a></li>
+                        <li><a href="catalog.html" class="dropdown-item">Каталог бухгалтерских услуг</a></li>
+                        <li><a href="buhuslugi.html" class="dropdown-item">Бухгалтерские услуги</a></li>
+                    </ul>
+                </li>
+
+                <li class="mobile-nav-item dropdown">
+                    <a class="direct-dropdown-link" href="#">Юридические услуги</a>
+
+                    <a class="btn dropdown-toggler" href="#" role="button" id="dropdownMenuLink1" aria-expanded="false">
+                        ▼
+                    </a>
+
+                    <ul class="dropdowned-menu" role="menu">
+                        <li class="back-menu-wrapper"><a class="back-menu-btn" href="#">Назад</a></li>
+                        <li><a href="#" class="dropdown-item">Каталог юридических услуг</a></li>
+                        <li><a href="#" class="dropdown-item">Юридические услуги</a></li>
+                    </ul>
+                </li>
+
+                <li class="mobile-nav-item dropdown">
+                    <a class="direct-dropdown-link" href="aboutcompany.html">О компании</a>
+
+                    <a class="btn dropdown-toggler" href="#" role="button" id="dropdownMenuLink2"aria-expanded="false">
+                        ▼
+                    </a>
+                    
+                    <ul class="dropdowned-menu" role="menu">
+                        <li class="back-menu-wrapper"><a class="back-menu-btn" href="#">Назад</a></li>
+                        <li><a href="aboutcompany.html" class="dropdown-item">О компании</a></li>
+                        <li><a href="companyhistory.html" class="dropdown-item">История компании</a></li>
+                        <li><a href="reviews.html" class="dropdown-item">Отзывы</a></li>
+                        <li><a href="collective.html" class="dropdown-item">Коллектив</a></li>
+                        <li><a href="license.html" class="dropdown-item">Лицензии</a></li>
+                        <li><a href="technology.html" class="dropdown-item">Технологии</a></li>
+                        <li><a href="clients.html" class="dropdown-item">Клиенты</a></li>
+                        <li><a href="partners.html" class="dropdown-item">Партнеры</a></li>
+                        <li><a href="questions.html" class="dropdown-item">Вопросы и ответы</a></li>
+                        <li><a href="requisits.html" class="dropdown-item">Реквизиты</a></li>
+                        <li><a href="vacansy.html" class="dropdown-item">Вакансии</a></li>
+                        <li><a href="benefits.html" class="dropdown-item">Преимущетва</a></li>
+                        <li><a href="onlinepay.html" class="dropdown-item">Оплата услуг онлайн</a></li>
+                    </ul>
+                </li>
+                
+                <li class="mobile-nav-item"><a href="portfolio.html" class="nav-link">Портфолио</a></li>
+                <li class="mobile-nav-item"><a href="price.html" class="nav-link">Прайс-лист</a></li>
+                <li class="mobile-nav-item"><a href="reviews.html" class="nav-link">Отзывы</a></li>
+                <li class="mobile-nav-item"><a href="#" class="nav-link">Акции</a></li>
+                <li class="mobile-nav-item"><a href="blog.html" class="nav-link">Блог</a></li>
+                <li class="mobile-nav-item"><a href="contacts.html" class="nav-link">Контакты</a></li>
+            </ul>
+        </div>
+
+        <div class="mobile-nav-strip d-lg-none">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="d-flex justify-content-between">
+                            <button class="btn burger-btn" type="button" data-bs-toggle="collapse" data-bs-target="#mobMenu" aria-expanded="false" aria-controls="mobMenu">
+                                <svg width="23" height="17" viewBox="0 0 23 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.5 16H21.5M1.5 1H21.5H1.5ZM1.5 8.5H21.5H1.5Z" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                                <span>Меню Сайта</span>
+                            </button>
+    
+                            <div class="mobile-search">
+                                <a href="searchresult.html"><i class="fas fa-search"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</header>
+<main>
+<div class="container">
+    <!-- КРОШКИ -->
+    <section class="breadcrumbs-section">
+        <div class="breadcrumbs">
+            <nav style="--bs-breadcrumb-divider: '&#183';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+                  <li class="breadcrumb-item"><a href="blog.html">Блог</a></li>
+                  <li class="breadcrumb-item"><a href="buhuchet.html">Бухгалтерский учет</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Как в бухучете отразить возмещение покупателю НДС по системе tax free</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+    <!-- Как в бухучете отразить возмещение покупателю НДС по системе tax free -->
+    <section class="currentarticle-section">
+        <div class="row custom-reverse">
+            <main class="col-lg-8">
+                <div class="article">
+                    <h1>Как в бухучете отразить возмещение покупателю НДС по системе tax free</h1>
+
+                    <img class="img-fluid" src="/Img/blogimage.jpg" alt="">
+
+                    <div class="info">
+                        <span><b>Дата: </b>01.02.2021</span>
+
+                        <span><b>Рубрика: </b><a class="services" href="#">Бухгалтерский учет</a></span>
+
+                        <span>
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect opacity="0.01" width="18" height="18" fill="#1A1A1A"/>
+                                <circle cx="9" cy="9" r="1.125" fill="#009846"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.79657 3.75C13.2816 3.615 15.9216 7.7925 16.4016 8.625C16.5355 8.85705 16.5355 9.14294 16.4016 9.375C15.7566 10.5 13.3491 14.145 9.20157 14.25H9.01407C4.59657 14.25 2.06907 10.1925 1.59657 9.375C1.4626 9.14294 1.4626 8.85705 1.59657 8.625C2.24907 7.5 4.64907 3.855 8.79657 3.75ZM6.37408 9C6.37408 10.4497 7.54933 11.625 8.99908 11.625C10.4488 11.625 11.6241 10.4497 11.6241 9C11.6241 7.55025 10.4488 6.375 8.99908 6.375C7.54933 6.375 6.37408 7.55025 6.37408 9Z" fill="url(#paint0_linear_646_30)"/>
+                                <defs>
+                                <linearGradient id="paint0_linear_646_30" x1="1.49586" y1="8.99847" x2="16.5018" y2="8.99847" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#009846"/>
+                                <stop offset="1" stop-color="#009A9C"/>
+                                </linearGradient>
+                                </defs>
+                            </svg>
+
+                            123456
+                        </span>
+
+                        <span>
+                            <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.5 12C6.32725 12.0011 6.16121 11.9274 6.03856 11.7953L0.988737 6.30337C-0.329579 4.85652 -0.329579 2.52654 0.988737 1.0797C2.3179 -0.359899 4.46893 -0.359899 5.79809 1.0797L6.5 1.84207L7.20191 1.0797C8.53107 -0.359899 10.6821 -0.359899 12.0113 1.0797C13.3296 2.52654 13.3296 4.85652 12.0113 6.30337L6.96144 11.7953C6.83879 11.9274 6.67275 12.0011 6.5 12Z" fill="url(#paint0_linear_626_139)"/>
+                                <defs>
+                                <linearGradient id="paint0_linear_626_139" x1="-0.000205849" y1="6.00009" x2="12.9998" y2="6.00009" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#009846"/>
+                                <stop offset="1" stop-color="#009A9C"/>
+                                </linearGradient>
+                                </defs>
+                            </svg>
+
+                            643
+                        </span>
+
+                        <div class="dropup">
+                            <button class="btn context-btn dropdown-toggle" type="button" id="contextMenuBtnUltra" data-bs-toggle="dropdown" aria-expanded="false">
+                                <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect opacity="0.01" x="2" y="2" width="12" height="12" fill="#1A1A1A"/>
+                                    <circle cx="8.66797" cy="8" r="8" fill="url(#paint0_linear_626_141)"/>
+                                    <path d="M11.0012 9.50002C10.6084 9.50035 10.2314 9.65474 9.95124 9.93002L6.00124 8.17002V8.00002V7.83502L9.95124 6.07002C10.4614 6.57004 11.2533 6.64097 11.8442 6.23955C12.435 5.83814 12.6609 5.07575 12.3839 4.4173C12.107 3.75884 11.4042 3.38701 10.704 3.52855C10.0039 3.67008 9.50066 4.28571 9.50124 5.00002V5.17002L5.55124 6.93002C4.96276 6.35186 4.01784 6.35743 3.43622 6.94249C2.85459 7.52756 2.85459 8.47249 3.43622 9.05755C4.01784 9.64261 4.96276 9.64818 5.55124 9.07002L9.50124 10.835V11C9.50124 11.8284 10.1728 12.5 11.0012 12.5C11.8297 12.5 12.5012 11.8284 12.5012 11C12.5012 10.1716 11.8297 9.50002 11.0012 9.50002Z" fill="white"/>
+                                    <defs>
+                                    <linearGradient id="paint0_linear_626_141" x1="0.667715" y1="8.00012" x2="16.6677" y2="8.00012" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#009846"/>
+                                    <stop offset="1" stop-color="#009A9C"/>
+                                    </linearGradient>
+                                    </defs>
+                                </svg>                                
+                            </button>
+
+                            <ul class="dropdown-menu" aria-labelledby="contextMenuBtnUltra">
+                                <li><a class="dropdown-item" href="#"><img src="/Img/contextinsta.png" alt=""></a></li>
+                                <li><a class="dropdown-item" href="#"><img src="/Img/contextface.png" alt=""></a></li>
+                                <li><a class="dropdown-item" href="#"><img src="/Img/contextvk.png" alt=""></a></li>
+                                <li><a class="dropdown-item" href="#"><img src="/Img/contextodnoklassniki.png" alt=""></a></li>
+                            </ul>
+                        </div>
+
+                        <div class="dropup">
+                            <button class="btn context-btn dropdown-toggle" type="button" id="contextMenuBtnPrint" data-bs-toggle="dropdown" aria-expanded="false">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect opacity="0.01" width="18" height="18" fill="url(#paint0_linear_626_1712)"/>
+                                    <rect x="3" y="13.5" width="12" height="1.5" rx="0.75" fill="url(#paint1_linear_626_1712)"/>
+                                    <rect x="3" y="15" width="3" height="1.5" rx="0.75" transform="rotate(-90 3 15)" fill="url(#paint2_linear_626_1712)"/>
+                                    <rect x="13.5" y="15" width="3" height="1.5" rx="0.75" transform="rotate(-90 13.5 15)" fill="url(#paint3_linear_626_1712)"/>
+                                    <path d="M9.00112 11.25C8.84563 11.2512 8.69362 11.204 8.56612 11.115L5.56612 8.99998C5.22951 8.7612 5.14907 8.29532 5.38612 7.95748C5.50093 7.79365 5.67643 7.68247 5.87361 7.64867C6.07079 7.61486 6.2733 7.66124 6.43612 7.77748L9.00112 9.56998L11.5511 7.64998C11.8825 7.40145 12.3526 7.46861 12.6011 7.79998C12.8496 8.13135 12.7825 8.60145 12.4511 8.84998L9.45112 11.1C9.3213 11.1973 9.1634 11.25 9.00112 11.25Z" fill="url(#paint4_linear_626_1712)"/>
+                                    <path d="M9 9.75C8.58579 9.75 8.25 9.41421 8.25 9V3C8.25 2.58579 8.58579 2.25 9 2.25C9.41421 2.25 9.75 2.58579 9.75 3V9C9.75 9.41421 9.41421 9.75 9 9.75Z" fill="url(#paint5_linear_626_1712)"/>
+                                    <defs>
+                                    <linearGradient id="paint0_linear_626_1712" x1="-0.000285022" y1="9.00013" x2="17.9997" y2="9.00013" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#009846"/>
+                                    <stop offset="1" stop-color="#009A9C"/>
+                                    </linearGradient>
+                                    <linearGradient id="paint1_linear_626_1712" x1="2.99981" y1="14.25" x2="14.9998" y2="14.25" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#009846"/>
+                                    <stop offset="1" stop-color="#009A9C"/>
+                                    </linearGradient>
+                                    <linearGradient id="paint2_linear_626_1712" x1="2.99995" y1="15.75" x2="5.99995" y2="15.75" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#009846"/>
+                                    <stop offset="1" stop-color="#009A9C"/>
+                                    </linearGradient>
+                                    <linearGradient id="paint3_linear_626_1712" x1="13.5" y1="15.75" x2="16.5" y2="15.75" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#009846"/>
+                                    <stop offset="1" stop-color="#009A9C"/>
+                                    </linearGradient>
+                                    <linearGradient id="paint4_linear_626_1712" x1="5.24988" y1="9.375" x2="12.751" y2="9.375" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#009846"/>
+                                    <stop offset="1" stop-color="#009A9C"/>
+                                    </linearGradient>
+                                    <linearGradient id="paint5_linear_626_1712" x1="8.24998" y1="6.00006" x2="9.74998" y2="6.00006" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#009846"/>
+                                    <stop offset="1" stop-color="#009A9C"/>
+                                    </linearGradient>
+                                    </defs>
+                                </svg>                                
+                            </button>
+
+                            <ul class="dropdown-menu" aria-labelledby="contextMenuBtnPrint">
+                                <li><a class="dropdown-item" href="#">Печать страницы</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <article>
+                        <p>
+                            По tax free иностранцу может быть возвращена часть денег за покупку в виде НДС от магазина или от оператора. 
+                            Именно от этого и зависит порядок отражения операций в бухучете. Кроме того, нужно помнить, что сам возврат денег 
+                            за покупку — это услуга платная, и ее стоимость учитывается при выплате компенсации. Разберемся на примерах. 
+                        </p>
+    
+                        <h3 class="in-view" id="taxReturn">Возмещение налога в системе tax free</h3>
+    
+                            <p>Начнем с того, что выплата компенсации в системе tax free — это платная услуга.</p>
+        
+                            <p>
+                                Так вот, покупатель (иностранец не из страны ЕАЭС) может получить компенсацию НДС только за вычетом стоимости этой услуги. 
+                                Форма выплаты — наличными деньгами или безналичным способом.
+                            </p>
+        
+                            <p>
+                                Наличные иностранец может получить при выезде из РФ в пункте пропуска через границу. После прохождения таможни он предъявляет 
+                                чек tax free с отметкой таможни о вывозе товара оператору или продавцу-оператору.
+                            </p>
+        
+                            <p>
+                                Для безналичного возврата покупатель отправляет чек и реквизиты своего счета оператору или продавцу в течение года со дня покупки товаров.
+                            </p>
+        
+                            <p>
+                                Срок для обращения за возвратом НДС по товарам, приобретенным в 2020 году, составляет 1 год. Его нужно отсчитывать с 1 января 2021 года 
+                                (Постановление Правительства от 1 сентября 2020 г. № 1334).
+                            </p>
+        
+                            <p>Учет операций возврата НДС в системе tax free зависит от того, кто это делает — продавец или оператор.</p>
+        
+                            <p>Услуги по выплате компенсаций в системе tax free облагаются НДС по ставке 0%.</p>
+    
+                        <h3 class="in-view" id="salerReturn">Возврат продавцом без оператора</h3>
+    
+                            <p>
+                                Если продавец самостоятельно выплачивает компенсацию покупателю, то он отражает в своем учете реализацию товара и реализацию услуги 
+                                по возврату НДС, а также начисление и вычеты НДС при реализации товара.
+                            </p>
+        
+                            <p>Пример. Операции tax free в учете продавца</p>
+        
+                            <p>
+                                Иностранный покупатель (имеет счет в российском банке) 26 апреля года купил в розничном магазине, реализующем покупные товары, товары 
+                                на общую сумму 36 000 руб., в том числе НДС — 6 000 руб. Продавец оформил на покупку чек tax free. 30 апреля иностранец выехал из РФ. 
+                                На таможне была проставлена на чеке отметка о вывозе товара. Чек и сведения, необходимые для возврата налога на свой счет в российском банке, 
+                                покупатель направила магазину. Их продавец получил 10 мая и перечислил налог покупателю. Стоимость услуг по выплате компенсации составила 600 руб.
+                            </p>
+        
+                            <p>В бухучете продавца сделаны следующие проводки.</p>
+        
+                            <p>
+                                26 апреля <br>
+                                — Дебет 50 (51) Кредит 90-1 <br>
+                                36 000 руб. — реализован товар покупателю;
+                            </p>
+        
+                            <p>
+                                — Дебет 90-3 Кредит 68 субсчет «Расчеты по НДС» <br>
+                                6 000 руб. — начислен НДС.
+                            </p>
+                            
+                            <p>
+                                10 мая <br>
+                                Дебет 62 Кредит 90-1 <br>
+                                600 руб. — отражена выручка от реализации услуг по выплате компенсации;
+                            </p>
+        
+                            <p>
+                                Дебет 76 Кредит 51 <br>
+                                5 400 руб. (6 000 — 600) — выплачена компенсация покупателю;
+                            </p>
+        
+                            <p>
+                                Дебет 76 Кредит 62 <br>
+                                600 руб. — погашена задолженность покупателя по услугам возврата налога;
+                            </p>
+        
+                            <p>
+                                Дебет 68 субсчет «Расчеты по НДС» Кредит 76 <br>
+                                6 000 руб. — принят к вычету НДС по чеку tax free при реализации товара.
+                            </p>
+
+                        <h3 class="in-view" id="operatorReturn">Возврат через оператора</h3>
+    
+                            <p>
+                                Теперь рассмотрим пример, как отражать в учете операции tax free при выплате 
+                                налога покупателю через оператора. Он выплачивает компенсацию за счет собственных 
+                                средств, а магазин потом возмещает ему расходы на основании подлинника чека tax free и копии расходного кассового ордера.
+                            </p>
+
+                            <p>Пример. Операции tax free в учете с привлечением оператора</p>
+
+                            <p>Воспользуемся данными предыдущего примера</p>
+
+                            <p>
+                                При выезде домой покупатель в пункте пропуска через границу предъявил чек tax free оператору, который работает по договору с магазином. 
+                                Оператор выплачивает компенсацию из собственных средств. 10 мая продавец получил от оператора документы. Стоимость услуг оператора по выплате компенсации составила 600 руб.
+                            </p>
+
+                            <p>Операции, связанные с расчетами по НДС, отражены в бухучете магазина теми же проводками, что и в предыдущем примере.</p>
+                        
+                            <p>А в учете оператора сделаны такие записи.</p>
+
+                            <p>
+                                30 апреля <br>
+                                Дебет 62 Кредит 90-1 <br>
+                                600 руб. — отражена выручка от реализации услуг оператора по выплате компенсации;
+                            </p>
+
+                            <p>
+                                Дебет 76 Кредит 50 <br>
+                                5 400 руб. (6 000 — 600) — выплачен налог покупателю;
+                            </p>
+
+                            <p>
+                                Дебет 76 Кредит 62 <br>
+                                600 руб. — удержана стоимость услуг по выплате компенсации из средств, полученных от продавца.
+                            </p>
+
+                            <p>
+                                10 мая <br>
+                                Дебет 51 Кредит 76 5 <br>
+                                400 руб. — погашена задолженность продавца за услуги оператора по выплате компенсации.
+                            </p>
+                    </article>
+                </div>
+            </main>
+
+            <aside class="col-lg-4">
+                <div class="autor">
+                    <div class="autor-avatar">
+                        <a href="#">
+                            <img src="/Img/autoravatar.png" alt="">
+                        </a>
+                    </div>
+
+                    <div class="head"><a href="#" class="services">Валентина Токарева</a></div>
+
+                    <span>Главный бухгалтер</span>
+
+                    <small>Стаж — 14 лет, более 60 кейсов</small>
+                </div>
+
+                <div class="aside-wrap">
+                    <div class="section-bighead">
+                        Содержание
+                    </div>
+
+                   
+                    <ol id="scrapapa">
+                    </ol>
+                
+                </div>
+            </aside>
+        </div>
+
+        <div class="articleinfo">
+            <span><b>Теги: </b>
+                <a class="services" href="#">Бухгалтерия, </a>
+                <a class="services" href="#">Учет, </a>
+                <a class="services" href="#">Финансы </a>
+            </span>
+
+            <span>
+                <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect opacity="0.01" x="0.667969" width="32" height="32" fill="url(#paint0_linear_626_1654)"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.33594 4H26.0026C28.2117 4 30.0026 5.79086 30.0026 8V21.3333C30.0026 23.5425 28.2117 25.3333 26.0026 25.3333H12.0693C11.8119 25.3234 11.5572 25.3883 11.3359 25.52L5.34927 29.1467C5.14346 29.2688 4.90858 29.3333 4.66927 29.3333C4.44022 29.3326 4.21521 29.2729 4.01594 29.16C3.59662 28.9243 3.33677 28.481 3.33594 28V8C3.33594 5.79086 5.1268 4 7.33594 4ZM10.0039 14.6666C10.0039 15.403 10.6009 15.9999 11.3372 15.9999C12.0736 15.9999 12.6706 15.403 12.6706 14.6666C12.6706 13.9302 12.0736 13.3333 11.3372 13.3333C10.6009 13.3333 10.0039 13.9302 10.0039 14.6666ZM16.6693 16C15.9329 16 15.3359 15.403 15.3359 14.6667C15.3359 13.9303 15.9329 13.3333 16.6693 13.3333C17.4057 13.3333 18.0026 13.9303 18.0026 14.6667C18.0026 15.403 17.4057 16 16.6693 16ZM20.668 14.6666C20.668 15.403 21.2649 15.9999 22.0013 15.9999C22.7377 15.9999 23.3346 15.403 23.3346 14.6666C23.3346 13.9302 22.7377 13.3333 22.0013 13.3333C21.2649 13.3333 20.668 13.9302 20.668 14.6666Z" fill="url(#paint1_linear_626_1654)"/>
+                    <defs>
+                    <linearGradient id="paint0_linear_626_1654" x1="0.667462" y1="16.0002" x2="32.6675" y2="16.0002" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#009846"/>
+                    <stop offset="1" stop-color="#009A9C"/>
+                    </linearGradient>
+                    <linearGradient id="paint1_linear_626_1654" x1="3.33552" y1="16.6669" x2="30.0022" y2="16.6669" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#009846"/>
+                    <stop offset="1" stop-color="#009A9C"/>
+                    </linearGradient>
+                    </defs>
+                </svg>
+                    
+                23
+            </span>
+
+            <span><b>Рубрика: </b><a class="services" href="#">Бухгалтерский учет </a></span>
+
+            <span>
+                <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11 21C10.7077 21.0019 10.4267 20.873 10.2191 20.6417L1.67325 11.0309C-0.557749 8.49891 -0.557749 4.42145 1.67325 1.88947C3.9226 -0.629822 7.5628 -0.629822 9.81216 1.88947L11 3.22362L12.1878 1.88947C14.4372 -0.629822 18.0774 -0.629822 20.3268 1.88947C22.5577 4.42145 22.5577 8.49891 20.3268 11.0309L11.7809 20.6417C11.5733 20.873 11.2923 21.0019 11 21Z" fill="url(#paint0_linear_723_8981)"/>
+                    <defs>
+                    <linearGradient id="paint0_linear_723_8981" x1="-0.00034836" y1="10.5002" x2="21.9997" y2="10.5002" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#009846"/>
+                    <stop offset="1" stop-color="#009A9C"/>
+                    </linearGradient>
+                    </defs>
+                </svg>
+                    
+                643
+            </span>
+
+            <div class="dropup">
+                <button class="btn context-btn dropdown-toggle" type="button" id="contextMenuBtnUltra1" data-bs-toggle="dropdown" aria-expanded="false">
+                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect opacity="0.01" x="1.75" y="2.625" width="15.75" height="15.75" fill="#1A1A1A"/>
+                        <circle cx="10.5" cy="10.5" r="10.5" fill="url(#paint0_linear_723_8976)"/>
+                        <path d="M13.5641 12.4686C13.0486 12.469 12.5538 12.6717 12.186 13.033L7.00162 10.723V10.4998V10.2833L12.186 7.96671C12.8555 8.62299 13.895 8.71608 14.6705 8.18922C15.446 7.66237 15.7424 6.66174 15.3789 5.79751C15.0155 4.93329 14.093 4.44526 13.174 4.63102C12.2551 4.81679 11.5946 5.6248 11.5954 6.56234V6.78546L6.411 9.09546C5.63862 8.33662 4.39842 8.34394 3.63504 9.11183C2.87165 9.87973 2.87165 11.1199 3.63504 11.8878C4.39842 12.6557 5.63862 12.6631 6.411 11.9042L11.5954 14.2208V14.4373C11.5954 15.5246 12.4768 16.4061 13.5641 16.4061C14.6514 16.4061 15.5329 15.5246 15.5329 14.4373C15.5329 13.35 14.6514 12.4686 13.5641 12.4686Z" fill="white"/>
+                        <defs>
+                        <linearGradient id="paint0_linear_723_8976" x1="-0.000332526" y1="10.5002" x2="20.9997" y2="10.5002" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#009846"/>
+                        <stop offset="1" stop-color="#009A9C"/>
+                        </linearGradient>
+                        </defs>
+                    </svg>                                 
+                </button>
+
+                <ul class="dropdown-menu" aria-labelledby="contextMenuBtnUltra1">
+                    <li><a class="dropdown-item" href="#"><img src="/Img/contextinsta.png" alt=""></a></li>
+                    <li><a class="dropdown-item" href="#"><img src="/Img/contextface.png" alt=""></a></li>
+                    <li><a class="dropdown-item" href="#"><img src="/Img/contextvk.png" alt=""></a></li>
+                    <li><a class="dropdown-item" href="#"><img src="/Img/contextodnoklassniki.png" alt=""></a></li>
+                </ul>
+            </div>
+
+            <div class="dropup">
+                <button class="btn context-btn dropdown-toggle" type="button" id="contextMenuBtnPrint1" data-bs-toggle="dropdown" aria-expanded="false">
+                    <svg width="26" height="22" viewBox="0 0 26 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect opacity="0.01" width="26" height="22" fill="url(#paint0_linear_723_8982)"/>
+                        <rect x="4.33594" y="19.5" width="17.3333" height="2.16667" rx="1" fill="url(#paint1_linear_723_8982)"/>
+                        <rect x="4.33594" y="21.6665" width="4.33333" height="2.16667" rx="1" transform="rotate(-90 4.33594 21.6665)" fill="url(#paint2_linear_723_8982)"/>
+                        <rect x="19.5" y="21.6665" width="4.33333" height="2.16667" rx="1" transform="rotate(-90 19.5 21.6665)" fill="url(#paint3_linear_723_8982)"/>
+                        <path d="M13.0042 16.2502C12.7796 16.2519 12.5601 16.1838 12.3759 16.0552L8.04255 13.0002C7.55634 12.6553 7.44015 11.9824 7.78255 11.4944C7.94839 11.2577 8.20189 11.0972 8.48671 11.0483C8.77152 10.9995 9.06404 11.0665 9.29922 11.2344L13.0042 13.8236L16.6876 11.0502C17.1662 10.6912 17.8452 10.7882 18.2042 11.2669C18.5632 11.7455 18.4662 12.4246 17.9876 12.7836L13.6542 16.0336C13.4667 16.1742 13.2386 16.2502 13.0042 16.2502Z" fill="url(#paint4_linear_723_8982)"/>
+                        <path d="M13 14C12.4477 14 12 13.418 12 12.7V2.3C12 1.58203 12.4477 1 13 1C13.5523 1 14 1.58203 14 2.3V12.7C14 13.418 13.5523 14 13 14Z" fill="url(#paint5_linear_723_8982)"/>
+                        <defs>
+                        <linearGradient id="paint0_linear_723_8982" x1="-0.000411699" y1="11.0002" x2="25.9996" y2="11.0002" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#009846"/>
+                        <stop offset="1" stop-color="#009A9C"/>
+                        </linearGradient>
+                        <linearGradient id="paint1_linear_723_8982" x1="4.33566" y1="20.5833" x2="21.669" y2="20.5833" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#009846"/>
+                        <stop offset="1" stop-color="#009A9C"/>
+                        </linearGradient>
+                        <linearGradient id="paint2_linear_723_8982" x1="4.33587" y1="22.7499" x2="8.6692" y2="22.7499" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#009846"/>
+                        <stop offset="1" stop-color="#009A9C"/>
+                        </linearGradient>
+                        <linearGradient id="paint3_linear_723_8982" x1="19.4999" y1="22.7499" x2="23.8333" y2="22.7499" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#009846"/>
+                        <stop offset="1" stop-color="#009A9C"/>
+                        </linearGradient>
+                        <linearGradient id="paint4_linear_723_8982" x1="7.58577" y1="13.5419" x2="18.4208" y2="13.5419" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#009846"/>
+                        <stop offset="1" stop-color="#009A9C"/>
+                        </linearGradient>
+                        <linearGradient id="paint5_linear_723_8982" x1="12" y1="7.5001" x2="14" y2="7.5001" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#009846"/>
+                        <stop offset="1" stop-color="#009A9C"/>
+                        </linearGradient>
+                        </defs>
+                    </svg>                               
+                </button>
+
+                <ul class="dropdown-menu" aria-labelledby="contextMenuBtnPrint1">
+                    <li><a class="dropdown-item" href="#" download="#">Печать страницы</a></li>
+                </ul>
+            </div>
+        </div>       
+    </section>
+    
+    <!-- Опрос -->
+    <section class="polls-section d-none" aria-hidden="true">
+        <form action="">
+            <div class="poll-head">Есть ли жизнь на марсе?</div>
+
+            <div class="radio-wrapper">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="pollAnswer1">
+                    <label class="form-check-label" for="pollAnswer1">
+                        Да, под землей
+                        <span class="count" id="pollCount1"></span>
+                    </label>
+                </div>
+
+                <div class="progress">
+                    <div class="progress-bar" id="progressBar1" role="progressbar" style="width: 0%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+
+            <div class="radio-wrapper">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="pollAnswer2">
+                    <label class="form-check-label" for="pollAnswer2">
+                        Да, я сам оттуда
+                        <span class="count" id="pollCount2"></span>
+                    </label>
+                </div>
+
+                <div class="progress">
+                    <div class="progress-bar" id="progressBar2" role="progressbar" style="width: 0%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+
+            <div class="radio-wrapper">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="pollAnswer3">
+                    <label class="form-check-label" for="pollAnswer3">
+                        Там жизни нет
+                        <span class="count" id="pollCount3"></span>
+                    </label>
+                </div>
+
+                <div class="progress">
+                    <div class="progress-bar" id="progressBar3" role="progressbar" style="width: 0%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+
+            <div class="totalpeople">
+                <span>Проголосовало: </span>
+                <span id="totalPeopleCount"></span>
+            </div>
+        </form>
+    </section>
+    <!-- Предупреждения -->
+    <section class="warnings-section d-none">
+        <div class="red-warning warning">
+            <img src="/Img/redwarning.png" alt="">
+            <span>Простое большое предупреждение.</span>
+        </div>
+
+        <div class="green-warning warning">
+            <img src="/Img/greenwarning.png" alt="">
+            <span>Простое большое предупреждение.</span>
+        </div>
+    </section>
+</div>
+<!-- На вопрос ответила: -->
+<section class="answerautor-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-lg-4">
+                <img class="img-fluid" src="/Img/answerautor.jpg" alt="">
+            </div>
+
+            <div class="col-md-8 col-lg-8">
+                <b>На вопрос ответила:</b>
+
+                <div class="head">Герасимова Алевтина Юрьевна</div>
+
+                <span>Главный бухгалтер</span><br>
+
+                <span class="small">Стаж — 14 лет, более 60 кейсов</span>
+
+                <div class="links">
+                    <a href="#">Статьи</a>
+
+                    <a href="#">Кейсы</a>
+
+                    <a href="#">Ответы на вопросы</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="container">
+<!-- Похожее по теме -->
+<section class="thesame-section">
+    <h2 class="title">Похожее по теме</h2>
+    <div class="row">
+        <div class="col-md-6 col-lg-4 col-xl-3">
+            <div class="wrap">
+                <div class="image">
+                    <div class="jaw">
+                        Бухгалтерский учет
+                    </div>
+                    <a href="#">
+                        <img class="img-fluid" src="/Img/thesameimage.jpg" alt="">
+                    </a>
+                </div>
+
+                <div class="description">
+                    <div class="info">
+                        <span>01.02.2021</span>
+                        <span>
+                            <img src="/Img/articleviews.png" alt="">
+                            123456
+                            <img src="/Img/asidecomments.png" alt="">
+                            123
+                        </span>
+                    </div>
+
+                    <div class="head">
+                        <a href="currentarticle.html">
+                            Как в бухучете отразить возмещение покупателю НДС по системе tax free
+                        </a>
+                    </div>
+
+                    <div class="text">
+                        По tax free иностранцу может быть возвращена часть денег за покупку в виде НДС от магазина или от оператора.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 col-xl-3">
+            <div class="wrap">
+                <div class="image">
+                    <div class="jaw">
+                        Бухгалтерский учет
+                    </div>
+                    <a href="#">
+                        <img class="img-fluid" src="/Img/thesameimage.jpg" alt="">
+                    </a>
+                </div>
+
+                <div class="description">
+                    <div class="info">
+                        <span>01.02.2021</span>
+                        <span>
+                            <img src="/Img/articleviews.png" alt="">
+                            123456
+                            <img src="/Img/asidecomments.png" alt="">
+                            123
+                        </span>
+                    </div>
+
+                    <div class="head">
+                        <a href="currentarticle.html">
+                            Как в бухучете отразить возмещение покупателю НДС по системе tax free
+                        </a>
+                    </div>
+
+                    <div class="text">
+                        По tax free иностранцу может быть возвращена часть денег за покупку в виде НДС от магазина или от оператора.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 col-xl-3">
+            <div class="wrap">
+                <div class="image">
+                    <div class="jaw">
+                        Бухгалтерский учет
+                    </div>
+                    <a href="#">
+                        <img class="img-fluid" src="/Img/thesameimage.jpg" alt="">
+                    </a>
+                </div>
+
+                <div class="description">
+                    <div class="info">
+                        <span>01.02.2021</span>
+                        <span>
+                            <img src="/Img/articleviews.png" alt="">
+                            123456
+                            <img src="/Img/asidecomments.png" alt="">
+                            123
+                        </span>
+                    </div>
+
+                    <div class="head">
+                        <a href="currentarticle.html">
+                            Как в бухучете отразить возмещение покупателю НДС по системе tax free
+                        </a>
+                    </div>
+
+                    <div class="text">
+                        По tax free иностранцу может быть возвращена часть денег за покупку в виде НДС от магазина или от оператора.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 col-xl-3">
+            <div class="wrap">
+                <div class="image">
+                    <div class="jaw">
+                        Бухгалтерский учет
+                    </div>
+                    <a href="#">
+                        <img class="img-fluid" src="/Img/thesameimage.jpg" alt="">
+                    </a>
+                </div>
+
+                <div class="description">
+                    <div class="info">
+                        <span>01.02.2021</span>
+                        <span>
+                            <img src="/Img/articleviews.png" alt="">
+                            123456
+                            <img src="/Img/asidecomments.png" alt="">
+                            123
+                        </span>
+                    </div>
+
+                    <div class="head">
+                        <a href="currentarticle.html">
+                            Как в бухучете отразить возмещение покупателю НДС по системе tax free
+                        </a>
+                    </div>
+
+                    <div class="text">
+                        По tax free иностранцу может быть возвращена часть денег за покупку в виде НДС от магазина или от оператора.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Тоже интересно -->
+<section class="tooineresting-section">
+    <h2 class="title">Тоже интересно</h2>
+    <div class="wrap">
+        <div class="row">
+            <div class="col-xl-8">
+                <a href="#">Последствия банкротства физических лиц для родственников и супругов</a>
+            </div>
+
+            <div class="col-xl-4">
+                <div class="info">
+                    <span>01.02.2019</span>
+
+                    <span>
+                        <img src="/Img/eye24tooint.png" alt="">
+                        123456
+                    </span>
+
+                    <span>
+                        <img src="/Img/articlelikes.png" alt="">
+                        643
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrap">
+        <div class="row">
+            <div class="col-xl-8">
+                <a href="#">​Какие выплаты можно оформить дистанционно до конца 2021 года</a>
+            </div>
+
+            <div class="col-xl-4">
+                <div class="info">
+                    <span>01.02.2019</span>
+
+                    <span>
+                        <img src="/Img/eye24tooint.png" alt="">
+                        123456
+                    </span>
+
+                    <span>
+                        <img src="/Img/articlelikes.png" alt="">
+                        643
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrap">
+        <div class="row">
+            <div class="col-xl-8">
+                <a href="#">​Как жить в 2021-ом, если в кармане затерялась иностранная компания: деофшоризация, КИК и обмен налоговой информацией</a>
+            </div>
+
+            <div class="col-xl-4">
+                <div class="info">
+                    <span>01.02.2019</span>
+
+                    <span>
+                        <img src="/Img/eye24tooint.png" alt="">
+                        123456
+                    </span>
+
+                    <span>
+                        <img src="/Img/articlelikes.png" alt="">
+                        643
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrap">
+        <div class="row">
+            <div class="col-xl-8">
+                <a href="#">​Оспаривание цепочки сделок с ликвидированным звеном</a>
+            </div>
+
+            <div class="col-xl-4">
+                <div class="info">
+                    <span>01.02.2019</span>
+
+                    <span>
+                        <img src="/Img/eye24tooint.png" alt="">
+                        123456
+                    </span>
+
+                    <span>
+                        <img src="/Img/articlelikes.png" alt="">
+                        643
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrap">
+        <div class="row">
+            <div class="col-xl-8">
+                <a href="#">​​Как составить 4-ФСС за 1 квартал 2021 года</a>
+            </div>
+
+            <div class="col-xl-4">
+                <div class="info">
+                    <span>01.02.2019</span>
+
+                    <span>
+                        <img src="/Img/eye24tooint.png" alt="">
+                        123456
+                    </span>
+
+                    <span>
+                        <img src="/Img/articlelikes.png" alt="">
+                        643
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Подпишись на рассылку -->
+<section class="subscribe-section">
+    <h2 class="title">Подпишись на рассылку</h2>
+
+    <div class="subtext">
+        Будем присылать не более 2 писем в месяц с дайджестом новых и лучших статей.
+    </div>
+
+    <div class="wrapper">
+        <div class="wrap wrapshadow">
+            <form action="">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <input class="maininput form-control" type="email" name="" id="" placeholder="Ваш e-mail">
+                    </div>
+
+                    <div class="col-lg-6">
+                        <button class="btn btn-main form-control" id="subscribeBtn" type="button" data-bs-toggle="modal" data-bs-target="#subscribe">Заказать звонок</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- МОДАЛ ПРИ ПОДПИСКЕ -->
+    <div class="modal fade" id="subscribe" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="text-center">
+                        <h2 class="title">Спасибо за подписку!</h2>
+                        <p class="mt-5">
+                            На ваш Email скорой прийдет сообщение, с уведомлением о удачной подписке. Если сообщение долго не приходит, то проверьте папку <b>«Спам»</b> и отметьте сообщение как не спам.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Оставить комментарии -->
+<section class="comments-section">
+    <div class="comment-wrapper wrapshadow">
+        <form action="">
+            <div class="head">
+                <span>Комментарии <sup><span id="symbolCount">190</span></sup></span>
+
+                <span>
+                    <button class="btn" type="button">Старые</button>
+
+                    <button class="btn" type="button">Новые</button>
+
+                    <button class="btn" type="button">Лучшие</button>
+                </span>
+            </div>
+
+            <textarea name="" id="commentAreaArticle" maxlength="190" cols="60" rows="6" placeholder="Добавить комментарий..."></textarea>
+
+            <div class="soclinks">
+                <span>Войти через:</span>
+
+                <a href="#"><i class="fab fa-vk"></i></a>
+
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+                <a href="#"><i class="fab fa-odnoklassniki"></i></a>
+
+                <a href="#"><i class="fab fa-telegram-plane"></i></a>
+
+                <a href="#"><i class="fab fa-yandex"></i></a>
+
+                <a href="#"><i class="fab fa-google"></i></a>
+            </div>
+
+            <div class="login">
+                <div class="row">
+                    <div class="col-md-6 col-lg-3 col-xl-3 mt-3">
+                        <span>Или как гость: </span>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 col-xl-3 mt-3">
+                        <input class="maininput form-control" type="text" name="" id="" placeholder="Ваше имя">
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 col-xl-3 mt-3">
+                        <input class="maininput form-control" type="email" name="" id="" placeholder="Ваш e-mail">
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 col-xl-3 mt-3">
+                        <button class="btn btn-main form-control" data-bs-toggle="modal" data-bs-target="#sendComment" type="button">Отправить</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <!-- Модалочка при отправке сообщения -->
+    <div class="modal fade" id="sendComment" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="sendcomment-wrapper">
+                        <img src="/Img/sendcommentthxowl.png" alt="">
+
+                        <div class="head">Спасибо</div>
+
+                        <span>Ваше сообщение отправлено</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Комментарии -->
+<section class="leftcomments-section">
+    <!-- Модал удаления коммента -->
+    <div class="modal fade" id="deleteComment" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="text-center">
+                        <h2 class="title">Вы уверены, что хотите удалить комментарий?</h2>
+                        
+                        <div class="yeiornopebtns">
+                            <div class="row">
+                                <div class="col-6">
+                                    <button class="btn btn-main form-control">Удалить</button>
+                                </div>
+
+                                <div class="col-6">
+                                    <button class="btn btn-main form-control">Отменить</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Модал жалоб -->
+    <div class="modal fade" id="claimComment" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="text-center">
+                        <h2 class="title">Пожаловаться на комментарий</h2>
+                        
+                        <div class="claim-form">
+                            <form action="">
+                                <textarea class="maininput form-control textleft" name="" id="" cols="30" rows="6" placeholder="Напишите причину жалобы"></textarea>
+
+                                <div class="row">
+                                    <div class="col-md-6 col-xl-5">
+                                        <button class="btn btn-main form-control mt-5">Отправить</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <ul>
+        <li>
+            <div class="leftcomment">
+                <div class="useravatar"></div>
+
+                <div class="wrap">
+                    <div class="head">Вячеслав Гавриленков</div>
+
+                    <div class="commentdate">20.03.2021</div>
+
+                    <div class="text">
+                        Добрый день! Ситуация следующая - ИП на УСН (доходы минус расходы), зарегистрирован 25.05.2020, необходимо рассчитать сумму дополнительных 
+                        взносов на обязательное пенсионное страхование с доходов свыше 300 000 руб. за 2020г. В расходах, учитываемых при исчислении налоговой базы 
+                        для УСН, отраженных в КУДиР, в том числе фигурируют фиксированные страховые взносы на ОПС, фиксированные страховые взносы на ОМС и дополнительные 
+                        взносы на ОПС с доходов свыше 300 000 руб. за 2020г., которые ИП уже уплатил в бюджет в течение 2020 года, можно ли их учесть при определении базы 
+                        для расчета суммы дополнительных взносов на обязательное пенсионное страхование с доходов свыше 300 000 руб. за 2020г. Или все-таки какие-то из 
+                        страховых взносов учитывать нельзя? Заранее спасибо за ответ.
+                    </div>
+
+                    <div class="interactive">
+                        <div class="leftside">
+                            <button class="btn">
+                                <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10 5.00225V0.750247C10 0.449247 9.819 0.177247 9.542 0.0592466C9.266 -0.0577534 8.943 0.00124645 8.728 0.212246L0.228 8.46225C0.082 8.60325 0 8.79725 0 9.00025C0 9.20325 0.082 9.39725 0.228 9.53825L8.728 17.7882C8.945 17.9982 9.267 18.0572 9.542 17.9412C9.819 17.8232 10 17.5512 10 17.2502V13.0002H11.418C16.054 13.0002 20.328 15.5202 22.571 19.5722L22.592 19.6102C22.726 19.8542 22.98 20.0002 23.25 20.0002C23.312 20.0002 23.374 19.9932 23.436 19.9772C23.768 19.8922 24 19.5932 24 19.2502C24 11.4762 17.743 5.13625 10 5.00225Z" fill="#009846"/>
+                                </svg>  
+                                <span>Ответить</span>                                  
+                            </button>
+                            
+                            <button class="btn">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M23.356 14.454C23.356 13.8847 23.162 13.3603 22.8374 12.9419C23.4758 12.4946 23.8944 11.7539 23.8944 10.9169C23.8944 9.55402 22.7856 8.44519 21.4227 8.44519H15.6697L16.4757 5.661V4.35262C16.4757 1.95258 14.5232 0 12.1231 0C11.5568 0 11.096 0.460781 11.096 1.02713V3.9502C10.6743 4.63538 8.03678 7.57444 5.34766 10.4451V22.2722L8.12561 23.314C9.33948 23.7692 10.6123 24 11.9087 24H15.4446H18.6959H19.8073C21.1702 24 22.279 22.8912 22.279 21.5283C22.279 20.9593 22.0857 20.4345 21.7614 20.0163C22.3995 19.569 22.8175 18.828 22.8175 17.9912C22.8175 17.4219 22.6235 16.8974 22.2989 16.4791C22.9374 16.0317 23.356 15.291 23.356 14.454Z" fill="#009846"/>
+                                    <path d="M3.94031 11.2407H0.105469V21.9934H3.94031V11.2407Z" fill="#009846"/>
+                                </svg>
+                                1                                    
+                            </button>
+
+                            <button class="btn">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.27993 2.3999H0.960159C0.700155 2.3999 0.475193 2.49494 0.285011 2.68497C0.0950387 2.87489 0 3.0999 0 3.3598V12.9598C0 13.2197 0.0950387 13.4448 0.285064 13.6347C0.475036 13.8246 0.699997 13.9197 0.960211 13.9197H5.27993C5.53988 13.9197 5.76479 13.8246 5.95486 13.6347C6.14484 13.4449 6.23982 13.2198 6.23982 12.9598V3.3598C6.23982 3.0999 6.14478 2.87494 5.95486 2.68497C5.76484 2.49489 5.53993 2.3999 5.27993 2.3999ZM3.55489 5.95495C3.36492 6.14497 3.13995 6.23991 2.87995 6.23991C2.60991 6.23991 2.38238 6.14497 2.1975 5.95495C2.01252 5.76492 1.92005 5.54001 1.92005 5.27985C1.92005 5.00997 2.01247 4.78238 2.1975 4.59735C2.38243 4.41237 2.60991 4.31996 2.87995 4.31996C3.13995 4.31996 3.36492 4.41237 3.55489 4.59735C3.74512 4.78233 3.83995 5.00997 3.83995 5.27985C3.83995 5.5398 3.74491 5.76471 3.55489 5.95495Z" fill="#B8B8B8"/>
+                                    <path d="M5.077 3H0.923256C0.673245 3 0.45693 3.033 0.274057 3.09898C0.091386 3.16493 0 3.24306 0 3.3333V6.66668C0 6.75694 0.091386 6.83511 0.274107 6.90104C0.456778 6.96696 0.673094 7 0.923306 7H5.077C5.32696 7 5.54322 6.96696 5.72599 6.90104C5.90866 6.83513 6 6.75696 6 6.66668V3.3333C6 3.24306 5.90861 3.16495 5.72599 3.09898C5.54327 3.03298 5.32701 3 5.077 3ZM3.41826 4.23441C3.23559 4.30039 3.01927 4.33336 2.76926 4.33336C2.5096 4.33336 2.29081 4.30039 2.11304 4.23441C1.93517 4.16843 1.84626 4.09034 1.84626 4C1.84626 3.90629 1.93512 3.82726 2.11304 3.76302C2.29086 3.69879 2.5096 3.6667 2.76926 3.6667C3.01927 3.6667 3.23559 3.69879 3.41826 3.76302C3.60118 3.82725 3.69237 3.90629 3.69237 4C3.69237 4.09026 3.60098 4.16836 3.41826 4.23441Z" fill="#B8B8B8"/>
+                                    <path d="M23.1744 10.725C23.3247 10.2849 23.3993 9.90496 23.3982 9.58528C23.4284 8.82528 23.2134 8.14031 22.7531 7.53036C22.9232 6.97032 22.9232 6.38522 22.7531 5.77527C22.6036 5.20525 22.3332 4.73546 21.9434 4.36545C22.0333 3.24537 21.7884 2.34053 21.2084 1.65046C20.5684 0.890517 19.5835 0.500328 18.2534 0.480469H17.7134H16.5735H16.3186C15.6587 0.480469 14.9385 0.55796 14.1586 0.712943C13.379 0.868032 12.7713 1.01309 12.3366 1.14805C11.9016 1.28297 11.299 1.4805 10.5292 1.74046C9.29916 2.17036 8.50916 2.39039 8.15922 2.40032C7.89922 2.41045 7.67425 2.50781 7.48428 2.69289C7.29426 2.87772 7.19922 3.10031 7.19922 3.36026V12.975C7.19922 13.225 7.28948 13.4425 7.46936 13.6273C7.64925 13.8125 7.86428 13.915 8.11425 13.9351C8.35408 13.9553 8.73413 14.2501 9.25419 14.82C9.7743 15.39 10.2792 15.9952 10.7691 16.6352C11.4492 17.5049 11.9542 18.1048 12.2841 18.4349C12.464 18.6147 12.6188 18.8547 12.749 19.1548C12.8788 19.4547 12.9666 19.6972 13.0119 19.8822C13.0568 20.0671 13.124 20.3694 13.2144 20.7898C13.2842 21.1795 13.3468 21.4847 13.4019 21.7045C13.457 21.9246 13.5542 22.1846 13.6943 22.4844C13.8345 22.7847 14.0044 23.0344 14.2045 23.2344C14.3944 23.4245 14.6194 23.5197 14.8794 23.5197C15.3397 23.5197 15.7517 23.4672 16.1171 23.3622C16.4821 23.2572 16.782 23.1274 17.0171 22.9724C17.2524 22.8171 17.4523 22.615 17.6173 22.3648C17.7824 22.1148 17.9023 21.8897 17.9773 21.6898C18.0524 21.4895 18.1125 21.24 18.1572 20.9401C18.2022 20.6398 18.2275 20.4147 18.2324 20.2648C18.2373 20.1148 18.24 19.92 18.24 19.6797C18.24 19.3 18.1902 18.9174 18.0902 18.5323C17.9899 18.1476 17.8948 17.8549 17.805 17.6546C17.7151 17.4546 17.5801 17.1698 17.4002 16.7999C17.37 16.7398 17.3202 16.6496 17.2502 16.5296C17.1805 16.4097 17.1251 16.2995 17.0852 16.1995C17.0451 16.0996 17.0052 15.9796 16.9654 15.8396H21.1204C21.9002 15.8396 22.5727 15.5544 23.1376 14.9843C23.7027 14.4144 23.9902 13.7395 24.0002 12.9596C23.9995 12.0799 23.7244 11.3349 23.1744 10.725Z" fill="#B8B8B8"/>
+                                </svg>
+                                0  
+                            </button>
+                        </div>
+
+                        <div class="rightside">
+                            <button class="btn">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M22.8585 1.14288C21.3338 -0.380959 18.8538 -0.380959 17.3291 1.14288L1.66419 16.8078C1.65681 16.8152 1.65246 16.8243 1.64595 16.8321C1.63683 16.8426 1.62901 16.8539 1.62075 16.8652C1.59773 16.8973 1.57992 16.9316 1.56645 16.969C1.56255 16.9803 1.5569 16.9903 1.55386 17.0016C1.55255 17.0059 1.54995 17.0102 1.54864 17.0146L0.464844 21.567L2.43436 23.5361L6.98676 22.4523C6.99849 22.4497 7.00892 22.4431 7.02021 22.4392C7.03498 22.4345 7.04888 22.4288 7.06322 22.4223C7.09449 22.408 7.1236 22.3902 7.15053 22.3689C7.16095 22.3606 7.17181 22.3545 7.1818 22.3454C7.18528 22.3419 7.18962 22.3402 7.1931 22.3367L22.8585 6.67135C24.3827 5.14751 24.3827 2.66715 22.8585 1.14288ZM7.4546 20.8472L7.60837 19.4645L17.3291 9.74335C17.499 9.5735 17.499 9.29897 17.3291 9.12912C17.1593 8.95928 16.8848 8.95928 16.7149 9.12912L6.99415 18.8503L4.92081 19.0805L5.15103 17.0072L14.8727 7.28644C15.0425 7.1166 15.0425 6.84206 14.8727 6.67222C14.7028 6.50237 14.4283 6.50237 14.2584 6.67222L4.53681 16.393L3.15415 16.5468L15.1793 4.52156L19.4798 8.82201L7.4546 20.8472ZM20.094 8.20778L15.7936 3.90733L16.4078 3.2931L20.7082 7.59356L20.094 8.20778ZM21.3225 6.97933L17.022 2.67888L17.6367 2.06422L21.9371 6.36467L21.3225 6.97933Z" fill="#009846"/>
+                                </svg>
+                                <span>Изменить </span>  
+                            </button>
+
+                            <button class="btn" data-bs-toggle="modal" data-bs-target="#deleteComment">
+                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M14 4.99994H19C19.5523 4.99994 20 5.44765 20 5.99994C20 6.55222 19.5523 6.99994 19 6.99994H18V17.9999C18 19.6568 16.6569 20.9999 15 20.9999H5C3.34315 20.9999 2 19.6568 2 17.9999V6.99994H1C0.447715 6.99994 0 6.55222 0 5.99994C0 5.44765 0.447715 4.99994 1 4.99994H6V3.32994C6.04884 1.99704 7.16696 0.954952 8.5 0.999939H11.5C12.833 0.954952 13.9512 1.99704 14 3.32994V4.99994ZM8.5 2.99994C8.21 2.99994 8 3.16994 8 3.32994V4.99994H12V3.32994C12 3.16994 11.79 2.99994 11.5 2.99994H8.5Z" fill="#009846"/>
+                                </svg>       
+                            </button>
+
+                            <button class="btn">
+                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16.9986 12.9998C16.213 13.0004 15.459 13.3092 14.8986 13.8598L6.99857 10.3398V9.9998V9.6698L14.8986 6.1398C15.9188 7.13984 17.5027 7.2817 18.6844 6.47886C19.8662 5.67603 20.3178 4.15126 19.764 2.83435C19.2101 1.51744 17.8045 0.773781 16.4042 1.05685C15.0038 1.33991 13.9974 2.57117 13.9986 3.9998V4.3398L6.09857 7.8598C4.9216 6.70347 3.03177 6.71462 1.86853 7.88474C0.705282 9.05487 0.705282 10.9447 1.86853 12.1149C3.03177 13.285 4.9216 13.2961 6.09857 12.1398L13.9986 15.6698V15.9998C13.9986 17.6567 15.3417 18.9998 16.9986 18.9998C18.6554 18.9998 19.9986 17.6567 19.9986 15.9998C19.9986 14.3429 18.6554 12.9998 16.9986 12.9998Z" fill="#009846"/>
+                                </svg>      
+                            </button>
+
+                            <button class="btn" data-bs-toggle="modal" data-bs-target="#claimComment">
+                                <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.00008 19.8498C8.65063 19.8553 8.30584 19.7691 8.00008 19.5998L7.70008 19.4298C2.94281 16.7383 0.00128144 11.6957 8.04859e-05 6.22978V6.08979C-0.0063732 5.36885 0.37569 4.70024 1.00008 4.33979L8.00008 0.399785C8.61888 0.0425195 9.38128 0.0425195 10.0001 0.399785L17.0001 4.33979C17.6245 4.70024 18.0065 5.36885 18.0001 6.08979V6.22978C17.9948 11.6998 15.0451 16.7434 10.2801 19.4298L9.98008 19.5998C9.68023 19.7657 9.34277 19.8518 9.00008 19.8498Z" fill="#009846"/>
+                                </svg>        
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <ul>
+                <li>
+                    <div class="leftcomment">
+                        <div class="useravatar"></div>
+        
+                        <div class="wrap">
+                            <div class="head">Вячеслав Гавриленков</div>
+        
+                            <div class="commentdate">20.03.2021</div>
+        
+                            <div class="text">
+                                Добрый день! Ситуация следующая - ИП на УСН (доходы минус расходы), зарегистрирован 25.05.2020, необходимо рассчитать сумму дополнительных 
+                                взносов на обязательное пенсионное страхование с доходов свыше 300 000 руб. за 2020г. В расходах, учитываемых при исчислении налоговой базы 
+                                для УСН, отраженных в КУДиР, в том числе фигурируют фиксированные страховые взносы на ОПС, фиксированные страховые взносы на ОМС и дополнительные 
+                                взносы на ОПС с доходов свыше 300 000 руб. за 2020г., которые ИП уже уплатил в бюджет в течение 2020 года, можно ли их учесть при определении базы 
+                                для расчета суммы дополнительных взносов на обязательное пенсионное страхование с доходов свыше 300 000 руб. за 2020г. Или все-таки какие-то из 
+                                страховых взносов учитывать нельзя? Заранее спасибо за ответ.
+                            </div>
+        
+                            <div class="interactive">
+                                <div class="leftside">
+                                    <button class="btn">
+                                        <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10 5.00225V0.750247C10 0.449247 9.819 0.177247 9.542 0.0592466C9.266 -0.0577534 8.943 0.00124645 8.728 0.212246L0.228 8.46225C0.082 8.60325 0 8.79725 0 9.00025C0 9.20325 0.082 9.39725 0.228 9.53825L8.728 17.7882C8.945 17.9982 9.267 18.0572 9.542 17.9412C9.819 17.8232 10 17.5512 10 17.2502V13.0002H11.418C16.054 13.0002 20.328 15.5202 22.571 19.5722L22.592 19.6102C22.726 19.8542 22.98 20.0002 23.25 20.0002C23.312 20.0002 23.374 19.9932 23.436 19.9772C23.768 19.8922 24 19.5932 24 19.2502C24 11.4762 17.743 5.13625 10 5.00225Z" fill="#009846"/>
+                                        </svg>  
+                                        <span>Ответить</span>                                  
+                                    </button>
+                                    
+                                    <button class="btn">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M23.356 14.454C23.356 13.8847 23.162 13.3603 22.8374 12.9419C23.4758 12.4946 23.8944 11.7539 23.8944 10.9169C23.8944 9.55402 22.7856 8.44519 21.4227 8.44519H15.6697L16.4757 5.661V4.35262C16.4757 1.95258 14.5232 0 12.1231 0C11.5568 0 11.096 0.460781 11.096 1.02713V3.9502C10.6743 4.63538 8.03678 7.57444 5.34766 10.4451V22.2722L8.12561 23.314C9.33948 23.7692 10.6123 24 11.9087 24H15.4446H18.6959H19.8073C21.1702 24 22.279 22.8912 22.279 21.5283C22.279 20.9593 22.0857 20.4345 21.7614 20.0163C22.3995 19.569 22.8175 18.828 22.8175 17.9912C22.8175 17.4219 22.6235 16.8974 22.2989 16.4791C22.9374 16.0317 23.356 15.291 23.356 14.454Z" fill="#009846"/>
+                                            <path d="M3.94031 11.2407H0.105469V21.9934H3.94031V11.2407Z" fill="#009846"/>
+                                        </svg>
+                                        1                                    
+                                    </button>
+        
+                                    <button class="btn">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.27993 2.3999H0.960159C0.700155 2.3999 0.475193 2.49494 0.285011 2.68497C0.0950387 2.87489 0 3.0999 0 3.3598V12.9598C0 13.2197 0.0950387 13.4448 0.285064 13.6347C0.475036 13.8246 0.699997 13.9197 0.960211 13.9197H5.27993C5.53988 13.9197 5.76479 13.8246 5.95486 13.6347C6.14484 13.4449 6.23982 13.2198 6.23982 12.9598V3.3598C6.23982 3.0999 6.14478 2.87494 5.95486 2.68497C5.76484 2.49489 5.53993 2.3999 5.27993 2.3999ZM3.55489 5.95495C3.36492 6.14497 3.13995 6.23991 2.87995 6.23991C2.60991 6.23991 2.38238 6.14497 2.1975 5.95495C2.01252 5.76492 1.92005 5.54001 1.92005 5.27985C1.92005 5.00997 2.01247 4.78238 2.1975 4.59735C2.38243 4.41237 2.60991 4.31996 2.87995 4.31996C3.13995 4.31996 3.36492 4.41237 3.55489 4.59735C3.74512 4.78233 3.83995 5.00997 3.83995 5.27985C3.83995 5.5398 3.74491 5.76471 3.55489 5.95495Z" fill="#B8B8B8"/>
+                                            <path d="M5.077 3H0.923256C0.673245 3 0.45693 3.033 0.274057 3.09898C0.091386 3.16493 0 3.24306 0 3.3333V6.66668C0 6.75694 0.091386 6.83511 0.274107 6.90104C0.456778 6.96696 0.673094 7 0.923306 7H5.077C5.32696 7 5.54322 6.96696 5.72599 6.90104C5.90866 6.83513 6 6.75696 6 6.66668V3.3333C6 3.24306 5.90861 3.16495 5.72599 3.09898C5.54327 3.03298 5.32701 3 5.077 3ZM3.41826 4.23441C3.23559 4.30039 3.01927 4.33336 2.76926 4.33336C2.5096 4.33336 2.29081 4.30039 2.11304 4.23441C1.93517 4.16843 1.84626 4.09034 1.84626 4C1.84626 3.90629 1.93512 3.82726 2.11304 3.76302C2.29086 3.69879 2.5096 3.6667 2.76926 3.6667C3.01927 3.6667 3.23559 3.69879 3.41826 3.76302C3.60118 3.82725 3.69237 3.90629 3.69237 4C3.69237 4.09026 3.60098 4.16836 3.41826 4.23441Z" fill="#B8B8B8"/>
+                                            <path d="M23.1744 10.725C23.3247 10.2849 23.3993 9.90496 23.3982 9.58528C23.4284 8.82528 23.2134 8.14031 22.7531 7.53036C22.9232 6.97032 22.9232 6.38522 22.7531 5.77527C22.6036 5.20525 22.3332 4.73546 21.9434 4.36545C22.0333 3.24537 21.7884 2.34053 21.2084 1.65046C20.5684 0.890517 19.5835 0.500328 18.2534 0.480469H17.7134H16.5735H16.3186C15.6587 0.480469 14.9385 0.55796 14.1586 0.712943C13.379 0.868032 12.7713 1.01309 12.3366 1.14805C11.9016 1.28297 11.299 1.4805 10.5292 1.74046C9.29916 2.17036 8.50916 2.39039 8.15922 2.40032C7.89922 2.41045 7.67425 2.50781 7.48428 2.69289C7.29426 2.87772 7.19922 3.10031 7.19922 3.36026V12.975C7.19922 13.225 7.28948 13.4425 7.46936 13.6273C7.64925 13.8125 7.86428 13.915 8.11425 13.9351C8.35408 13.9553 8.73413 14.2501 9.25419 14.82C9.7743 15.39 10.2792 15.9952 10.7691 16.6352C11.4492 17.5049 11.9542 18.1048 12.2841 18.4349C12.464 18.6147 12.6188 18.8547 12.749 19.1548C12.8788 19.4547 12.9666 19.6972 13.0119 19.8822C13.0568 20.0671 13.124 20.3694 13.2144 20.7898C13.2842 21.1795 13.3468 21.4847 13.4019 21.7045C13.457 21.9246 13.5542 22.1846 13.6943 22.4844C13.8345 22.7847 14.0044 23.0344 14.2045 23.2344C14.3944 23.4245 14.6194 23.5197 14.8794 23.5197C15.3397 23.5197 15.7517 23.4672 16.1171 23.3622C16.4821 23.2572 16.782 23.1274 17.0171 22.9724C17.2524 22.8171 17.4523 22.615 17.6173 22.3648C17.7824 22.1148 17.9023 21.8897 17.9773 21.6898C18.0524 21.4895 18.1125 21.24 18.1572 20.9401C18.2022 20.6398 18.2275 20.4147 18.2324 20.2648C18.2373 20.1148 18.24 19.92 18.24 19.6797C18.24 19.3 18.1902 18.9174 18.0902 18.5323C17.9899 18.1476 17.8948 17.8549 17.805 17.6546C17.7151 17.4546 17.5801 17.1698 17.4002 16.7999C17.37 16.7398 17.3202 16.6496 17.2502 16.5296C17.1805 16.4097 17.1251 16.2995 17.0852 16.1995C17.0451 16.0996 17.0052 15.9796 16.9654 15.8396H21.1204C21.9002 15.8396 22.5727 15.5544 23.1376 14.9843C23.7027 14.4144 23.9902 13.7395 24.0002 12.9596C23.9995 12.0799 23.7244 11.3349 23.1744 10.725Z" fill="#B8B8B8"/>
+                                        </svg>
+                                        0  
+                                    </button>
+                                </div>
+        
+                                <div class="rightside">
+                                    <button class="btn">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M22.8585 1.14288C21.3338 -0.380959 18.8538 -0.380959 17.3291 1.14288L1.66419 16.8078C1.65681 16.8152 1.65246 16.8243 1.64595 16.8321C1.63683 16.8426 1.62901 16.8539 1.62075 16.8652C1.59773 16.8973 1.57992 16.9316 1.56645 16.969C1.56255 16.9803 1.5569 16.9903 1.55386 17.0016C1.55255 17.0059 1.54995 17.0102 1.54864 17.0146L0.464844 21.567L2.43436 23.5361L6.98676 22.4523C6.99849 22.4497 7.00892 22.4431 7.02021 22.4392C7.03498 22.4345 7.04888 22.4288 7.06322 22.4223C7.09449 22.408 7.1236 22.3902 7.15053 22.3689C7.16095 22.3606 7.17181 22.3545 7.1818 22.3454C7.18528 22.3419 7.18962 22.3402 7.1931 22.3367L22.8585 6.67135C24.3827 5.14751 24.3827 2.66715 22.8585 1.14288ZM7.4546 20.8472L7.60837 19.4645L17.3291 9.74335C17.499 9.5735 17.499 9.29897 17.3291 9.12912C17.1593 8.95928 16.8848 8.95928 16.7149 9.12912L6.99415 18.8503L4.92081 19.0805L5.15103 17.0072L14.8727 7.28644C15.0425 7.1166 15.0425 6.84206 14.8727 6.67222C14.7028 6.50237 14.4283 6.50237 14.2584 6.67222L4.53681 16.393L3.15415 16.5468L15.1793 4.52156L19.4798 8.82201L7.4546 20.8472ZM20.094 8.20778L15.7936 3.90733L16.4078 3.2931L20.7082 7.59356L20.094 8.20778ZM21.3225 6.97933L17.022 2.67888L17.6367 2.06422L21.9371 6.36467L21.3225 6.97933Z" fill="#009846"/>
+                                        </svg>
+                                        <span>Изменить </span>  
+                                    </button>
+        
+                                    <button class="btn">
+                                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M14 4.99994H19C19.5523 4.99994 20 5.44765 20 5.99994C20 6.55222 19.5523 6.99994 19 6.99994H18V17.9999C18 19.6568 16.6569 20.9999 15 20.9999H5C3.34315 20.9999 2 19.6568 2 17.9999V6.99994H1C0.447715 6.99994 0 6.55222 0 5.99994C0 5.44765 0.447715 4.99994 1 4.99994H6V3.32994C6.04884 1.99704 7.16696 0.954952 8.5 0.999939H11.5C12.833 0.954952 13.9512 1.99704 14 3.32994V4.99994ZM8.5 2.99994C8.21 2.99994 8 3.16994 8 3.32994V4.99994H12V3.32994C12 3.16994 11.79 2.99994 11.5 2.99994H8.5Z" fill="#009846"/>
+                                        </svg>       
+                                    </button>
+        
+                                    <button class="btn">
+                                        <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M16.9986 12.9998C16.213 13.0004 15.459 13.3092 14.8986 13.8598L6.99857 10.3398V9.9998V9.6698L14.8986 6.1398C15.9188 7.13984 17.5027 7.2817 18.6844 6.47886C19.8662 5.67603 20.3178 4.15126 19.764 2.83435C19.2101 1.51744 17.8045 0.773781 16.4042 1.05685C15.0038 1.33991 13.9974 2.57117 13.9986 3.9998V4.3398L6.09857 7.8598C4.9216 6.70347 3.03177 6.71462 1.86853 7.88474C0.705282 9.05487 0.705282 10.9447 1.86853 12.1149C3.03177 13.285 4.9216 13.2961 6.09857 12.1398L13.9986 15.6698V15.9998C13.9986 17.6567 15.3417 18.9998 16.9986 18.9998C18.6554 18.9998 19.9986 17.6567 19.9986 15.9998C19.9986 14.3429 18.6554 12.9998 16.9986 12.9998Z" fill="#009846"/>
+                                        </svg>      
+                                    </button>
+        
+                                    <button class="btn">
+                                        <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9.00008 19.8498C8.65063 19.8553 8.30584 19.7691 8.00008 19.5998L7.70008 19.4298C2.94281 16.7383 0.00128144 11.6957 8.04859e-05 6.22978V6.08979C-0.0063732 5.36885 0.37569 4.70024 1.00008 4.33979L8.00008 0.399785C8.61888 0.0425195 9.38128 0.0425195 10.0001 0.399785L17.0001 4.33979C17.6245 4.70024 18.0065 5.36885 18.0001 6.08979V6.22978C17.9948 11.6998 15.0451 16.7434 10.2801 19.4298L9.98008 19.5998C9.68023 19.7657 9.34277 19.8518 9.00008 19.8498Z" fill="#009846"/>
+                                        </svg>        
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <ul>
+                        <li>
+                            <div class="leftcomment">
+                                <div class="useravatar"></div>
+                
+                                <div class="wrap">
+                                    <div class="head">Вячеслав Гавриленков</div>
+                
+                                    <div class="commentdate">20.03.2021</div>
+                
+                                    <div class="text">
+                                        Добрый день! Ситуация следующая - ИП на УСН (доходы минус расходы), зарегистрирован 25.05.2020, необходимо рассчитать сумму дополнительных 
+                                        взносов на обязательное пенсионное страхование с доходов свыше 300 000 руб. за 2020г. В расходах, учитываемых при исчислении налоговой базы 
+                                        для УСН, отраженных в КУДиР, в том числе фигурируют фиксированные страховые взносы на ОПС, фиксированные страховые взносы на ОМС и дополнительные 
+                                        взносы на ОПС с доходов свыше 300 000 руб. за 2020г., которые ИП уже уплатил в бюджет в течение 2020 года, можно ли их учесть при определении базы 
+                                        для расчета суммы дополнительных взносов на обязательное пенсионное страхование с доходов свыше 300 000 руб. за 2020г. Или все-таки какие-то из 
+                                        страховых взносов учитывать нельзя? Заранее спасибо за ответ.
+                                    </div>
+                
+                                    <div class="interactive">
+                                        <div class="leftside">
+                                            <button class="btn">
+                                                <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M10 5.00225V0.750247C10 0.449247 9.819 0.177247 9.542 0.0592466C9.266 -0.0577534 8.943 0.00124645 8.728 0.212246L0.228 8.46225C0.082 8.60325 0 8.79725 0 9.00025C0 9.20325 0.082 9.39725 0.228 9.53825L8.728 17.7882C8.945 17.9982 9.267 18.0572 9.542 17.9412C9.819 17.8232 10 17.5512 10 17.2502V13.0002H11.418C16.054 13.0002 20.328 15.5202 22.571 19.5722L22.592 19.6102C22.726 19.8542 22.98 20.0002 23.25 20.0002C23.312 20.0002 23.374 19.9932 23.436 19.9772C23.768 19.8922 24 19.5932 24 19.2502C24 11.4762 17.743 5.13625 10 5.00225Z" fill="#009846"/>
+                                                </svg>  
+                                                <span>Ответить</span>                                  
+                                            </button>
+                                            
+                                            <button class="btn">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M23.356 14.454C23.356 13.8847 23.162 13.3603 22.8374 12.9419C23.4758 12.4946 23.8944 11.7539 23.8944 10.9169C23.8944 9.55402 22.7856 8.44519 21.4227 8.44519H15.6697L16.4757 5.661V4.35262C16.4757 1.95258 14.5232 0 12.1231 0C11.5568 0 11.096 0.460781 11.096 1.02713V3.9502C10.6743 4.63538 8.03678 7.57444 5.34766 10.4451V22.2722L8.12561 23.314C9.33948 23.7692 10.6123 24 11.9087 24H15.4446H18.6959H19.8073C21.1702 24 22.279 22.8912 22.279 21.5283C22.279 20.9593 22.0857 20.4345 21.7614 20.0163C22.3995 19.569 22.8175 18.828 22.8175 17.9912C22.8175 17.4219 22.6235 16.8974 22.2989 16.4791C22.9374 16.0317 23.356 15.291 23.356 14.454Z" fill="#009846"/>
+                                                    <path d="M3.94031 11.2407H0.105469V21.9934H3.94031V11.2407Z" fill="#009846"/>
+                                                </svg>
+                                                1                                    
+                                            </button>
+                
+                                            <button class="btn">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M5.27993 2.3999H0.960159C0.700155 2.3999 0.475193 2.49494 0.285011 2.68497C0.0950387 2.87489 0 3.0999 0 3.3598V12.9598C0 13.2197 0.0950387 13.4448 0.285064 13.6347C0.475036 13.8246 0.699997 13.9197 0.960211 13.9197H5.27993C5.53988 13.9197 5.76479 13.8246 5.95486 13.6347C6.14484 13.4449 6.23982 13.2198 6.23982 12.9598V3.3598C6.23982 3.0999 6.14478 2.87494 5.95486 2.68497C5.76484 2.49489 5.53993 2.3999 5.27993 2.3999ZM3.55489 5.95495C3.36492 6.14497 3.13995 6.23991 2.87995 6.23991C2.60991 6.23991 2.38238 6.14497 2.1975 5.95495C2.01252 5.76492 1.92005 5.54001 1.92005 5.27985C1.92005 5.00997 2.01247 4.78238 2.1975 4.59735C2.38243 4.41237 2.60991 4.31996 2.87995 4.31996C3.13995 4.31996 3.36492 4.41237 3.55489 4.59735C3.74512 4.78233 3.83995 5.00997 3.83995 5.27985C3.83995 5.5398 3.74491 5.76471 3.55489 5.95495Z" fill="#B8B8B8"/>
+                                                    <path d="M5.077 3H0.923256C0.673245 3 0.45693 3.033 0.274057 3.09898C0.091386 3.16493 0 3.24306 0 3.3333V6.66668C0 6.75694 0.091386 6.83511 0.274107 6.90104C0.456778 6.96696 0.673094 7 0.923306 7H5.077C5.32696 7 5.54322 6.96696 5.72599 6.90104C5.90866 6.83513 6 6.75696 6 6.66668V3.3333C6 3.24306 5.90861 3.16495 5.72599 3.09898C5.54327 3.03298 5.32701 3 5.077 3ZM3.41826 4.23441C3.23559 4.30039 3.01927 4.33336 2.76926 4.33336C2.5096 4.33336 2.29081 4.30039 2.11304 4.23441C1.93517 4.16843 1.84626 4.09034 1.84626 4C1.84626 3.90629 1.93512 3.82726 2.11304 3.76302C2.29086 3.69879 2.5096 3.6667 2.76926 3.6667C3.01927 3.6667 3.23559 3.69879 3.41826 3.76302C3.60118 3.82725 3.69237 3.90629 3.69237 4C3.69237 4.09026 3.60098 4.16836 3.41826 4.23441Z" fill="#B8B8B8"/>
+                                                    <path d="M23.1744 10.725C23.3247 10.2849 23.3993 9.90496 23.3982 9.58528C23.4284 8.82528 23.2134 8.14031 22.7531 7.53036C22.9232 6.97032 22.9232 6.38522 22.7531 5.77527C22.6036 5.20525 22.3332 4.73546 21.9434 4.36545C22.0333 3.24537 21.7884 2.34053 21.2084 1.65046C20.5684 0.890517 19.5835 0.500328 18.2534 0.480469H17.7134H16.5735H16.3186C15.6587 0.480469 14.9385 0.55796 14.1586 0.712943C13.379 0.868032 12.7713 1.01309 12.3366 1.14805C11.9016 1.28297 11.299 1.4805 10.5292 1.74046C9.29916 2.17036 8.50916 2.39039 8.15922 2.40032C7.89922 2.41045 7.67425 2.50781 7.48428 2.69289C7.29426 2.87772 7.19922 3.10031 7.19922 3.36026V12.975C7.19922 13.225 7.28948 13.4425 7.46936 13.6273C7.64925 13.8125 7.86428 13.915 8.11425 13.9351C8.35408 13.9553 8.73413 14.2501 9.25419 14.82C9.7743 15.39 10.2792 15.9952 10.7691 16.6352C11.4492 17.5049 11.9542 18.1048 12.2841 18.4349C12.464 18.6147 12.6188 18.8547 12.749 19.1548C12.8788 19.4547 12.9666 19.6972 13.0119 19.8822C13.0568 20.0671 13.124 20.3694 13.2144 20.7898C13.2842 21.1795 13.3468 21.4847 13.4019 21.7045C13.457 21.9246 13.5542 22.1846 13.6943 22.4844C13.8345 22.7847 14.0044 23.0344 14.2045 23.2344C14.3944 23.4245 14.6194 23.5197 14.8794 23.5197C15.3397 23.5197 15.7517 23.4672 16.1171 23.3622C16.4821 23.2572 16.782 23.1274 17.0171 22.9724C17.2524 22.8171 17.4523 22.615 17.6173 22.3648C17.7824 22.1148 17.9023 21.8897 17.9773 21.6898C18.0524 21.4895 18.1125 21.24 18.1572 20.9401C18.2022 20.6398 18.2275 20.4147 18.2324 20.2648C18.2373 20.1148 18.24 19.92 18.24 19.6797C18.24 19.3 18.1902 18.9174 18.0902 18.5323C17.9899 18.1476 17.8948 17.8549 17.805 17.6546C17.7151 17.4546 17.5801 17.1698 17.4002 16.7999C17.37 16.7398 17.3202 16.6496 17.2502 16.5296C17.1805 16.4097 17.1251 16.2995 17.0852 16.1995C17.0451 16.0996 17.0052 15.9796 16.9654 15.8396H21.1204C21.9002 15.8396 22.5727 15.5544 23.1376 14.9843C23.7027 14.4144 23.9902 13.7395 24.0002 12.9596C23.9995 12.0799 23.7244 11.3349 23.1744 10.725Z" fill="#B8B8B8"/>
+                                                </svg>
+                                                0  
+                                            </button>
+                                        </div>
+                
+                                        <div class="rightside">
+                                            <button class="btn">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M22.8585 1.14288C21.3338 -0.380959 18.8538 -0.380959 17.3291 1.14288L1.66419 16.8078C1.65681 16.8152 1.65246 16.8243 1.64595 16.8321C1.63683 16.8426 1.62901 16.8539 1.62075 16.8652C1.59773 16.8973 1.57992 16.9316 1.56645 16.969C1.56255 16.9803 1.5569 16.9903 1.55386 17.0016C1.55255 17.0059 1.54995 17.0102 1.54864 17.0146L0.464844 21.567L2.43436 23.5361L6.98676 22.4523C6.99849 22.4497 7.00892 22.4431 7.02021 22.4392C7.03498 22.4345 7.04888 22.4288 7.06322 22.4223C7.09449 22.408 7.1236 22.3902 7.15053 22.3689C7.16095 22.3606 7.17181 22.3545 7.1818 22.3454C7.18528 22.3419 7.18962 22.3402 7.1931 22.3367L22.8585 6.67135C24.3827 5.14751 24.3827 2.66715 22.8585 1.14288ZM7.4546 20.8472L7.60837 19.4645L17.3291 9.74335C17.499 9.5735 17.499 9.29897 17.3291 9.12912C17.1593 8.95928 16.8848 8.95928 16.7149 9.12912L6.99415 18.8503L4.92081 19.0805L5.15103 17.0072L14.8727 7.28644C15.0425 7.1166 15.0425 6.84206 14.8727 6.67222C14.7028 6.50237 14.4283 6.50237 14.2584 6.67222L4.53681 16.393L3.15415 16.5468L15.1793 4.52156L19.4798 8.82201L7.4546 20.8472ZM20.094 8.20778L15.7936 3.90733L16.4078 3.2931L20.7082 7.59356L20.094 8.20778ZM21.3225 6.97933L17.022 2.67888L17.6367 2.06422L21.9371 6.36467L21.3225 6.97933Z" fill="#009846"/>
+                                                </svg>
+                                                <span>Изменить </span>  
+                                            </button>
+                
+                                            <button class="btn">
+                                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M14 4.99994H19C19.5523 4.99994 20 5.44765 20 5.99994C20 6.55222 19.5523 6.99994 19 6.99994H18V17.9999C18 19.6568 16.6569 20.9999 15 20.9999H5C3.34315 20.9999 2 19.6568 2 17.9999V6.99994H1C0.447715 6.99994 0 6.55222 0 5.99994C0 5.44765 0.447715 4.99994 1 4.99994H6V3.32994C6.04884 1.99704 7.16696 0.954952 8.5 0.999939H11.5C12.833 0.954952 13.9512 1.99704 14 3.32994V4.99994ZM8.5 2.99994C8.21 2.99994 8 3.16994 8 3.32994V4.99994H12V3.32994C12 3.16994 11.79 2.99994 11.5 2.99994H8.5Z" fill="#009846"/>
+                                                </svg>       
+                                            </button>
+                
+                                            <button class="btn">
+                                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M16.9986 12.9998C16.213 13.0004 15.459 13.3092 14.8986 13.8598L6.99857 10.3398V9.9998V9.6698L14.8986 6.1398C15.9188 7.13984 17.5027 7.2817 18.6844 6.47886C19.8662 5.67603 20.3178 4.15126 19.764 2.83435C19.2101 1.51744 17.8045 0.773781 16.4042 1.05685C15.0038 1.33991 13.9974 2.57117 13.9986 3.9998V4.3398L6.09857 7.8598C4.9216 6.70347 3.03177 6.71462 1.86853 7.88474C0.705282 9.05487 0.705282 10.9447 1.86853 12.1149C3.03177 13.285 4.9216 13.2961 6.09857 12.1398L13.9986 15.6698V15.9998C13.9986 17.6567 15.3417 18.9998 16.9986 18.9998C18.6554 18.9998 19.9986 17.6567 19.9986 15.9998C19.9986 14.3429 18.6554 12.9998 16.9986 12.9998Z" fill="#009846"/>
+                                                </svg>      
+                                            </button>
+                
+                                            <button class="btn">
+                                                <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M9.00008 19.8498C8.65063 19.8553 8.30584 19.7691 8.00008 19.5998L7.70008 19.4298C2.94281 16.7383 0.00128144 11.6957 8.04859e-05 6.22978V6.08979C-0.0063732 5.36885 0.37569 4.70024 1.00008 4.33979L8.00008 0.399785C8.61888 0.0425195 9.38128 0.0425195 10.0001 0.399785L17.0001 4.33979C17.6245 4.70024 18.0065 5.36885 18.0001 6.08979V6.22978C17.9948 11.6998 15.0451 16.7434 10.2801 19.4298L9.98008 19.5998C9.68023 19.7657 9.34277 19.8518 9.00008 19.8498Z" fill="#009846"/>
+                                                </svg>        
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <ul>
+                                <li>
+                                    <div class="leftcomment">
+                                        <div class="useravatar"></div>
+                        
+                                        <div class="wrap">
+                                            <div class="head">Вячеслав Гавриленков</div>
+                        
+                                            <div class="commentdate">20.03.2021</div>
+                        
+                                            <div class="text">
+                                                Добрый день! Ситуация следующая - ИП на УСН (доходы минус расходы), зарегистрирован 25.05.2020, необходимо рассчитать сумму дополнительных 
+                                                взносов на обязательное пенсионное страхование с доходов свыше 300 000 руб. за 2020г. В расходах, учитываемых при исчислении налоговой базы 
+                                                для УСН, отраженных в КУДиР, в том числе фигурируют фиксированные страховые взносы на ОПС, фиксированные страховые взносы на ОМС и дополнительные 
+                                                взносы на ОПС с доходов свыше 300 000 руб. за 2020г., которые ИП уже уплатил в бюджет в течение 2020 года, можно ли их учесть при определении базы 
+                                                для расчета суммы дополнительных взносов на обязательное пенсионное страхование с доходов свыше 300 000 руб. за 2020г. Или все-таки какие-то из 
+                                                страховых взносов учитывать нельзя? Заранее спасибо за ответ.
+                                            </div>
+                        
+                                            <div class="interactive">
+                                                <div class="leftside">
+                                                    <button class="btn">
+                                                        <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M10 5.00225V0.750247C10 0.449247 9.819 0.177247 9.542 0.0592466C9.266 -0.0577534 8.943 0.00124645 8.728 0.212246L0.228 8.46225C0.082 8.60325 0 8.79725 0 9.00025C0 9.20325 0.082 9.39725 0.228 9.53825L8.728 17.7882C8.945 17.9982 9.267 18.0572 9.542 17.9412C9.819 17.8232 10 17.5512 10 17.2502V13.0002H11.418C16.054 13.0002 20.328 15.5202 22.571 19.5722L22.592 19.6102C22.726 19.8542 22.98 20.0002 23.25 20.0002C23.312 20.0002 23.374 19.9932 23.436 19.9772C23.768 19.8922 24 19.5932 24 19.2502C24 11.4762 17.743 5.13625 10 5.00225Z" fill="#009846"/>
+                                                        </svg>  
+                                                        <span>Ответить</span>                                  
+                                                    </button>
+                                                    
+                                                    <button class="btn">
+                                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M23.356 14.454C23.356 13.8847 23.162 13.3603 22.8374 12.9419C23.4758 12.4946 23.8944 11.7539 23.8944 10.9169C23.8944 9.55402 22.7856 8.44519 21.4227 8.44519H15.6697L16.4757 5.661V4.35262C16.4757 1.95258 14.5232 0 12.1231 0C11.5568 0 11.096 0.460781 11.096 1.02713V3.9502C10.6743 4.63538 8.03678 7.57444 5.34766 10.4451V22.2722L8.12561 23.314C9.33948 23.7692 10.6123 24 11.9087 24H15.4446H18.6959H19.8073C21.1702 24 22.279 22.8912 22.279 21.5283C22.279 20.9593 22.0857 20.4345 21.7614 20.0163C22.3995 19.569 22.8175 18.828 22.8175 17.9912C22.8175 17.4219 22.6235 16.8974 22.2989 16.4791C22.9374 16.0317 23.356 15.291 23.356 14.454Z" fill="#009846"/>
+                                                            <path d="M3.94031 11.2407H0.105469V21.9934H3.94031V11.2407Z" fill="#009846"/>
+                                                        </svg>
+                                                        1                                    
+                                                    </button>
+                        
+                                                    <button class="btn">
+                                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M5.27993 2.3999H0.960159C0.700155 2.3999 0.475193 2.49494 0.285011 2.68497C0.0950387 2.87489 0 3.0999 0 3.3598V12.9598C0 13.2197 0.0950387 13.4448 0.285064 13.6347C0.475036 13.8246 0.699997 13.9197 0.960211 13.9197H5.27993C5.53988 13.9197 5.76479 13.8246 5.95486 13.6347C6.14484 13.4449 6.23982 13.2198 6.23982 12.9598V3.3598C6.23982 3.0999 6.14478 2.87494 5.95486 2.68497C5.76484 2.49489 5.53993 2.3999 5.27993 2.3999ZM3.55489 5.95495C3.36492 6.14497 3.13995 6.23991 2.87995 6.23991C2.60991 6.23991 2.38238 6.14497 2.1975 5.95495C2.01252 5.76492 1.92005 5.54001 1.92005 5.27985C1.92005 5.00997 2.01247 4.78238 2.1975 4.59735C2.38243 4.41237 2.60991 4.31996 2.87995 4.31996C3.13995 4.31996 3.36492 4.41237 3.55489 4.59735C3.74512 4.78233 3.83995 5.00997 3.83995 5.27985C3.83995 5.5398 3.74491 5.76471 3.55489 5.95495Z" fill="#B8B8B8"/>
+                                                            <path d="M5.077 3H0.923256C0.673245 3 0.45693 3.033 0.274057 3.09898C0.091386 3.16493 0 3.24306 0 3.3333V6.66668C0 6.75694 0.091386 6.83511 0.274107 6.90104C0.456778 6.96696 0.673094 7 0.923306 7H5.077C5.32696 7 5.54322 6.96696 5.72599 6.90104C5.90866 6.83513 6 6.75696 6 6.66668V3.3333C6 3.24306 5.90861 3.16495 5.72599 3.09898C5.54327 3.03298 5.32701 3 5.077 3ZM3.41826 4.23441C3.23559 4.30039 3.01927 4.33336 2.76926 4.33336C2.5096 4.33336 2.29081 4.30039 2.11304 4.23441C1.93517 4.16843 1.84626 4.09034 1.84626 4C1.84626 3.90629 1.93512 3.82726 2.11304 3.76302C2.29086 3.69879 2.5096 3.6667 2.76926 3.6667C3.01927 3.6667 3.23559 3.69879 3.41826 3.76302C3.60118 3.82725 3.69237 3.90629 3.69237 4C3.69237 4.09026 3.60098 4.16836 3.41826 4.23441Z" fill="#B8B8B8"/>
+                                                            <path d="M23.1744 10.725C23.3247 10.2849 23.3993 9.90496 23.3982 9.58528C23.4284 8.82528 23.2134 8.14031 22.7531 7.53036C22.9232 6.97032 22.9232 6.38522 22.7531 5.77527C22.6036 5.20525 22.3332 4.73546 21.9434 4.36545C22.0333 3.24537 21.7884 2.34053 21.2084 1.65046C20.5684 0.890517 19.5835 0.500328 18.2534 0.480469H17.7134H16.5735H16.3186C15.6587 0.480469 14.9385 0.55796 14.1586 0.712943C13.379 0.868032 12.7713 1.01309 12.3366 1.14805C11.9016 1.28297 11.299 1.4805 10.5292 1.74046C9.29916 2.17036 8.50916 2.39039 8.15922 2.40032C7.89922 2.41045 7.67425 2.50781 7.48428 2.69289C7.29426 2.87772 7.19922 3.10031 7.19922 3.36026V12.975C7.19922 13.225 7.28948 13.4425 7.46936 13.6273C7.64925 13.8125 7.86428 13.915 8.11425 13.9351C8.35408 13.9553 8.73413 14.2501 9.25419 14.82C9.7743 15.39 10.2792 15.9952 10.7691 16.6352C11.4492 17.5049 11.9542 18.1048 12.2841 18.4349C12.464 18.6147 12.6188 18.8547 12.749 19.1548C12.8788 19.4547 12.9666 19.6972 13.0119 19.8822C13.0568 20.0671 13.124 20.3694 13.2144 20.7898C13.2842 21.1795 13.3468 21.4847 13.4019 21.7045C13.457 21.9246 13.5542 22.1846 13.6943 22.4844C13.8345 22.7847 14.0044 23.0344 14.2045 23.2344C14.3944 23.4245 14.6194 23.5197 14.8794 23.5197C15.3397 23.5197 15.7517 23.4672 16.1171 23.3622C16.4821 23.2572 16.782 23.1274 17.0171 22.9724C17.2524 22.8171 17.4523 22.615 17.6173 22.3648C17.7824 22.1148 17.9023 21.8897 17.9773 21.6898C18.0524 21.4895 18.1125 21.24 18.1572 20.9401C18.2022 20.6398 18.2275 20.4147 18.2324 20.2648C18.2373 20.1148 18.24 19.92 18.24 19.6797C18.24 19.3 18.1902 18.9174 18.0902 18.5323C17.9899 18.1476 17.8948 17.8549 17.805 17.6546C17.7151 17.4546 17.5801 17.1698 17.4002 16.7999C17.37 16.7398 17.3202 16.6496 17.2502 16.5296C17.1805 16.4097 17.1251 16.2995 17.0852 16.1995C17.0451 16.0996 17.0052 15.9796 16.9654 15.8396H21.1204C21.9002 15.8396 22.5727 15.5544 23.1376 14.9843C23.7027 14.4144 23.9902 13.7395 24.0002 12.9596C23.9995 12.0799 23.7244 11.3349 23.1744 10.725Z" fill="#B8B8B8"/>
+                                                        </svg>
+                                                        0  
+                                                    </button>
+                                                </div>
+                        
+                                                <div class="rightside">
+                                                    <button class="btn">
+                                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M22.8585 1.14288C21.3338 -0.380959 18.8538 -0.380959 17.3291 1.14288L1.66419 16.8078C1.65681 16.8152 1.65246 16.8243 1.64595 16.8321C1.63683 16.8426 1.62901 16.8539 1.62075 16.8652C1.59773 16.8973 1.57992 16.9316 1.56645 16.969C1.56255 16.9803 1.5569 16.9903 1.55386 17.0016C1.55255 17.0059 1.54995 17.0102 1.54864 17.0146L0.464844 21.567L2.43436 23.5361L6.98676 22.4523C6.99849 22.4497 7.00892 22.4431 7.02021 22.4392C7.03498 22.4345 7.04888 22.4288 7.06322 22.4223C7.09449 22.408 7.1236 22.3902 7.15053 22.3689C7.16095 22.3606 7.17181 22.3545 7.1818 22.3454C7.18528 22.3419 7.18962 22.3402 7.1931 22.3367L22.8585 6.67135C24.3827 5.14751 24.3827 2.66715 22.8585 1.14288ZM7.4546 20.8472L7.60837 19.4645L17.3291 9.74335C17.499 9.5735 17.499 9.29897 17.3291 9.12912C17.1593 8.95928 16.8848 8.95928 16.7149 9.12912L6.99415 18.8503L4.92081 19.0805L5.15103 17.0072L14.8727 7.28644C15.0425 7.1166 15.0425 6.84206 14.8727 6.67222C14.7028 6.50237 14.4283 6.50237 14.2584 6.67222L4.53681 16.393L3.15415 16.5468L15.1793 4.52156L19.4798 8.82201L7.4546 20.8472ZM20.094 8.20778L15.7936 3.90733L16.4078 3.2931L20.7082 7.59356L20.094 8.20778ZM21.3225 6.97933L17.022 2.67888L17.6367 2.06422L21.9371 6.36467L21.3225 6.97933Z" fill="#009846"/>
+                                                        </svg>
+                                                        <span>Изменить </span>  
+                                                    </button>
+                        
+                                                    <button class="btn">
+                                                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M14 4.99994H19C19.5523 4.99994 20 5.44765 20 5.99994C20 6.55222 19.5523 6.99994 19 6.99994H18V17.9999C18 19.6568 16.6569 20.9999 15 20.9999H5C3.34315 20.9999 2 19.6568 2 17.9999V6.99994H1C0.447715 6.99994 0 6.55222 0 5.99994C0 5.44765 0.447715 4.99994 1 4.99994H6V3.32994C6.04884 1.99704 7.16696 0.954952 8.5 0.999939H11.5C12.833 0.954952 13.9512 1.99704 14 3.32994V4.99994ZM8.5 2.99994C8.21 2.99994 8 3.16994 8 3.32994V4.99994H12V3.32994C12 3.16994 11.79 2.99994 11.5 2.99994H8.5Z" fill="#009846"/>
+                                                        </svg>       
+                                                    </button>
+                        
+                                                    <button class="btn">
+                                                        <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M16.9986 12.9998C16.213 13.0004 15.459 13.3092 14.8986 13.8598L6.99857 10.3398V9.9998V9.6698L14.8986 6.1398C15.9188 7.13984 17.5027 7.2817 18.6844 6.47886C19.8662 5.67603 20.3178 4.15126 19.764 2.83435C19.2101 1.51744 17.8045 0.773781 16.4042 1.05685C15.0038 1.33991 13.9974 2.57117 13.9986 3.9998V4.3398L6.09857 7.8598C4.9216 6.70347 3.03177 6.71462 1.86853 7.88474C0.705282 9.05487 0.705282 10.9447 1.86853 12.1149C3.03177 13.285 4.9216 13.2961 6.09857 12.1398L13.9986 15.6698V15.9998C13.9986 17.6567 15.3417 18.9998 16.9986 18.9998C18.6554 18.9998 19.9986 17.6567 19.9986 15.9998C19.9986 14.3429 18.6554 12.9998 16.9986 12.9998Z" fill="#009846"/>
+                                                        </svg>      
+                                                    </button>
+                        
+                                                    <button class="btn">
+                                                        <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M9.00008 19.8498C8.65063 19.8553 8.30584 19.7691 8.00008 19.5998L7.70008 19.4298C2.94281 16.7383 0.00128144 11.6957 8.04859e-05 6.22978V6.08979C-0.0063732 5.36885 0.37569 4.70024 1.00008 4.33979L8.00008 0.399785C8.61888 0.0425195 9.38128 0.0425195 10.0001 0.399785L17.0001 4.33979C17.6245 4.70024 18.0065 5.36885 18.0001 6.08979V6.22978C17.9948 11.6998 15.0451 16.7434 10.2801 19.4298L9.98008 19.5998C9.68023 19.7657 9.34277 19.8518 9.00008 19.8498Z" fill="#009846"/>
+                                                        </svg>        
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <ul>
+                                        <li>
+                                            <div class="leftcomment">
+                                                <div class="useravatar"></div>
+                                
+                                                <div class="wrap">
+                                                    <div class="head">Вячеслав Гавриленков</div>
+                                
+                                                    <div class="commentdate">20.03.2021</div>
+                                
+                                                    <div class="text">
+                                                        Добрый день! Ситуация следующая - ИП на УСН (доходы минус расходы), зарегистрирован 25.05.2020, необходимо рассчитать сумму дополнительных 
+                                                        взносов на обязательное пенсионное страхование с доходов свыше 300 000 руб. за 2020г. В расходах, учитываемых при исчислении налоговой базы 
+                                                        для УСН, отраженных в КУДиР, в том числе фигурируют фиксированные страховые взносы на ОПС, фиксированные страховые взносы на ОМС и дополнительные 
+                                                        взносы на ОПС с доходов свыше 300 000 руб. за 2020г., которые ИП уже уплатил в бюджет в течение 2020 года, можно ли их учесть при определении базы 
+                                                        для расчета суммы дополнительных взносов на обязательное пенсионное страхование с доходов свыше 300 000 руб. за 2020г. Или все-таки какие-то из 
+                                                        страховых взносов учитывать нельзя? Заранее спасибо за ответ.
+                                                    </div>
+                                
+                                                    <div class="interactive">
+                                                        <div class="leftside">
+                                                            <button class="btn">
+                                                                <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M10 5.00225V0.750247C10 0.449247 9.819 0.177247 9.542 0.0592466C9.266 -0.0577534 8.943 0.00124645 8.728 0.212246L0.228 8.46225C0.082 8.60325 0 8.79725 0 9.00025C0 9.20325 0.082 9.39725 0.228 9.53825L8.728 17.7882C8.945 17.9982 9.267 18.0572 9.542 17.9412C9.819 17.8232 10 17.5512 10 17.2502V13.0002H11.418C16.054 13.0002 20.328 15.5202 22.571 19.5722L22.592 19.6102C22.726 19.8542 22.98 20.0002 23.25 20.0002C23.312 20.0002 23.374 19.9932 23.436 19.9772C23.768 19.8922 24 19.5932 24 19.2502C24 11.4762 17.743 5.13625 10 5.00225Z" fill="#009846"/>
+                                                                </svg>  
+                                                                <span>Ответить</span>                                  
+                                                            </button>
+                                                            
+                                                            <button class="btn">
+                                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M23.356 14.454C23.356 13.8847 23.162 13.3603 22.8374 12.9419C23.4758 12.4946 23.8944 11.7539 23.8944 10.9169C23.8944 9.55402 22.7856 8.44519 21.4227 8.44519H15.6697L16.4757 5.661V4.35262C16.4757 1.95258 14.5232 0 12.1231 0C11.5568 0 11.096 0.460781 11.096 1.02713V3.9502C10.6743 4.63538 8.03678 7.57444 5.34766 10.4451V22.2722L8.12561 23.314C9.33948 23.7692 10.6123 24 11.9087 24H15.4446H18.6959H19.8073C21.1702 24 22.279 22.8912 22.279 21.5283C22.279 20.9593 22.0857 20.4345 21.7614 20.0163C22.3995 19.569 22.8175 18.828 22.8175 17.9912C22.8175 17.4219 22.6235 16.8974 22.2989 16.4791C22.9374 16.0317 23.356 15.291 23.356 14.454Z" fill="#009846"/>
+                                                                    <path d="M3.94031 11.2407H0.105469V21.9934H3.94031V11.2407Z" fill="#009846"/>
+                                                                </svg>
+                                                                1                                    
+                                                            </button>
+                                
+                                                            <button class="btn">
+                                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M5.27993 2.3999H0.960159C0.700155 2.3999 0.475193 2.49494 0.285011 2.68497C0.0950387 2.87489 0 3.0999 0 3.3598V12.9598C0 13.2197 0.0950387 13.4448 0.285064 13.6347C0.475036 13.8246 0.699997 13.9197 0.960211 13.9197H5.27993C5.53988 13.9197 5.76479 13.8246 5.95486 13.6347C6.14484 13.4449 6.23982 13.2198 6.23982 12.9598V3.3598C6.23982 3.0999 6.14478 2.87494 5.95486 2.68497C5.76484 2.49489 5.53993 2.3999 5.27993 2.3999ZM3.55489 5.95495C3.36492 6.14497 3.13995 6.23991 2.87995 6.23991C2.60991 6.23991 2.38238 6.14497 2.1975 5.95495C2.01252 5.76492 1.92005 5.54001 1.92005 5.27985C1.92005 5.00997 2.01247 4.78238 2.1975 4.59735C2.38243 4.41237 2.60991 4.31996 2.87995 4.31996C3.13995 4.31996 3.36492 4.41237 3.55489 4.59735C3.74512 4.78233 3.83995 5.00997 3.83995 5.27985C3.83995 5.5398 3.74491 5.76471 3.55489 5.95495Z" fill="#B8B8B8"/>
+                                                                    <path d="M5.077 3H0.923256C0.673245 3 0.45693 3.033 0.274057 3.09898C0.091386 3.16493 0 3.24306 0 3.3333V6.66668C0 6.75694 0.091386 6.83511 0.274107 6.90104C0.456778 6.96696 0.673094 7 0.923306 7H5.077C5.32696 7 5.54322 6.96696 5.72599 6.90104C5.90866 6.83513 6 6.75696 6 6.66668V3.3333C6 3.24306 5.90861 3.16495 5.72599 3.09898C5.54327 3.03298 5.32701 3 5.077 3ZM3.41826 4.23441C3.23559 4.30039 3.01927 4.33336 2.76926 4.33336C2.5096 4.33336 2.29081 4.30039 2.11304 4.23441C1.93517 4.16843 1.84626 4.09034 1.84626 4C1.84626 3.90629 1.93512 3.82726 2.11304 3.76302C2.29086 3.69879 2.5096 3.6667 2.76926 3.6667C3.01927 3.6667 3.23559 3.69879 3.41826 3.76302C3.60118 3.82725 3.69237 3.90629 3.69237 4C3.69237 4.09026 3.60098 4.16836 3.41826 4.23441Z" fill="#B8B8B8"/>
+                                                                    <path d="M23.1744 10.725C23.3247 10.2849 23.3993 9.90496 23.3982 9.58528C23.4284 8.82528 23.2134 8.14031 22.7531 7.53036C22.9232 6.97032 22.9232 6.38522 22.7531 5.77527C22.6036 5.20525 22.3332 4.73546 21.9434 4.36545C22.0333 3.24537 21.7884 2.34053 21.2084 1.65046C20.5684 0.890517 19.5835 0.500328 18.2534 0.480469H17.7134H16.5735H16.3186C15.6587 0.480469 14.9385 0.55796 14.1586 0.712943C13.379 0.868032 12.7713 1.01309 12.3366 1.14805C11.9016 1.28297 11.299 1.4805 10.5292 1.74046C9.29916 2.17036 8.50916 2.39039 8.15922 2.40032C7.89922 2.41045 7.67425 2.50781 7.48428 2.69289C7.29426 2.87772 7.19922 3.10031 7.19922 3.36026V12.975C7.19922 13.225 7.28948 13.4425 7.46936 13.6273C7.64925 13.8125 7.86428 13.915 8.11425 13.9351C8.35408 13.9553 8.73413 14.2501 9.25419 14.82C9.7743 15.39 10.2792 15.9952 10.7691 16.6352C11.4492 17.5049 11.9542 18.1048 12.2841 18.4349C12.464 18.6147 12.6188 18.8547 12.749 19.1548C12.8788 19.4547 12.9666 19.6972 13.0119 19.8822C13.0568 20.0671 13.124 20.3694 13.2144 20.7898C13.2842 21.1795 13.3468 21.4847 13.4019 21.7045C13.457 21.9246 13.5542 22.1846 13.6943 22.4844C13.8345 22.7847 14.0044 23.0344 14.2045 23.2344C14.3944 23.4245 14.6194 23.5197 14.8794 23.5197C15.3397 23.5197 15.7517 23.4672 16.1171 23.3622C16.4821 23.2572 16.782 23.1274 17.0171 22.9724C17.2524 22.8171 17.4523 22.615 17.6173 22.3648C17.7824 22.1148 17.9023 21.8897 17.9773 21.6898C18.0524 21.4895 18.1125 21.24 18.1572 20.9401C18.2022 20.6398 18.2275 20.4147 18.2324 20.2648C18.2373 20.1148 18.24 19.92 18.24 19.6797C18.24 19.3 18.1902 18.9174 18.0902 18.5323C17.9899 18.1476 17.8948 17.8549 17.805 17.6546C17.7151 17.4546 17.5801 17.1698 17.4002 16.7999C17.37 16.7398 17.3202 16.6496 17.2502 16.5296C17.1805 16.4097 17.1251 16.2995 17.0852 16.1995C17.0451 16.0996 17.0052 15.9796 16.9654 15.8396H21.1204C21.9002 15.8396 22.5727 15.5544 23.1376 14.9843C23.7027 14.4144 23.9902 13.7395 24.0002 12.9596C23.9995 12.0799 23.7244 11.3349 23.1744 10.725Z" fill="#B8B8B8"/>
+                                                                </svg>
+                                                                0  
+                                                            </button>
+                                                        </div>
+                                
+                                                        <div class="rightside">
+                                                            <button class="btn">
+                                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M22.8585 1.14288C21.3338 -0.380959 18.8538 -0.380959 17.3291 1.14288L1.66419 16.8078C1.65681 16.8152 1.65246 16.8243 1.64595 16.8321C1.63683 16.8426 1.62901 16.8539 1.62075 16.8652C1.59773 16.8973 1.57992 16.9316 1.56645 16.969C1.56255 16.9803 1.5569 16.9903 1.55386 17.0016C1.55255 17.0059 1.54995 17.0102 1.54864 17.0146L0.464844 21.567L2.43436 23.5361L6.98676 22.4523C6.99849 22.4497 7.00892 22.4431 7.02021 22.4392C7.03498 22.4345 7.04888 22.4288 7.06322 22.4223C7.09449 22.408 7.1236 22.3902 7.15053 22.3689C7.16095 22.3606 7.17181 22.3545 7.1818 22.3454C7.18528 22.3419 7.18962 22.3402 7.1931 22.3367L22.8585 6.67135C24.3827 5.14751 24.3827 2.66715 22.8585 1.14288ZM7.4546 20.8472L7.60837 19.4645L17.3291 9.74335C17.499 9.5735 17.499 9.29897 17.3291 9.12912C17.1593 8.95928 16.8848 8.95928 16.7149 9.12912L6.99415 18.8503L4.92081 19.0805L5.15103 17.0072L14.8727 7.28644C15.0425 7.1166 15.0425 6.84206 14.8727 6.67222C14.7028 6.50237 14.4283 6.50237 14.2584 6.67222L4.53681 16.393L3.15415 16.5468L15.1793 4.52156L19.4798 8.82201L7.4546 20.8472ZM20.094 8.20778L15.7936 3.90733L16.4078 3.2931L20.7082 7.59356L20.094 8.20778ZM21.3225 6.97933L17.022 2.67888L17.6367 2.06422L21.9371 6.36467L21.3225 6.97933Z" fill="#009846"/>
+                                                                </svg>
+                                                                <span>Изменить </span>  
+                                                            </button>
+                                
+                                                            <button class="btn">
+                                                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M14 4.99994H19C19.5523 4.99994 20 5.44765 20 5.99994C20 6.55222 19.5523 6.99994 19 6.99994H18V17.9999C18 19.6568 16.6569 20.9999 15 20.9999H5C3.34315 20.9999 2 19.6568 2 17.9999V6.99994H1C0.447715 6.99994 0 6.55222 0 5.99994C0 5.44765 0.447715 4.99994 1 4.99994H6V3.32994C6.04884 1.99704 7.16696 0.954952 8.5 0.999939H11.5C12.833 0.954952 13.9512 1.99704 14 3.32994V4.99994ZM8.5 2.99994C8.21 2.99994 8 3.16994 8 3.32994V4.99994H12V3.32994C12 3.16994 11.79 2.99994 11.5 2.99994H8.5Z" fill="#009846"/>
+                                                                </svg>       
+                                                            </button>
+                                
+                                                            <button class="btn">
+                                                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M16.9986 12.9998C16.213 13.0004 15.459 13.3092 14.8986 13.8598L6.99857 10.3398V9.9998V9.6698L14.8986 6.1398C15.9188 7.13984 17.5027 7.2817 18.6844 6.47886C19.8662 5.67603 20.3178 4.15126 19.764 2.83435C19.2101 1.51744 17.8045 0.773781 16.4042 1.05685C15.0038 1.33991 13.9974 2.57117 13.9986 3.9998V4.3398L6.09857 7.8598C4.9216 6.70347 3.03177 6.71462 1.86853 7.88474C0.705282 9.05487 0.705282 10.9447 1.86853 12.1149C3.03177 13.285 4.9216 13.2961 6.09857 12.1398L13.9986 15.6698V15.9998C13.9986 17.6567 15.3417 18.9998 16.9986 18.9998C18.6554 18.9998 19.9986 17.6567 19.9986 15.9998C19.9986 14.3429 18.6554 12.9998 16.9986 12.9998Z" fill="#009846"/>
+                                                                </svg>      
+                                                            </button>
+                                
+                                                            <button class="btn">
+                                                                <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M9.00008 19.8498C8.65063 19.8553 8.30584 19.7691 8.00008 19.5998L7.70008 19.4298C2.94281 16.7383 0.00128144 11.6957 8.04859e-05 6.22978V6.08979C-0.0063732 5.36885 0.37569 4.70024 1.00008 4.33979L8.00008 0.399785C8.61888 0.0425195 9.38128 0.0425195 10.0001 0.399785L17.0001 4.33979C17.6245 4.70024 18.0065 5.36885 18.0001 6.08979V6.22978C17.9948 11.6998 15.0451 16.7434 10.2801 19.4298L9.98008 19.5998C9.68023 19.7657 9.34277 19.8518 9.00008 19.8498Z" fill="#009846"/>
+                                                                </svg>        
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="leftcomment">
+                                                <div class="useravatar"></div>
+                                
+                                                <div class="wrap">
+                                                    <div class="head">Вячеслав Гавриленков</div>
+                                
+                                                    <div class="commentdate">20.03.2021</div>
+                                
+                                                    <div class="text">
+                                                        Добрый день! Ситуация следующая - ИП на УСН (доходы минус расходы), зарегистрирован 25.05.2020, необходимо рассчитать сумму дополнительных 
+                                                        взносов на обязательное пенсионное страхование с доходов свыше 300 000 руб. за 2020г. В расходах, учитываемых при исчислении налоговой базы 
+                                                        для УСН, отраженных в КУДиР, в том числе фигурируют фиксированные страховые взносы на ОПС, фиксированные страховые взносы на ОМС и дополнительные 
+                                                        взносы на ОПС с доходов свыше 300 000 руб. за 2020г., которые ИП уже уплатил в бюджет в течение 2020 года, можно ли их учесть при определении базы 
+                                                        для расчета суммы дополнительных взносов на обязательное пенсионное страхование с доходов свыше 300 000 руб. за 2020г. Или все-таки какие-то из 
+                                                        страховых взносов учитывать нельзя? Заранее спасибо за ответ.
+                                                    </div>
+                                
+                                                    <div class="interactive">
+                                                        <div class="leftside">
+                                                            <button class="btn">
+                                                                <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M10 5.00225V0.750247C10 0.449247 9.819 0.177247 9.542 0.0592466C9.266 -0.0577534 8.943 0.00124645 8.728 0.212246L0.228 8.46225C0.082 8.60325 0 8.79725 0 9.00025C0 9.20325 0.082 9.39725 0.228 9.53825L8.728 17.7882C8.945 17.9982 9.267 18.0572 9.542 17.9412C9.819 17.8232 10 17.5512 10 17.2502V13.0002H11.418C16.054 13.0002 20.328 15.5202 22.571 19.5722L22.592 19.6102C22.726 19.8542 22.98 20.0002 23.25 20.0002C23.312 20.0002 23.374 19.9932 23.436 19.9772C23.768 19.8922 24 19.5932 24 19.2502C24 11.4762 17.743 5.13625 10 5.00225Z" fill="#009846"/>
+                                                                </svg>  
+                                                                <span>Ответить</span>                                  
+                                                            </button>
+                                                            
+                                                            <button class="btn">
+                                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M23.356 14.454C23.356 13.8847 23.162 13.3603 22.8374 12.9419C23.4758 12.4946 23.8944 11.7539 23.8944 10.9169C23.8944 9.55402 22.7856 8.44519 21.4227 8.44519H15.6697L16.4757 5.661V4.35262C16.4757 1.95258 14.5232 0 12.1231 0C11.5568 0 11.096 0.460781 11.096 1.02713V3.9502C10.6743 4.63538 8.03678 7.57444 5.34766 10.4451V22.2722L8.12561 23.314C9.33948 23.7692 10.6123 24 11.9087 24H15.4446H18.6959H19.8073C21.1702 24 22.279 22.8912 22.279 21.5283C22.279 20.9593 22.0857 20.4345 21.7614 20.0163C22.3995 19.569 22.8175 18.828 22.8175 17.9912C22.8175 17.4219 22.6235 16.8974 22.2989 16.4791C22.9374 16.0317 23.356 15.291 23.356 14.454Z" fill="#009846"/>
+                                                                    <path d="M3.94031 11.2407H0.105469V21.9934H3.94031V11.2407Z" fill="#009846"/>
+                                                                </svg>
+                                                                1                                    
+                                                            </button>
+                                
+                                                            <button class="btn">
+                                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M5.27993 2.3999H0.960159C0.700155 2.3999 0.475193 2.49494 0.285011 2.68497C0.0950387 2.87489 0 3.0999 0 3.3598V12.9598C0 13.2197 0.0950387 13.4448 0.285064 13.6347C0.475036 13.8246 0.699997 13.9197 0.960211 13.9197H5.27993C5.53988 13.9197 5.76479 13.8246 5.95486 13.6347C6.14484 13.4449 6.23982 13.2198 6.23982 12.9598V3.3598C6.23982 3.0999 6.14478 2.87494 5.95486 2.68497C5.76484 2.49489 5.53993 2.3999 5.27993 2.3999ZM3.55489 5.95495C3.36492 6.14497 3.13995 6.23991 2.87995 6.23991C2.60991 6.23991 2.38238 6.14497 2.1975 5.95495C2.01252 5.76492 1.92005 5.54001 1.92005 5.27985C1.92005 5.00997 2.01247 4.78238 2.1975 4.59735C2.38243 4.41237 2.60991 4.31996 2.87995 4.31996C3.13995 4.31996 3.36492 4.41237 3.55489 4.59735C3.74512 4.78233 3.83995 5.00997 3.83995 5.27985C3.83995 5.5398 3.74491 5.76471 3.55489 5.95495Z" fill="#B8B8B8"/>
+                                                                    <path d="M5.077 3H0.923256C0.673245 3 0.45693 3.033 0.274057 3.09898C0.091386 3.16493 0 3.24306 0 3.3333V6.66668C0 6.75694 0.091386 6.83511 0.274107 6.90104C0.456778 6.96696 0.673094 7 0.923306 7H5.077C5.32696 7 5.54322 6.96696 5.72599 6.90104C5.90866 6.83513 6 6.75696 6 6.66668V3.3333C6 3.24306 5.90861 3.16495 5.72599 3.09898C5.54327 3.03298 5.32701 3 5.077 3ZM3.41826 4.23441C3.23559 4.30039 3.01927 4.33336 2.76926 4.33336C2.5096 4.33336 2.29081 4.30039 2.11304 4.23441C1.93517 4.16843 1.84626 4.09034 1.84626 4C1.84626 3.90629 1.93512 3.82726 2.11304 3.76302C2.29086 3.69879 2.5096 3.6667 2.76926 3.6667C3.01927 3.6667 3.23559 3.69879 3.41826 3.76302C3.60118 3.82725 3.69237 3.90629 3.69237 4C3.69237 4.09026 3.60098 4.16836 3.41826 4.23441Z" fill="#B8B8B8"/>
+                                                                    <path d="M23.1744 10.725C23.3247 10.2849 23.3993 9.90496 23.3982 9.58528C23.4284 8.82528 23.2134 8.14031 22.7531 7.53036C22.9232 6.97032 22.9232 6.38522 22.7531 5.77527C22.6036 5.20525 22.3332 4.73546 21.9434 4.36545C22.0333 3.24537 21.7884 2.34053 21.2084 1.65046C20.5684 0.890517 19.5835 0.500328 18.2534 0.480469H17.7134H16.5735H16.3186C15.6587 0.480469 14.9385 0.55796 14.1586 0.712943C13.379 0.868032 12.7713 1.01309 12.3366 1.14805C11.9016 1.28297 11.299 1.4805 10.5292 1.74046C9.29916 2.17036 8.50916 2.39039 8.15922 2.40032C7.89922 2.41045 7.67425 2.50781 7.48428 2.69289C7.29426 2.87772 7.19922 3.10031 7.19922 3.36026V12.975C7.19922 13.225 7.28948 13.4425 7.46936 13.6273C7.64925 13.8125 7.86428 13.915 8.11425 13.9351C8.35408 13.9553 8.73413 14.2501 9.25419 14.82C9.7743 15.39 10.2792 15.9952 10.7691 16.6352C11.4492 17.5049 11.9542 18.1048 12.2841 18.4349C12.464 18.6147 12.6188 18.8547 12.749 19.1548C12.8788 19.4547 12.9666 19.6972 13.0119 19.8822C13.0568 20.0671 13.124 20.3694 13.2144 20.7898C13.2842 21.1795 13.3468 21.4847 13.4019 21.7045C13.457 21.9246 13.5542 22.1846 13.6943 22.4844C13.8345 22.7847 14.0044 23.0344 14.2045 23.2344C14.3944 23.4245 14.6194 23.5197 14.8794 23.5197C15.3397 23.5197 15.7517 23.4672 16.1171 23.3622C16.4821 23.2572 16.782 23.1274 17.0171 22.9724C17.2524 22.8171 17.4523 22.615 17.6173 22.3648C17.7824 22.1148 17.9023 21.8897 17.9773 21.6898C18.0524 21.4895 18.1125 21.24 18.1572 20.9401C18.2022 20.6398 18.2275 20.4147 18.2324 20.2648C18.2373 20.1148 18.24 19.92 18.24 19.6797C18.24 19.3 18.1902 18.9174 18.0902 18.5323C17.9899 18.1476 17.8948 17.8549 17.805 17.6546C17.7151 17.4546 17.5801 17.1698 17.4002 16.7999C17.37 16.7398 17.3202 16.6496 17.2502 16.5296C17.1805 16.4097 17.1251 16.2995 17.0852 16.1995C17.0451 16.0996 17.0052 15.9796 16.9654 15.8396H21.1204C21.9002 15.8396 22.5727 15.5544 23.1376 14.9843C23.7027 14.4144 23.9902 13.7395 24.0002 12.9596C23.9995 12.0799 23.7244 11.3349 23.1744 10.725Z" fill="#B8B8B8"/>
+                                                                </svg>
+                                                                0  
+                                                            </button>
+                                                        </div>
+                                
+                                                        <div class="rightside">
+                                                            <button class="btn">
+                                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M22.8585 1.14288C21.3338 -0.380959 18.8538 -0.380959 17.3291 1.14288L1.66419 16.8078C1.65681 16.8152 1.65246 16.8243 1.64595 16.8321C1.63683 16.8426 1.62901 16.8539 1.62075 16.8652C1.59773 16.8973 1.57992 16.9316 1.56645 16.969C1.56255 16.9803 1.5569 16.9903 1.55386 17.0016C1.55255 17.0059 1.54995 17.0102 1.54864 17.0146L0.464844 21.567L2.43436 23.5361L6.98676 22.4523C6.99849 22.4497 7.00892 22.4431 7.02021 22.4392C7.03498 22.4345 7.04888 22.4288 7.06322 22.4223C7.09449 22.408 7.1236 22.3902 7.15053 22.3689C7.16095 22.3606 7.17181 22.3545 7.1818 22.3454C7.18528 22.3419 7.18962 22.3402 7.1931 22.3367L22.8585 6.67135C24.3827 5.14751 24.3827 2.66715 22.8585 1.14288ZM7.4546 20.8472L7.60837 19.4645L17.3291 9.74335C17.499 9.5735 17.499 9.29897 17.3291 9.12912C17.1593 8.95928 16.8848 8.95928 16.7149 9.12912L6.99415 18.8503L4.92081 19.0805L5.15103 17.0072L14.8727 7.28644C15.0425 7.1166 15.0425 6.84206 14.8727 6.67222C14.7028 6.50237 14.4283 6.50237 14.2584 6.67222L4.53681 16.393L3.15415 16.5468L15.1793 4.52156L19.4798 8.82201L7.4546 20.8472ZM20.094 8.20778L15.7936 3.90733L16.4078 3.2931L20.7082 7.59356L20.094 8.20778ZM21.3225 6.97933L17.022 2.67888L17.6367 2.06422L21.9371 6.36467L21.3225 6.97933Z" fill="#009846"/>
+                                                                </svg>
+                                                                <span>Изменить </span>  
+                                                            </button>
+                                
+                                                            <button class="btn">
+                                                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M14 4.99994H19C19.5523 4.99994 20 5.44765 20 5.99994C20 6.55222 19.5523 6.99994 19 6.99994H18V17.9999C18 19.6568 16.6569 20.9999 15 20.9999H5C3.34315 20.9999 2 19.6568 2 17.9999V6.99994H1C0.447715 6.99994 0 6.55222 0 5.99994C0 5.44765 0.447715 4.99994 1 4.99994H6V3.32994C6.04884 1.99704 7.16696 0.954952 8.5 0.999939H11.5C12.833 0.954952 13.9512 1.99704 14 3.32994V4.99994ZM8.5 2.99994C8.21 2.99994 8 3.16994 8 3.32994V4.99994H12V3.32994C12 3.16994 11.79 2.99994 11.5 2.99994H8.5Z" fill="#009846"/>
+                                                                </svg>       
+                                                            </button>
+                                
+                                                            <button class="btn">
+                                                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M16.9986 12.9998C16.213 13.0004 15.459 13.3092 14.8986 13.8598L6.99857 10.3398V9.9998V9.6698L14.8986 6.1398C15.9188 7.13984 17.5027 7.2817 18.6844 6.47886C19.8662 5.67603 20.3178 4.15126 19.764 2.83435C19.2101 1.51744 17.8045 0.773781 16.4042 1.05685C15.0038 1.33991 13.9974 2.57117 13.9986 3.9998V4.3398L6.09857 7.8598C4.9216 6.70347 3.03177 6.71462 1.86853 7.88474C0.705282 9.05487 0.705282 10.9447 1.86853 12.1149C3.03177 13.285 4.9216 13.2961 6.09857 12.1398L13.9986 15.6698V15.9998C13.9986 17.6567 15.3417 18.9998 16.9986 18.9998C18.6554 18.9998 19.9986 17.6567 19.9986 15.9998C19.9986 14.3429 18.6554 12.9998 16.9986 12.9998Z" fill="#009846"/>
+                                                                </svg>      
+                                                            </button>
+                                
+                                                            <button class="btn">
+                                                                <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M9.00008 19.8498C8.65063 19.8553 8.30584 19.7691 8.00008 19.5998L7.70008 19.4298C2.94281 16.7383 0.00128144 11.6957 8.04859e-05 6.22978V6.08979C-0.0063732 5.36885 0.37569 4.70024 1.00008 4.33979L8.00008 0.399785C8.61888 0.0425195 9.38128 0.0425195 10.0001 0.399785L17.0001 4.33979C17.6245 4.70024 18.0065 5.36885 18.0001 6.08979V6.22978C17.9948 11.6998 15.0451 16.7434 10.2801 19.4298L9.98008 19.5998C9.68023 19.7657 9.34277 19.8518 9.00008 19.8498Z" fill="#009846"/>
+                                                                </svg>        
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                </li>
+            </ul>
+        </li>
+
+        <li>
+        </li>
+    </ul>
+</section>
+</div>
+</main>
+<footer>
+    <!-- MAIN_FOOTER -->
+    <section class="main-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-2 col-lg-1 col-xl-1">
+                    <a href="/">
+                        <img class="img-fluid" src="/Img/Footerlogo.png" alt="">
+                    </a>
+                </div>
+
+                <div class="col-sm-12 col-md-5 col-lg-3 col-xl-3">
+                    <div>
+                        <div class="footer-first-header">
+                            <span>
+                                <a href="index.html">БухАссистент</a>
+                            </span>
+
+                            <span>
+                                Консалтинговые услуги
+                            </span>
+                        </div>
+                        
+                        <ul>
+                            <li>ООО «Компания БухАссистент»</li>
+                            <li>ОГРН 1135038008973</li>
+                            <li>ИНН 5038102480</li>
+                            <li>КПП 503801001</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-5 col-lg-2 col-xl-2">
+                    <div>
+                        <div class="footer-header">Услуги</div>
+
+                        <ul>
+                            <li><a class="footer-nelezet" href="buhuslugi.html">Бухгалтерские услуги</a></li>
+                            <li><a href="#">Юридические услуги</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 col-xl-3">
+                    <div>
+                        <div class="footer-header">
+                            Инофрмация
+                        </div>
+
+                        <div class="footer-double-list">
+                            <ul>
+                                <li><a href="aboutcompany.html">О компании</a></li>
+                                <li><a href="portfolio.html">Портфолио</a></li>
+                                <li><a href="price.html">Прайс-лист</a></li>
+                                <li><a href="feedback.html">Отзывы</a></li>
+                            </ul>
+
+                            <ul>
+                                <li><a href="sales.html">Акции</a></li>
+                                <li><a href="blog">Блог</a></li>
+                                <li><a href="contacts">Контакты</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 col-xl-3">
+                    <div class="footer-header">Контакты</div>
+
+                    <ul>
+                        <li>
+                            <span>
+                                <i class="fas fa-phone-alt"></i>
+                                <a href="tel:89099933773">+ 7 (909) 993-37-73</a>
+                            </span>
+                        </li>
+                        <li>
+                            <span>
+                                <i class="far fa-envelope"></i>
+                                <a href="mailto:info@buhassistent.ru">info@buhassistent.ru</a>
+                            </span>
+                        </li>
+                        <li>
+                            <a class="header-adress" href="https://goo.gl/maps/va3B1hSnr2of3sj78" target="_blank">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.75 7.5C15.75 12.75 9 17.25 9 17.25C9 17.25 2.25 12.75 2.25 7.5C2.25 5.70979 2.96116 3.9929 4.22703 2.72703C5.4929 1.46116 7.20979 0.75 9 0.75C10.7902 0.75 12.5071 1.46116 13.773 2.72703C15.0388 3.9929 15.75 5.70979 15.75 7.5Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M9 9.75C10.2426 9.75 11.25 8.74264 11.25 7.5C11.25 6.25736 10.2426 5.25 9 5.25C7.75736 5.25 6.75 6.25736 6.75 7.5C6.75 8.74264 7.75736 9.75 9 9.75Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <span>МО, Пушкино, Надсоновская 24</span>  
+                            </a>                              
+                        </li>
+                        <li class="mt-1">
+                            <div class="social-icons">
+                                <div class="social-icon">
+                                    <a href="#">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </div>
+                                <div class="social-icon">
+                                    <a href="#">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                </div>
+                                <div class="social-icon">
+                                    <a href="#">
+                                        <i class="fab fa-vk"></i>
+                                    </a>
+                                </div>
+                                <div class="social-icon">
+                                    <a href="#">
+                                        <i class="fab fa-odnoklassniki"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SUBFOOTER -->
+    <section class="sub-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-xl-4">
+                    <span>2014-2022 БухАссистент</span>
+                </div>
+                <div class="col-md-4 col-xl-4 d-flex justify-content-center">
+                    <a href="#">Политика конфиденциальности</a>
+                </div>
+                <div class="col-md-4 col-xl-4 d-flex justify-content-end">
+                    <span>
+                        <img src="/Img/subFooterBizMark.png" alt="">
+                        <a href="https://biz-mark.ru/">Разработано в Biz-Mark</a>
+                    </span> 
+                </div>
+            </div>
+        </div>
+    </section>
+</footer>
+<!-- jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="/JS/counter.js"></script>
+<script src="/JS/polls.js"></script>
+<script src="/JS/mobileMenu.js"></script>
+<script src="/JS/elemInView.js"></script>
+<!-- BS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

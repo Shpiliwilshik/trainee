@@ -1,0 +1,1513 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="/Styles/Style.css">
+  <link rel="stylesheet" href="/Styles/font-face.css">
+  <link rel="shortcut icon" href="/Img/favicon.svg">
+  <title>Бухгалтерский учет</title>
+</head>
+<body>
+<header>
+    <!-- TOP-HEADER -->
+    <section class="top-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8 col-md-8 col-lg-3 col-xl-3">
+                    <a class="header-adress" href="https://goo.gl/maps/va3B1hSnr2of3sj78" target="_blank">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15.75 7.5C15.75 12.75 9 17.25 9 17.25C9 17.25 2.25 12.75 2.25 7.5C2.25 5.70979 2.96116 3.9929 4.22703 2.72703C5.4929 1.46116 7.20979 0.75 9 0.75C10.7902 0.75 12.5071 1.46116 13.773 2.72703C15.0388 3.9929 15.75 5.70979 15.75 7.5Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9 9.75C10.2426 9.75 11.25 8.74264 11.25 7.5C11.25 6.25736 10.2426 5.25 9 5.25C7.75736 5.25 6.75 6.25736 6.75 7.5C6.75 8.74264 7.75736 9.75 9 9.75Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>МО, Пушкино, Надсоновская 24</span>  
+                    </a>
+                </div>
+
+                <div class="col-sm-4 col-md-4 col-lg-3 col-xl-3">
+                    <div class="social-icons">
+                        <div class="social-icon">
+                            <a href="#">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                        <div class="social-icon">
+                            <a href="#">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </div>
+                        <div class="social-icon">
+                            <a href="#">
+                                <i class="fab fa-vk"></i>
+                            </a>
+                        </div>
+                        <div class="social-icon">
+                            <a href="#">
+                                <i class="fab fa-odnoklassniki"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-lg-6 col-xl-6">
+                    <div class="header-aside-links">
+                        <a href="#">Заказать обратный звонок</a>
+                        <a href="#">Калькулятор и расчет стоимости</a>
+                        <a href=""><i class="fas fa-search"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- MIDDLE-HEADER -->
+    <section class="middle-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <a href="/">
+                        <img src="/Img/Toplogo.png" alt="">
+                    </a>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="header-contacts">
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="contacts-svg-center">
+                                        <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M15.0835 11.6072V13.6395C15.0843 13.8282 15.0455 14.0149 14.9698 14.1878C14.8941 14.3607 14.783 14.5158 14.6437 14.6434C14.5044 14.7709 14.34 14.868 14.1609 14.9285C13.9818 14.9889 13.792 15.0114 13.6038 14.9944C11.5151 14.7679 9.50871 14.0556 7.74593 12.9147C6.10589 11.8746 4.71543 10.4869 3.67328 8.85008C2.52613 7.08279 1.81224 5.07068 1.58943 2.97674C1.57247 2.78941 1.59478 2.60061 1.65493 2.42235C1.71509 2.24409 1.81178 2.08029 1.93884 1.94137C2.06591 1.80245 2.22056 1.69146 2.39296 1.61546C2.56536 1.53946 2.75173 1.50012 2.9402 1.49994H4.97653C5.30594 1.49671 5.6253 1.61313 5.87506 1.8275C6.12483 2.04188 6.28797 2.33958 6.33408 2.66513C6.42003 3.3155 6.57942 3.95409 6.80922 4.56871C6.90055 4.81118 6.92031 5.07469 6.86618 5.32803C6.81204 5.58136 6.68627 5.8139 6.50377 5.99809L5.64173 6.85843C6.608 8.55441 8.01504 9.95865 9.71438 10.923L10.5764 10.0627C10.761 9.88054 10.994 9.75502 11.2478 9.70099C11.5017 9.64696 11.7657 9.66669 12.0086 9.75783C12.6245 9.98718 13.2643 10.1463 13.916 10.232C14.2457 10.2785 14.5469 10.4442 14.7621 10.6978C14.9774 10.9513 15.0918 11.275 15.0835 11.6072Z" stroke="#009846" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+
+                                        <a href="tel:89099933773">+ 7 (909) 993-37-73</a>
+                                </div>                                    
+                            </div>
+
+                            <div class="col-xl-12">
+                                <div>
+                                    с 9.00 до 18.00
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="header-contacts">
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="contacts-svg-center">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M3 3H15C15.825 3 16.5 3.675 16.5 4.5V13.5C16.5 14.325 15.825 15 15 15H3C2.175 15 1.5 14.325 1.5 13.5V4.5C1.5 3.675 2.175 3 3 3Z" stroke="#009846" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M16.5 4.5L9 9.75L1.5 4.5" stroke="#009846" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+
+                                        <a href="mailto:info@buhassistent.ru">info@buhassistent.ru</a>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-12">
+                                <div class="middle-social-icons">
+                                    <a href="#">
+                                        <i class="fab fa-whatsapp"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fab fa-viber"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fab fa-telegram-plane"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-12 col-xl-3">
+                    <div class="header-consult-buttons">
+                        <a class="btn header-consult-button" href="freeconsultation.html">Консультация бухгалтера</a>
+                        <a class="btn header-consult-button" href="freeconsultation.html">Консультация юриста</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- NAVIGATION -->
+    <section class="header-navigation">
+        <div class="container">
+            <nav class="nav navbar-expand-lg">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarToggler">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item dropdown">
+                                <a href="buhuslugi.html" class="nav-link dropdown-toggle" id="navbarDropdown" aria-expanded="false">
+                                    Бухгалтерские услуги
+                                </a>
+                                <ul class="dropdown-custom" aria-labelledby="navbarDropdown">
+                                    <li><a href="catalog.html" class="dropdown-item">Каталог бухгалтерских услуг</a></li>
+                                    <li><a href="buhuslugi.html" class="dropdown-item">Бухгалтерские услуги</a></li>
+                                    <li><a href="#" class="dropdown-item">12345</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown1" aria-expanded="false">
+                                    Юридические услуги
+                                </a>
+                                <ul class="dropdown-custom" aria-labelledby="navbarDropdown1">
+                                    <li><a href="#" class="dropdown-item">1234567890</a></li>
+                                    <li><a href="#" class="dropdown-item">12345</a></li>
+                                    <li><a href="#" class="dropdown-item">12345</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a href="aboutcompany.html" class="nav-link dropdown-toggle" id="navbarDropdown2" aria-expanded="false">
+                                    О компании
+                                </a>
+                                <ul class="dropdown-custom" aria-labelledby="navbarDropdown2">
+                                    <li><a href="aboutcompany.html" class="dropdown-item">О компании</a></li>
+                                    <li><a href="companyhistory.html" class="dropdown-item">История компании</a></li>
+                                    <li><a href="reviews.html" class="dropdown-item">Отзывы</a></li>
+                                    <li><a href="collective.html" class="dropdown-item">Коллектив</a></li>
+                                    <li><a href="license.html" class="dropdown-item">Лицензии</a></li>
+                                    <li><a href="technology.html" class="dropdown-item">Технологии</a></li>
+                                    <li><a href="clients.html" class="dropdown-item">Клиенты</a></li>
+                                    <li><a href="partners.html" class="dropdown-item">Партнеры</a></li>
+                                    <li><a href="questions.html" class="dropdown-item">Вопросы и ответы</a></li>
+                                    <li><a href="requisits.html" class="dropdown-item">Реквизиты</a></li>
+                                    <li><a href="vacansy.html" class="dropdown-item">Вакансии</a></li>
+                                    <li><a href="benefits.html" class="dropdown-item">Преимущетва</a></li>
+                                    <li><a href="onlinepay.html" class="dropdown-item">Оплата услуг онлайн</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="portfolio.html" class="nav-link">Портфолио</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="price.html" class="nav-link">Прайс-лист</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="reviews.html" class="nav-link">Отзывы</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Акции</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="blog.html" class="nav-link">Блог</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="contacts.html" class="nav-link">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="strip">
+            </div>
+        </div>
+    </section>
+    <!-- MOBILE-STICKY-NAVIGATION -->
+    <section class="mobile-navigation">
+        <div class="mobile-menu collapse d-lg-none" id="mobMenu">
+            <ul class="mobile-nav-list">
+                <li class="mobile-nav-item dropdown">
+                    <a class="direct-dropdown-link" href="buhuslugi.html">Бухгалтерские услуги</a>
+
+                    <a class="btn dropdown-toggler" href="#" role="button" id="dropdownMenuLink">
+                        ▼
+                    </a>
+
+                    <ul class="dropdowned-menu" role="menu">
+                        <li class="back-menu-wrapper"><a class="back-menu-btn" href="#">Назад</a></li>
+                        <li><a href="catalog.html" class="dropdown-item">Каталог бухгалтерских услуг</a></li>
+                        <li><a href="buhuslugi.html" class="dropdown-item">Бухгалтерские услуги</a></li>
+                    </ul>
+                </li>
+
+                <li class="mobile-nav-item dropdown">
+                    <a class="direct-dropdown-link" href="#">Юридические услуги</a>
+
+                    <a class="btn dropdown-toggler" href="#" role="button" id="dropdownMenuLink1" aria-expanded="false">
+                        ▼
+                    </a>
+
+                    <ul class="dropdowned-menu" role="menu">
+                        <li class="back-menu-wrapper"><a class="back-menu-btn" href="#">Назад</a></li>
+                        <li><a href="#" class="dropdown-item">Каталог юридических услуг</a></li>
+                        <li><a href="#" class="dropdown-item">Юридические услуги</a></li>
+                    </ul>
+                </li>
+
+                <li class="mobile-nav-item dropdown">
+                    <a class="direct-dropdown-link" href="aboutcompany.html">О компании</a>
+
+                    <a class="btn dropdown-toggler" href="#" role="button" id="dropdownMenuLink2"aria-expanded="false">
+                        ▼
+                    </a>
+                    
+                    <ul class="dropdowned-menu" role="menu">
+                        <li class="back-menu-wrapper"><a class="back-menu-btn" href="#">Назад</a></li>
+                        <li><a href="aboutcompany.html" class="dropdown-item">О компании</a></li>
+                        <li><a href="companyhistory.html" class="dropdown-item">История компании</a></li>
+                        <li><a href="reviews.html" class="dropdown-item">Отзывы</a></li>
+                        <li><a href="collective.html" class="dropdown-item">Коллектив</a></li>
+                        <li><a href="license.html" class="dropdown-item">Лицензии</a></li>
+                        <li><a href="technology.html" class="dropdown-item">Технологии</a></li>
+                        <li><a href="clients.html" class="dropdown-item">Клиенты</a></li>
+                        <li><a href="partners.html" class="dropdown-item">Партнеры</a></li>
+                        <li><a href="questions.html" class="dropdown-item">Вопросы и ответы</a></li>
+                        <li><a href="requisits.html" class="dropdown-item">Реквизиты</a></li>
+                        <li><a href="vacansy.html" class="dropdown-item">Вакансии</a></li>
+                        <li><a href="benefits.html" class="dropdown-item">Преимущетва</a></li>
+                        <li><a href="onlinepay.html" class="dropdown-item">Оплата услуг онлайн</a></li>
+                    </ul>
+                </li>
+                
+                <li class="mobile-nav-item"><a href="portfolio.html" class="nav-link">Портфолио</a></li>
+                <li class="mobile-nav-item"><a href="price.html" class="nav-link">Прайс-лист</a></li>
+                <li class="mobile-nav-item"><a href="reviews.html" class="nav-link">Отзывы</a></li>
+                <li class="mobile-nav-item"><a href="#" class="nav-link">Акции</a></li>
+                <li class="mobile-nav-item"><a href="blog.html" class="nav-link">Блог</a></li>
+                <li class="mobile-nav-item"><a href="contacts.html" class="nav-link">Контакты</a></li>
+            </ul>
+        </div>
+
+        <div class="mobile-nav-strip d-lg-none">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="d-flex justify-content-between">
+                            <button class="btn burger-btn" type="button" data-bs-toggle="collapse" data-bs-target="#mobMenu" aria-expanded="false" aria-controls="mobMenu">
+                                <svg width="23" height="17" viewBox="0 0 23 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.5 16H21.5M1.5 1H21.5H1.5ZM1.5 8.5H21.5H1.5Z" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                                <span>Меню Сайта</span>
+                            </button>
+    
+                            <div class="mobile-search">
+                                <a href="searchresult.html"><i class="fas fa-search"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</header>
+<main>
+<div class="container">
+    <!-- КРОШКИ -->
+    <section class="breadcrumbs-section">
+        <div class="breadcrumbs">
+            <nav style="--bs-breadcrumb-divider: '&#183';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+                  <li class="breadcrumb-item"><a href="index.html">Блог</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Бухгалтерский учет</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+    <!-- Блог -->
+    <section class="blog-section">
+        <h1 class="title text-start">Бухгалтерский учет</h1>
+        <span>Рассказываем, как правильно вести  учет в вашей компании.</span>
+        <div class="extendedaboutcompany">
+            <div class="list">
+                <a href="blog.html" class="btn">Все статьи</a>
+
+                <a href="news.html" class="btn">Новости</a>
+
+                <a href="#" class="btn active">Бухгалтерский учет</a>
+
+                <a href="taxotchet.html" class="btn">Налоговая отчетность</a>
+
+                <a href="lawschange.html" class="btn">Изменение законов</a>
+                
+                <a href="laborrelate.html" class="btn">Трудовые отношения</a>
+
+                <a href="bankruptcy.html" class="btn">Банкротство</a>
+            </div>
+            <div class="wrapper">
+                <div class="row">
+                    <main class="col-lg-8">
+                        <div class="blogitem">
+                            <div class="info">
+                                <div class="user">
+                                    <div class="usericon">
+                                    </div>
+                                    Валентина Токарева
+                                </div>
+
+                                <div class="articledate">
+                                    01.02.2021
+                                </div>
+
+                                <div class="articleviews">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect opacity="0.01" width="18" height="18" fill="url(#paint0_linear_620_1581)"/>
+                                        <circle cx="9" cy="9" r="1.125" fill="url(#paint1_linear_620_1581)"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.79657 3.75003C13.2816 3.61503 15.9216 7.79253 16.4016 8.62503C16.5355 8.85708 16.5355 9.14298 16.4016 9.37503C15.7566 10.5 13.3491 14.145 9.20157 14.25H9.01407C4.59657 14.25 2.06907 10.1925 1.59657 9.37503C1.4626 9.14298 1.4626 8.85708 1.59657 8.62503C2.24907 7.50003 4.64907 3.85503 8.79657 3.75003ZM6.37408 9.00003C6.37408 10.4498 7.54933 11.625 8.99908 11.625C10.4488 11.625 11.6241 10.4498 11.6241 9.00003C11.6241 7.55028 10.4488 6.37503 8.99908 6.37503C7.54933 6.37503 6.37408 7.55028 6.37408 9.00003Z" fill="url(#paint2_linear_620_1581)"/>
+                                        <defs>
+                                        <linearGradient id="paint0_linear_620_1581" x1="-0.000285022" y1="9.00013" x2="17.9997" y2="9.00013" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#009846"/>
+                                        <stop offset="1" stop-color="#009A9C"/>
+                                        </linearGradient>
+                                        <linearGradient id="paint1_linear_620_1581" x1="7.87496" y1="9.00002" x2="10.125" y2="9.00002" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#009846"/>
+                                        <stop offset="1" stop-color="#009A9C"/>
+                                        </linearGradient>
+                                        <linearGradient id="paint2_linear_620_1581" x1="1.49586" y1="8.9985" x2="16.5018" y2="8.9985" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#009846"/>
+                                        <stop offset="1" stop-color="#009A9C"/>
+                                        </linearGradient>
+                                        </defs>
+                                    </svg>
+                                        
+                                    123456
+                                </div>
+
+                                <div class="articlelikes">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect opacity="0.01" width="18" height="18" fill="url(#paint0_linear_620_1601)"/>
+                                        <path d="M8.5 14C8.35383 14.0009 8.21333 13.9395 8.10955 13.8294L3.83662 9.2528C2.72113 8.0471 2.72113 6.10545 3.83662 4.89975C4.9613 3.70008 6.7814 3.70008 7.90608 4.89975L8.5 5.53506L9.09392 4.89975C10.2186 3.70008 12.0387 3.70008 13.1634 4.89975C14.2789 6.10545 14.2789 8.0471 13.1634 9.2528L8.89045 13.8294C8.78667 13.9395 8.64617 14.0009 8.5 14Z" fill="url(#paint1_linear_620_1601)"/>
+                                        <defs>
+                                        <linearGradient id="paint0_linear_620_1601" x1="-0.000285022" y1="9.00013" x2="17.9997" y2="9.00013" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#009846"/>
+                                        <stop offset="1" stop-color="#009A9C"/>
+                                        </linearGradient>
+                                        <linearGradient id="paint1_linear_620_1601" x1="2.99983" y1="9.00007" x2="13.9998" y2="9.00007" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#009846"/>
+                                        <stop offset="1" stop-color="#009A9C"/>
+                                        </linearGradient>
+                                        </defs>
+                                    </svg>
+                                        
+                                    643
+                                </div>
+
+                                <div class="articletheme">
+                                    <span>#</span>
+                                    <a class="services" href="#">Бухгалтерский учет</a>
+                                </div>
+                            </div>
+                            
+                            <a href="currentarticle.html" class="head">Как в бухучете отразить возмещение покупателю НДС по системе tax free</a>
+
+                            <div class="description">
+                                По tax free иностранцу может быть возвращена часть денег за покупку в виде НДС от магазина или от оператора. 
+                                Именно от этого и зависит порядок отражения операций в бухучете.
+                            </div>
+
+                            <div class="image">
+                                <img class="img-fluid" src="/Img/blogimage.jpg" alt="">
+                            </div>
+                            
+                            <div class="comments">
+                                <div class="comments-count">
+                                    <a href="#" class="miniroundbtn">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="12" cy="12" r="12" fill="url(#paint0_linear_1526_8582)"/>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.81579 6H16.2895C17.2923 6 18.1053 6.81296 18.1053 7.81579V13.8684C18.1053 14.8713 17.2923 15.6842 16.2895 15.6842H9.96447C9.84765 15.6797 9.73203 15.7091 9.63158 15.7689L6.91395 17.4153C6.82052 17.4707 6.7139 17.5 6.60526 17.5C6.50129 17.4997 6.39914 17.4726 6.30868 17.4213C6.11834 17.3143 6.00038 17.1131 6 16.8947V7.81579C6 6.81296 6.81296 6 7.81579 6ZM9.02734 10.8421C9.02734 11.1764 9.29833 11.4474 9.63261 11.4474C9.96688 11.4474 10.2379 11.1764 10.2379 10.8421C10.2379 10.5078 9.96688 10.2368 9.63261 10.2368C9.29833 10.2368 9.02734 10.5078 9.02734 10.8421ZM12.0545 11.4474C11.7202 11.4474 11.4492 11.1764 11.4492 10.8421C11.4492 10.5078 11.7202 10.2368 12.0545 10.2368C12.3888 10.2368 12.6597 10.5078 12.6597 10.8421C12.6597 11.1764 12.3888 11.4474 12.0545 11.4474ZM13.8672 10.8421C13.8672 11.1764 14.1382 11.4474 14.4725 11.4474C14.8067 11.4474 15.0777 11.1764 15.0777 10.8421C15.0777 10.5078 14.8067 10.2368 14.4725 10.2368C14.1382 10.2368 13.8672 10.5078 13.8672 10.8421Z" fill="white"/>
+                                            <defs>
+                                            <linearGradient id="paint0_linear_1526_8582" x1="-0.000380029" y1="12.0002" x2="23.9996" y2="12.0002" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#009846"/>
+                                            <stop offset="1" stop-color="#009A9C"/>
+                                            </linearGradient>
+                                            </defs>
+                                        </svg>  
+                                    </a>
+    
+                                    123
+                                </div>
+
+                                <div class="share">
+                                    <a href="#">Комментировать</a>
+
+                                    <div>
+                                        <a class="miniroundbtn context-btn dropdown-toggle" role="button" id="dropdownMenuLink10" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="12" cy="12" r="12" fill="url(#paint0_linear_1526_8583)"/>
+                                                <path d="M15.5019 14.25C14.9127 14.2505 14.3472 14.4821 13.9269 14.895L8.00186 12.255V12V11.7525L13.9269 9.105C14.692 9.85503 15.88 9.96142 16.7663 9.3593C17.6525 8.75718 17.9913 7.6136 17.5759 6.62592C17.1605 5.63824 16.1063 5.08049 15.056 5.29279C14.0058 5.50509 13.251 6.42853 13.2519 7.5V7.755L7.32686 10.395C6.44413 9.52776 5.02676 9.53611 4.15433 10.4137C3.28189 11.2913 3.28189 12.7087 4.15433 13.5863C5.02676 14.4639 6.44413 14.4722 7.32686 13.605L13.2519 16.2525V16.5C13.2519 17.7426 14.2592 18.75 15.5019 18.75C16.7445 18.75 17.7519 17.7426 17.7519 16.5C17.7519 15.2574 16.7445 14.25 15.5019 14.25Z" fill="white"/>
+                                                <defs>
+                                                <linearGradient id="paint0_linear_1526_8583" x1="-0.000380029" y1="12.0002" x2="23.9996" y2="12.0002" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#009846"/>
+                                                <stop offset="1" stop-color="#009A9C"/>
+                                                </linearGradient>
+                                                </defs>
+                                            </svg>   
+                                        </a>
+    
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink10">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="blogitem">
+                            <div class="info">
+                                <div class="user">
+                                    <div class="usericon">
+                                    </div>
+                                    Валентина Токарева
+                                </div>
+
+                                <div class="articledate">
+                                    01.02.2021
+                                </div>
+
+                                <div class="articleviews">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect opacity="0.01" width="18" height="18" fill="url(#paint0_linear_620_1581)"/>
+                                        <circle cx="9" cy="9" r="1.125" fill="url(#paint1_linear_620_1581)"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.79657 3.75003C13.2816 3.61503 15.9216 7.79253 16.4016 8.62503C16.5355 8.85708 16.5355 9.14298 16.4016 9.37503C15.7566 10.5 13.3491 14.145 9.20157 14.25H9.01407C4.59657 14.25 2.06907 10.1925 1.59657 9.37503C1.4626 9.14298 1.4626 8.85708 1.59657 8.62503C2.24907 7.50003 4.64907 3.85503 8.79657 3.75003ZM6.37408 9.00003C6.37408 10.4498 7.54933 11.625 8.99908 11.625C10.4488 11.625 11.6241 10.4498 11.6241 9.00003C11.6241 7.55028 10.4488 6.37503 8.99908 6.37503C7.54933 6.37503 6.37408 7.55028 6.37408 9.00003Z" fill="url(#paint2_linear_620_1581)"/>
+                                        <defs>
+                                        <linearGradient id="paint0_linear_620_1581" x1="-0.000285022" y1="9.00013" x2="17.9997" y2="9.00013" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#009846"/>
+                                        <stop offset="1" stop-color="#009A9C"/>
+                                        </linearGradient>
+                                        <linearGradient id="paint1_linear_620_1581" x1="7.87496" y1="9.00002" x2="10.125" y2="9.00002" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#009846"/>
+                                        <stop offset="1" stop-color="#009A9C"/>
+                                        </linearGradient>
+                                        <linearGradient id="paint2_linear_620_1581" x1="1.49586" y1="8.9985" x2="16.5018" y2="8.9985" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#009846"/>
+                                        <stop offset="1" stop-color="#009A9C"/>
+                                        </linearGradient>
+                                        </defs>
+                                    </svg>
+                                        
+                                    123456
+                                </div>
+
+                                <div class="articlelikes">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect opacity="0.01" width="18" height="18" fill="url(#paint0_linear_620_1601)"/>
+                                        <path d="M8.5 14C8.35383 14.0009 8.21333 13.9395 8.10955 13.8294L3.83662 9.2528C2.72113 8.0471 2.72113 6.10545 3.83662 4.89975C4.9613 3.70008 6.7814 3.70008 7.90608 4.89975L8.5 5.53506L9.09392 4.89975C10.2186 3.70008 12.0387 3.70008 13.1634 4.89975C14.2789 6.10545 14.2789 8.0471 13.1634 9.2528L8.89045 13.8294C8.78667 13.9395 8.64617 14.0009 8.5 14Z" fill="url(#paint1_linear_620_1601)"/>
+                                        <defs>
+                                        <linearGradient id="paint0_linear_620_1601" x1="-0.000285022" y1="9.00013" x2="17.9997" y2="9.00013" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#009846"/>
+                                        <stop offset="1" stop-color="#009A9C"/>
+                                        </linearGradient>
+                                        <linearGradient id="paint1_linear_620_1601" x1="2.99983" y1="9.00007" x2="13.9998" y2="9.00007" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#009846"/>
+                                        <stop offset="1" stop-color="#009A9C"/>
+                                        </linearGradient>
+                                        </defs>
+                                    </svg>
+                                        
+                                    643
+                                </div>
+
+                                <div class="articletheme">
+                                    <span>#</span>
+                                    <a class="services" href="#">Бухгалтерский учет</a>
+                                </div>
+                            </div>
+                            
+                            <a href="currentarticle.html" class="head">Как в бухучете отразить возмещение покупателю НДС по системе tax free</a>
+
+                            <div class="description">
+                                По tax free иностранцу может быть возвращена часть денег за покупку в виде НДС от магазина или от оператора. 
+                                Именно от этого и зависит порядок отражения операций в бухучете.
+                            </div>
+
+                            <div class="image">
+                                <img class="img-fluid" src="/Img/blogimage.jpg" alt="">
+                            </div>
+                            
+                            <div class="comments">
+                                <div class="comments-count">
+                                    <a href="#" class="miniroundbtn">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="12" cy="12" r="12" fill="url(#paint0_linear_1526_8582)"/>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.81579 6H16.2895C17.2923 6 18.1053 6.81296 18.1053 7.81579V13.8684C18.1053 14.8713 17.2923 15.6842 16.2895 15.6842H9.96447C9.84765 15.6797 9.73203 15.7091 9.63158 15.7689L6.91395 17.4153C6.82052 17.4707 6.7139 17.5 6.60526 17.5C6.50129 17.4997 6.39914 17.4726 6.30868 17.4213C6.11834 17.3143 6.00038 17.1131 6 16.8947V7.81579C6 6.81296 6.81296 6 7.81579 6ZM9.02734 10.8421C9.02734 11.1764 9.29833 11.4474 9.63261 11.4474C9.96688 11.4474 10.2379 11.1764 10.2379 10.8421C10.2379 10.5078 9.96688 10.2368 9.63261 10.2368C9.29833 10.2368 9.02734 10.5078 9.02734 10.8421ZM12.0545 11.4474C11.7202 11.4474 11.4492 11.1764 11.4492 10.8421C11.4492 10.5078 11.7202 10.2368 12.0545 10.2368C12.3888 10.2368 12.6597 10.5078 12.6597 10.8421C12.6597 11.1764 12.3888 11.4474 12.0545 11.4474ZM13.8672 10.8421C13.8672 11.1764 14.1382 11.4474 14.4725 11.4474C14.8067 11.4474 15.0777 11.1764 15.0777 10.8421C15.0777 10.5078 14.8067 10.2368 14.4725 10.2368C14.1382 10.2368 13.8672 10.5078 13.8672 10.8421Z" fill="white"/>
+                                            <defs>
+                                            <linearGradient id="paint0_linear_1526_8582" x1="-0.000380029" y1="12.0002" x2="23.9996" y2="12.0002" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#009846"/>
+                                            <stop offset="1" stop-color="#009A9C"/>
+                                            </linearGradient>
+                                            </defs>
+                                        </svg>  
+                                    </a>
+    
+                                    123
+                                </div>
+
+                                <div class="share">
+                                    <a href="#">Комментировать</a>
+
+                                    <div>
+                                        <a class="miniroundbtn context-btn dropdown-toggle" role="button" id="dropdownMenuLink11" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="12" cy="12" r="12" fill="url(#paint0_linear_1526_8583)"/>
+                                                <path d="M15.5019 14.25C14.9127 14.2505 14.3472 14.4821 13.9269 14.895L8.00186 12.255V12V11.7525L13.9269 9.105C14.692 9.85503 15.88 9.96142 16.7663 9.3593C17.6525 8.75718 17.9913 7.6136 17.5759 6.62592C17.1605 5.63824 16.1063 5.08049 15.056 5.29279C14.0058 5.50509 13.251 6.42853 13.2519 7.5V7.755L7.32686 10.395C6.44413 9.52776 5.02676 9.53611 4.15433 10.4137C3.28189 11.2913 3.28189 12.7087 4.15433 13.5863C5.02676 14.4639 6.44413 14.4722 7.32686 13.605L13.2519 16.2525V16.5C13.2519 17.7426 14.2592 18.75 15.5019 18.75C16.7445 18.75 17.7519 17.7426 17.7519 16.5C17.7519 15.2574 16.7445 14.25 15.5019 14.25Z" fill="white"/>
+                                                <defs>
+                                                <linearGradient id="paint0_linear_1526_8583" x1="-0.000380029" y1="12.0002" x2="23.9996" y2="12.0002" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#009846"/>
+                                                <stop offset="1" stop-color="#009A9C"/>
+                                                </linearGradient>
+                                                </defs>
+                                            </svg>   
+                                        </a>
+    
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink11">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="blogitem">
+                            <div class="info">
+                                <div class="user">
+                                    <div class="usericon">
+                                    </div>
+                                    Валентина Токарева
+                                </div>
+
+                                <div class="articledate">
+                                    01.02.2021
+                                </div>
+
+                                <div class="articleviews">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect opacity="0.01" width="18" height="18" fill="url(#paint0_linear_620_1581)"/>
+                                        <circle cx="9" cy="9" r="1.125" fill="url(#paint1_linear_620_1581)"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.79657 3.75003C13.2816 3.61503 15.9216 7.79253 16.4016 8.62503C16.5355 8.85708 16.5355 9.14298 16.4016 9.37503C15.7566 10.5 13.3491 14.145 9.20157 14.25H9.01407C4.59657 14.25 2.06907 10.1925 1.59657 9.37503C1.4626 9.14298 1.4626 8.85708 1.59657 8.62503C2.24907 7.50003 4.64907 3.85503 8.79657 3.75003ZM6.37408 9.00003C6.37408 10.4498 7.54933 11.625 8.99908 11.625C10.4488 11.625 11.6241 10.4498 11.6241 9.00003C11.6241 7.55028 10.4488 6.37503 8.99908 6.37503C7.54933 6.37503 6.37408 7.55028 6.37408 9.00003Z" fill="url(#paint2_linear_620_1581)"/>
+                                        <defs>
+                                        <linearGradient id="paint0_linear_620_1581" x1="-0.000285022" y1="9.00013" x2="17.9997" y2="9.00013" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#009846"/>
+                                        <stop offset="1" stop-color="#009A9C"/>
+                                        </linearGradient>
+                                        <linearGradient id="paint1_linear_620_1581" x1="7.87496" y1="9.00002" x2="10.125" y2="9.00002" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#009846"/>
+                                        <stop offset="1" stop-color="#009A9C"/>
+                                        </linearGradient>
+                                        <linearGradient id="paint2_linear_620_1581" x1="1.49586" y1="8.9985" x2="16.5018" y2="8.9985" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#009846"/>
+                                        <stop offset="1" stop-color="#009A9C"/>
+                                        </linearGradient>
+                                        </defs>
+                                    </svg>
+                                        
+                                    123456
+                                </div>
+
+                                <div class="articlelikes">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect opacity="0.01" width="18" height="18" fill="url(#paint0_linear_620_1601)"/>
+                                        <path d="M8.5 14C8.35383 14.0009 8.21333 13.9395 8.10955 13.8294L3.83662 9.2528C2.72113 8.0471 2.72113 6.10545 3.83662 4.89975C4.9613 3.70008 6.7814 3.70008 7.90608 4.89975L8.5 5.53506L9.09392 4.89975C10.2186 3.70008 12.0387 3.70008 13.1634 4.89975C14.2789 6.10545 14.2789 8.0471 13.1634 9.2528L8.89045 13.8294C8.78667 13.9395 8.64617 14.0009 8.5 14Z" fill="url(#paint1_linear_620_1601)"/>
+                                        <defs>
+                                        <linearGradient id="paint0_linear_620_1601" x1="-0.000285022" y1="9.00013" x2="17.9997" y2="9.00013" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#009846"/>
+                                        <stop offset="1" stop-color="#009A9C"/>
+                                        </linearGradient>
+                                        <linearGradient id="paint1_linear_620_1601" x1="2.99983" y1="9.00007" x2="13.9998" y2="9.00007" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#009846"/>
+                                        <stop offset="1" stop-color="#009A9C"/>
+                                        </linearGradient>
+                                        </defs>
+                                    </svg>
+                                        
+                                    643
+                                </div>
+
+                                <div class="articletheme">
+                                    <span>#</span>
+                                    <a class="services" href="#">Бухгалтерский учет</a>
+                                </div>
+                            </div>
+                            
+                            <a href="currentarticle.html" class="head">Как в бухучете отразить возмещение покупателю НДС по системе tax free</a>
+
+                            <div class="description">
+                                По tax free иностранцу может быть возвращена часть денег за покупку в виде НДС от магазина или от оператора. 
+                                Именно от этого и зависит порядок отражения операций в бухучете.
+                            </div>
+                            
+                            <div class="comments">
+                                <div class="comments-count">
+                                    <a href="#" class="miniroundbtn">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="12" cy="12" r="12" fill="url(#paint0_linear_1526_8582)"/>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.81579 6H16.2895C17.2923 6 18.1053 6.81296 18.1053 7.81579V13.8684C18.1053 14.8713 17.2923 15.6842 16.2895 15.6842H9.96447C9.84765 15.6797 9.73203 15.7091 9.63158 15.7689L6.91395 17.4153C6.82052 17.4707 6.7139 17.5 6.60526 17.5C6.50129 17.4997 6.39914 17.4726 6.30868 17.4213C6.11834 17.3143 6.00038 17.1131 6 16.8947V7.81579C6 6.81296 6.81296 6 7.81579 6ZM9.02734 10.8421C9.02734 11.1764 9.29833 11.4474 9.63261 11.4474C9.96688 11.4474 10.2379 11.1764 10.2379 10.8421C10.2379 10.5078 9.96688 10.2368 9.63261 10.2368C9.29833 10.2368 9.02734 10.5078 9.02734 10.8421ZM12.0545 11.4474C11.7202 11.4474 11.4492 11.1764 11.4492 10.8421C11.4492 10.5078 11.7202 10.2368 12.0545 10.2368C12.3888 10.2368 12.6597 10.5078 12.6597 10.8421C12.6597 11.1764 12.3888 11.4474 12.0545 11.4474ZM13.8672 10.8421C13.8672 11.1764 14.1382 11.4474 14.4725 11.4474C14.8067 11.4474 15.0777 11.1764 15.0777 10.8421C15.0777 10.5078 14.8067 10.2368 14.4725 10.2368C14.1382 10.2368 13.8672 10.5078 13.8672 10.8421Z" fill="white"/>
+                                            <defs>
+                                            <linearGradient id="paint0_linear_1526_8582" x1="-0.000380029" y1="12.0002" x2="23.9996" y2="12.0002" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#009846"/>
+                                            <stop offset="1" stop-color="#009A9C"/>
+                                            </linearGradient>
+                                            </defs>
+                                        </svg>  
+                                    </a>
+    
+                                    123
+                                </div>
+
+                                <div class="share">
+                                    <a href="#">Комментировать</a>
+
+                                    <div>
+                                        <a class="miniroundbtn context-btn dropdown-toggle" role="button" id="dropdownMenuLink12" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="12" cy="12" r="12" fill="url(#paint0_linear_1526_8583)"/>
+                                                <path d="M15.5019 14.25C14.9127 14.2505 14.3472 14.4821 13.9269 14.895L8.00186 12.255V12V11.7525L13.9269 9.105C14.692 9.85503 15.88 9.96142 16.7663 9.3593C17.6525 8.75718 17.9913 7.6136 17.5759 6.62592C17.1605 5.63824 16.1063 5.08049 15.056 5.29279C14.0058 5.50509 13.251 6.42853 13.2519 7.5V7.755L7.32686 10.395C6.44413 9.52776 5.02676 9.53611 4.15433 10.4137C3.28189 11.2913 3.28189 12.7087 4.15433 13.5863C5.02676 14.4639 6.44413 14.4722 7.32686 13.605L13.2519 16.2525V16.5C13.2519 17.7426 14.2592 18.75 15.5019 18.75C16.7445 18.75 17.7519 17.7426 17.7519 16.5C17.7519 15.2574 16.7445 14.25 15.5019 14.25Z" fill="white"/>
+                                                <defs>
+                                                <linearGradient id="paint0_linear_1526_8583" x1="-0.000380029" y1="12.0002" x2="23.9996" y2="12.0002" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#009846"/>
+                                                <stop offset="1" stop-color="#009A9C"/>
+                                                </linearGradient>
+                                                </defs>
+                                            </svg>   
+                                        </a>
+    
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink12">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="blogitem">
+                            <div class="info">
+                                <div class="user">
+                                    <div class="usericon">
+                                    </div>
+                                    Валентина Токарева
+                                </div>
+
+                                <div class="articledate">
+                                    01.02.2021
+                                </div>
+
+                                <div class="articleviews">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect opacity="0.01" width="18" height="18" fill="url(#paint0_linear_620_1581)"/>
+                                        <circle cx="9" cy="9" r="1.125" fill="url(#paint1_linear_620_1581)"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.79657 3.75003C13.2816 3.61503 15.9216 7.79253 16.4016 8.62503C16.5355 8.85708 16.5355 9.14298 16.4016 9.37503C15.7566 10.5 13.3491 14.145 9.20157 14.25H9.01407C4.59657 14.25 2.06907 10.1925 1.59657 9.37503C1.4626 9.14298 1.4626 8.85708 1.59657 8.62503C2.24907 7.50003 4.64907 3.85503 8.79657 3.75003ZM6.37408 9.00003C6.37408 10.4498 7.54933 11.625 8.99908 11.625C10.4488 11.625 11.6241 10.4498 11.6241 9.00003C11.6241 7.55028 10.4488 6.37503 8.99908 6.37503C7.54933 6.37503 6.37408 7.55028 6.37408 9.00003Z" fill="url(#paint2_linear_620_1581)"/>
+                                        <defs>
+                                        <linearGradient id="paint0_linear_620_1581" x1="-0.000285022" y1="9.00013" x2="17.9997" y2="9.00013" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#009846"/>
+                                        <stop offset="1" stop-color="#009A9C"/>
+                                        </linearGradient>
+                                        <linearGradient id="paint1_linear_620_1581" x1="7.87496" y1="9.00002" x2="10.125" y2="9.00002" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#009846"/>
+                                        <stop offset="1" stop-color="#009A9C"/>
+                                        </linearGradient>
+                                        <linearGradient id="paint2_linear_620_1581" x1="1.49586" y1="8.9985" x2="16.5018" y2="8.9985" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#009846"/>
+                                        <stop offset="1" stop-color="#009A9C"/>
+                                        </linearGradient>
+                                        </defs>
+                                    </svg>
+                                        
+                                    123456
+                                </div>
+
+                                <div class="articlelikes">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect opacity="0.01" width="18" height="18" fill="url(#paint0_linear_620_1601)"/>
+                                        <path d="M8.5 14C8.35383 14.0009 8.21333 13.9395 8.10955 13.8294L3.83662 9.2528C2.72113 8.0471 2.72113 6.10545 3.83662 4.89975C4.9613 3.70008 6.7814 3.70008 7.90608 4.89975L8.5 5.53506L9.09392 4.89975C10.2186 3.70008 12.0387 3.70008 13.1634 4.89975C14.2789 6.10545 14.2789 8.0471 13.1634 9.2528L8.89045 13.8294C8.78667 13.9395 8.64617 14.0009 8.5 14Z" fill="url(#paint1_linear_620_1601)"/>
+                                        <defs>
+                                        <linearGradient id="paint0_linear_620_1601" x1="-0.000285022" y1="9.00013" x2="17.9997" y2="9.00013" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#009846"/>
+                                        <stop offset="1" stop-color="#009A9C"/>
+                                        </linearGradient>
+                                        <linearGradient id="paint1_linear_620_1601" x1="2.99983" y1="9.00007" x2="13.9998" y2="9.00007" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#009846"/>
+                                        <stop offset="1" stop-color="#009A9C"/>
+                                        </linearGradient>
+                                        </defs>
+                                    </svg>
+                                        
+                                    643
+                                </div>
+
+                                <div class="articletheme">
+                                    <span>#</span>
+                                    <a class="services" href="#">Бухгалтерский учет</a>
+                                </div>
+                            </div>
+                            
+                            <a href="currentarticle.html" class="head">Как в бухучете отразить возмещение покупателю НДС по системе tax free</a>
+
+                            <div class="description">
+                                По tax free иностранцу может быть возвращена часть денег за покупку в виде НДС от магазина или от оператора. 
+                                Именно от этого и зависит порядок отражения операций в бухучете.
+                            </div>
+                            
+                            <div class="comments">
+                                <div class="comments-count">
+                                    <a href="#" class="miniroundbtn">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="12" cy="12" r="12" fill="url(#paint0_linear_1526_8582)"/>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.81579 6H16.2895C17.2923 6 18.1053 6.81296 18.1053 7.81579V13.8684C18.1053 14.8713 17.2923 15.6842 16.2895 15.6842H9.96447C9.84765 15.6797 9.73203 15.7091 9.63158 15.7689L6.91395 17.4153C6.82052 17.4707 6.7139 17.5 6.60526 17.5C6.50129 17.4997 6.39914 17.4726 6.30868 17.4213C6.11834 17.3143 6.00038 17.1131 6 16.8947V7.81579C6 6.81296 6.81296 6 7.81579 6ZM9.02734 10.8421C9.02734 11.1764 9.29833 11.4474 9.63261 11.4474C9.96688 11.4474 10.2379 11.1764 10.2379 10.8421C10.2379 10.5078 9.96688 10.2368 9.63261 10.2368C9.29833 10.2368 9.02734 10.5078 9.02734 10.8421ZM12.0545 11.4474C11.7202 11.4474 11.4492 11.1764 11.4492 10.8421C11.4492 10.5078 11.7202 10.2368 12.0545 10.2368C12.3888 10.2368 12.6597 10.5078 12.6597 10.8421C12.6597 11.1764 12.3888 11.4474 12.0545 11.4474ZM13.8672 10.8421C13.8672 11.1764 14.1382 11.4474 14.4725 11.4474C14.8067 11.4474 15.0777 11.1764 15.0777 10.8421C15.0777 10.5078 14.8067 10.2368 14.4725 10.2368C14.1382 10.2368 13.8672 10.5078 13.8672 10.8421Z" fill="white"/>
+                                            <defs>
+                                            <linearGradient id="paint0_linear_1526_8582" x1="-0.000380029" y1="12.0002" x2="23.9996" y2="12.0002" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#009846"/>
+                                            <stop offset="1" stop-color="#009A9C"/>
+                                            </linearGradient>
+                                            </defs>
+                                        </svg>  
+                                    </a>
+    
+                                    123
+                                </div>
+
+                                <div class="share">
+                                    <a href="#">Комментировать</a>
+
+                                    <div>
+                                        <a class="miniroundbtn context-btn">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="12" cy="12" r="12" fill="url(#paint0_linear_1526_8583)"/>
+                                                <path d="M15.5019 14.25C14.9127 14.2505 14.3472 14.4821 13.9269 14.895L8.00186 12.255V12V11.7525L13.9269 9.105C14.692 9.85503 15.88 9.96142 16.7663 9.3593C17.6525 8.75718 17.9913 7.6136 17.5759 6.62592C17.1605 5.63824 16.1063 5.08049 15.056 5.29279C14.0058 5.50509 13.251 6.42853 13.2519 7.5V7.755L7.32686 10.395C6.44413 9.52776 5.02676 9.53611 4.15433 10.4137C3.28189 11.2913 3.28189 12.7087 4.15433 13.5863C5.02676 14.4639 6.44413 14.4722 7.32686 13.605L13.2519 16.2525V16.5C13.2519 17.7426 14.2592 18.75 15.5019 18.75C16.7445 18.75 17.7519 17.7426 17.7519 16.5C17.7519 15.2574 16.7445 14.25 15.5019 14.25Z" fill="white"/>
+                                                <defs>
+                                                <linearGradient id="paint0_linear_1526_8583" x1="-0.000380029" y1="12.0002" x2="23.9996" y2="12.0002" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#009846"/>
+                                                <stop offset="1" stop-color="#009A9C"/>
+                                                </linearGradient>
+                                                </defs>
+                                            </svg>   
+                                        </a>
+    
+                                        <div class="context-menu">
+                                            <ul>
+                                                <li>ВК</li>
+                                                <li>ИНСТА(не самка)</li>
+                                                <li>ПОДПИВОСНИКИ</li>
+                                                <li>ФИГИТЕР</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="blogitem">
+                            <div class="info">
+                                <div class="user">
+                                    <div class="usericon">
+                                    </div>
+                                    Валентина Токарева
+                                </div>
+
+                                <div class="articledate">
+                                    01.02.2021
+                                </div>
+
+                                <div class="articleviews">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect opacity="0.01" width="18" height="18" fill="url(#paint0_linear_620_1581)"/>
+                                        <circle cx="9" cy="9" r="1.125" fill="url(#paint1_linear_620_1581)"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.79657 3.75003C13.2816 3.61503 15.9216 7.79253 16.4016 8.62503C16.5355 8.85708 16.5355 9.14298 16.4016 9.37503C15.7566 10.5 13.3491 14.145 9.20157 14.25H9.01407C4.59657 14.25 2.06907 10.1925 1.59657 9.37503C1.4626 9.14298 1.4626 8.85708 1.59657 8.62503C2.24907 7.50003 4.64907 3.85503 8.79657 3.75003ZM6.37408 9.00003C6.37408 10.4498 7.54933 11.625 8.99908 11.625C10.4488 11.625 11.6241 10.4498 11.6241 9.00003C11.6241 7.55028 10.4488 6.37503 8.99908 6.37503C7.54933 6.37503 6.37408 7.55028 6.37408 9.00003Z" fill="url(#paint2_linear_620_1581)"/>
+                                        <defs>
+                                        <linearGradient id="paint0_linear_620_1581" x1="-0.000285022" y1="9.00013" x2="17.9997" y2="9.00013" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#009846"/>
+                                        <stop offset="1" stop-color="#009A9C"/>
+                                        </linearGradient>
+                                        <linearGradient id="paint1_linear_620_1581" x1="7.87496" y1="9.00002" x2="10.125" y2="9.00002" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#009846"/>
+                                        <stop offset="1" stop-color="#009A9C"/>
+                                        </linearGradient>
+                                        <linearGradient id="paint2_linear_620_1581" x1="1.49586" y1="8.9985" x2="16.5018" y2="8.9985" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#009846"/>
+                                        <stop offset="1" stop-color="#009A9C"/>
+                                        </linearGradient>
+                                        </defs>
+                                    </svg>
+                                        
+                                    123456
+                                </div>
+
+                                <div class="articlelikes">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect opacity="0.01" width="18" height="18" fill="url(#paint0_linear_620_1601)"/>
+                                        <path d="M8.5 14C8.35383 14.0009 8.21333 13.9395 8.10955 13.8294L3.83662 9.2528C2.72113 8.0471 2.72113 6.10545 3.83662 4.89975C4.9613 3.70008 6.7814 3.70008 7.90608 4.89975L8.5 5.53506L9.09392 4.89975C10.2186 3.70008 12.0387 3.70008 13.1634 4.89975C14.2789 6.10545 14.2789 8.0471 13.1634 9.2528L8.89045 13.8294C8.78667 13.9395 8.64617 14.0009 8.5 14Z" fill="url(#paint1_linear_620_1601)"/>
+                                        <defs>
+                                        <linearGradient id="paint0_linear_620_1601" x1="-0.000285022" y1="9.00013" x2="17.9997" y2="9.00013" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#009846"/>
+                                        <stop offset="1" stop-color="#009A9C"/>
+                                        </linearGradient>
+                                        <linearGradient id="paint1_linear_620_1601" x1="2.99983" y1="9.00007" x2="13.9998" y2="9.00007" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#009846"/>
+                                        <stop offset="1" stop-color="#009A9C"/>
+                                        </linearGradient>
+                                        </defs>
+                                    </svg>
+                                        
+                                    643
+                                </div>
+
+                                <div class="articletheme">
+                                    <span>#</span>
+                                    <a class="services" href="#">Бухгалтерский учет</a>
+                                </div>
+                            </div>
+                            
+                            <a href="currentarticle.html" class="head">Как в бухучете отразить возмещение покупателю НДС по системе tax free</a>
+
+                            <div class="description">
+                                По tax free иностранцу может быть возвращена часть денег за покупку в виде НДС от магазина или от оператора. 
+                                Именно от этого и зависит порядок отражения операций в бухучете.
+                            </div>
+                            
+                            <div class="comments">
+                                <div class="comments-count">
+                                    <a href="#" class="miniroundbtn">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="12" cy="12" r="12" fill="url(#paint0_linear_1526_8582)"/>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.81579 6H16.2895C17.2923 6 18.1053 6.81296 18.1053 7.81579V13.8684C18.1053 14.8713 17.2923 15.6842 16.2895 15.6842H9.96447C9.84765 15.6797 9.73203 15.7091 9.63158 15.7689L6.91395 17.4153C6.82052 17.4707 6.7139 17.5 6.60526 17.5C6.50129 17.4997 6.39914 17.4726 6.30868 17.4213C6.11834 17.3143 6.00038 17.1131 6 16.8947V7.81579C6 6.81296 6.81296 6 7.81579 6ZM9.02734 10.8421C9.02734 11.1764 9.29833 11.4474 9.63261 11.4474C9.96688 11.4474 10.2379 11.1764 10.2379 10.8421C10.2379 10.5078 9.96688 10.2368 9.63261 10.2368C9.29833 10.2368 9.02734 10.5078 9.02734 10.8421ZM12.0545 11.4474C11.7202 11.4474 11.4492 11.1764 11.4492 10.8421C11.4492 10.5078 11.7202 10.2368 12.0545 10.2368C12.3888 10.2368 12.6597 10.5078 12.6597 10.8421C12.6597 11.1764 12.3888 11.4474 12.0545 11.4474ZM13.8672 10.8421C13.8672 11.1764 14.1382 11.4474 14.4725 11.4474C14.8067 11.4474 15.0777 11.1764 15.0777 10.8421C15.0777 10.5078 14.8067 10.2368 14.4725 10.2368C14.1382 10.2368 13.8672 10.5078 13.8672 10.8421Z" fill="white"/>
+                                            <defs>
+                                            <linearGradient id="paint0_linear_1526_8582" x1="-0.000380029" y1="12.0002" x2="23.9996" y2="12.0002" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#009846"/>
+                                            <stop offset="1" stop-color="#009A9C"/>
+                                            </linearGradient>
+                                            </defs>
+                                        </svg>  
+                                    </a>
+    
+                                    123
+                                </div>
+
+                                <div class="share">
+                                    <a href="#">Комментировать</a>
+
+                                    <div>
+                                        <a class="miniroundbtn context-btn">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="12" cy="12" r="12" fill="url(#paint0_linear_1526_8583)"/>
+                                                <path d="M15.5019 14.25C14.9127 14.2505 14.3472 14.4821 13.9269 14.895L8.00186 12.255V12V11.7525L13.9269 9.105C14.692 9.85503 15.88 9.96142 16.7663 9.3593C17.6525 8.75718 17.9913 7.6136 17.5759 6.62592C17.1605 5.63824 16.1063 5.08049 15.056 5.29279C14.0058 5.50509 13.251 6.42853 13.2519 7.5V7.755L7.32686 10.395C6.44413 9.52776 5.02676 9.53611 4.15433 10.4137C3.28189 11.2913 3.28189 12.7087 4.15433 13.5863C5.02676 14.4639 6.44413 14.4722 7.32686 13.605L13.2519 16.2525V16.5C13.2519 17.7426 14.2592 18.75 15.5019 18.75C16.7445 18.75 17.7519 17.7426 17.7519 16.5C17.7519 15.2574 16.7445 14.25 15.5019 14.25Z" fill="white"/>
+                                                <defs>
+                                                <linearGradient id="paint0_linear_1526_8583" x1="-0.000380029" y1="12.0002" x2="23.9996" y2="12.0002" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#009846"/>
+                                                <stop offset="1" stop-color="#009A9C"/>
+                                                </linearGradient>
+                                                </defs>
+                                            </svg>   
+                                        </a>
+    
+                                        <div class="context-menu">
+                                            <ul>
+                                                <li>ВК</li>
+                                                <li>ИНСТА(не самка)</li>
+                                                <li>ПОДПИВОСНИКИ</li>
+                                                <li>ФИГИТЕР</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="blogitem">
+                            <div class="info">
+                                <div class="user">
+                                    <div class="usericon">
+                                    </div>
+                                    Валентина Токарева
+                                </div>
+
+                                <div class="articledate">
+                                    01.02.2021
+                                </div>
+
+                                <div class="articleviews">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect opacity="0.01" width="18" height="18" fill="url(#paint0_linear_620_1581)"/>
+                                        <circle cx="9" cy="9" r="1.125" fill="url(#paint1_linear_620_1581)"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.79657 3.75003C13.2816 3.61503 15.9216 7.79253 16.4016 8.62503C16.5355 8.85708 16.5355 9.14298 16.4016 9.37503C15.7566 10.5 13.3491 14.145 9.20157 14.25H9.01407C4.59657 14.25 2.06907 10.1925 1.59657 9.37503C1.4626 9.14298 1.4626 8.85708 1.59657 8.62503C2.24907 7.50003 4.64907 3.85503 8.79657 3.75003ZM6.37408 9.00003C6.37408 10.4498 7.54933 11.625 8.99908 11.625C10.4488 11.625 11.6241 10.4498 11.6241 9.00003C11.6241 7.55028 10.4488 6.37503 8.99908 6.37503C7.54933 6.37503 6.37408 7.55028 6.37408 9.00003Z" fill="url(#paint2_linear_620_1581)"/>
+                                        <defs>
+                                        <linearGradient id="paint0_linear_620_1581" x1="-0.000285022" y1="9.00013" x2="17.9997" y2="9.00013" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#009846"/>
+                                        <stop offset="1" stop-color="#009A9C"/>
+                                        </linearGradient>
+                                        <linearGradient id="paint1_linear_620_1581" x1="7.87496" y1="9.00002" x2="10.125" y2="9.00002" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#009846"/>
+                                        <stop offset="1" stop-color="#009A9C"/>
+                                        </linearGradient>
+                                        <linearGradient id="paint2_linear_620_1581" x1="1.49586" y1="8.9985" x2="16.5018" y2="8.9985" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#009846"/>
+                                        <stop offset="1" stop-color="#009A9C"/>
+                                        </linearGradient>
+                                        </defs>
+                                    </svg>
+                                        
+                                    123456
+                                </div>
+
+                                <div class="articlelikes">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect opacity="0.01" width="18" height="18" fill="url(#paint0_linear_620_1601)"/>
+                                        <path d="M8.5 14C8.35383 14.0009 8.21333 13.9395 8.10955 13.8294L3.83662 9.2528C2.72113 8.0471 2.72113 6.10545 3.83662 4.89975C4.9613 3.70008 6.7814 3.70008 7.90608 4.89975L8.5 5.53506L9.09392 4.89975C10.2186 3.70008 12.0387 3.70008 13.1634 4.89975C14.2789 6.10545 14.2789 8.0471 13.1634 9.2528L8.89045 13.8294C8.78667 13.9395 8.64617 14.0009 8.5 14Z" fill="url(#paint1_linear_620_1601)"/>
+                                        <defs>
+                                        <linearGradient id="paint0_linear_620_1601" x1="-0.000285022" y1="9.00013" x2="17.9997" y2="9.00013" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#009846"/>
+                                        <stop offset="1" stop-color="#009A9C"/>
+                                        </linearGradient>
+                                        <linearGradient id="paint1_linear_620_1601" x1="2.99983" y1="9.00007" x2="13.9998" y2="9.00007" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#009846"/>
+                                        <stop offset="1" stop-color="#009A9C"/>
+                                        </linearGradient>
+                                        </defs>
+                                    </svg>
+                                        
+                                    643
+                                </div>
+
+                                <div class="articletheme">
+                                    <span>#</span>
+                                    <a class="services" href="#">Бухгалтерский учет</a>
+                                </div>
+                            </div>
+                            
+                            <a href="currentarticle.html" class="head">Как в бухучете отразить возмещение покупателю НДС по системе tax free</a>
+
+                            <div class="description">
+                                По tax free иностранцу может быть возвращена часть денег за покупку в виде НДС от магазина или от оператора. 
+                                Именно от этого и зависит порядок отражения операций в бухучете.
+                            </div>
+                            
+                            <div class="comments">
+                                <div class="comments-count">
+                                    <a href="#" class="miniroundbtn">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="12" cy="12" r="12" fill="url(#paint0_linear_1526_8582)"/>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.81579 6H16.2895C17.2923 6 18.1053 6.81296 18.1053 7.81579V13.8684C18.1053 14.8713 17.2923 15.6842 16.2895 15.6842H9.96447C9.84765 15.6797 9.73203 15.7091 9.63158 15.7689L6.91395 17.4153C6.82052 17.4707 6.7139 17.5 6.60526 17.5C6.50129 17.4997 6.39914 17.4726 6.30868 17.4213C6.11834 17.3143 6.00038 17.1131 6 16.8947V7.81579C6 6.81296 6.81296 6 7.81579 6ZM9.02734 10.8421C9.02734 11.1764 9.29833 11.4474 9.63261 11.4474C9.96688 11.4474 10.2379 11.1764 10.2379 10.8421C10.2379 10.5078 9.96688 10.2368 9.63261 10.2368C9.29833 10.2368 9.02734 10.5078 9.02734 10.8421ZM12.0545 11.4474C11.7202 11.4474 11.4492 11.1764 11.4492 10.8421C11.4492 10.5078 11.7202 10.2368 12.0545 10.2368C12.3888 10.2368 12.6597 10.5078 12.6597 10.8421C12.6597 11.1764 12.3888 11.4474 12.0545 11.4474ZM13.8672 10.8421C13.8672 11.1764 14.1382 11.4474 14.4725 11.4474C14.8067 11.4474 15.0777 11.1764 15.0777 10.8421C15.0777 10.5078 14.8067 10.2368 14.4725 10.2368C14.1382 10.2368 13.8672 10.5078 13.8672 10.8421Z" fill="white"/>
+                                            <defs>
+                                            <linearGradient id="paint0_linear_1526_8582" x1="-0.000380029" y1="12.0002" x2="23.9996" y2="12.0002" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#009846"/>
+                                            <stop offset="1" stop-color="#009A9C"/>
+                                            </linearGradient>
+                                            </defs>
+                                        </svg>  
+                                    </a>
+    
+                                    123
+                                </div>
+
+                                <div class="share">
+                                    <a href="#">Комментировать</a>
+
+                                    <div>
+                                        <a class="miniroundbtn context-btn">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="12" cy="12" r="12" fill="url(#paint0_linear_1526_8583)"/>
+                                                <path d="M15.5019 14.25C14.9127 14.2505 14.3472 14.4821 13.9269 14.895L8.00186 12.255V12V11.7525L13.9269 9.105C14.692 9.85503 15.88 9.96142 16.7663 9.3593C17.6525 8.75718 17.9913 7.6136 17.5759 6.62592C17.1605 5.63824 16.1063 5.08049 15.056 5.29279C14.0058 5.50509 13.251 6.42853 13.2519 7.5V7.755L7.32686 10.395C6.44413 9.52776 5.02676 9.53611 4.15433 10.4137C3.28189 11.2913 3.28189 12.7087 4.15433 13.5863C5.02676 14.4639 6.44413 14.4722 7.32686 13.605L13.2519 16.2525V16.5C13.2519 17.7426 14.2592 18.75 15.5019 18.75C16.7445 18.75 17.7519 17.7426 17.7519 16.5C17.7519 15.2574 16.7445 14.25 15.5019 14.25Z" fill="white"/>
+                                                <defs>
+                                                <linearGradient id="paint0_linear_1526_8583" x1="-0.000380029" y1="12.0002" x2="23.9996" y2="12.0002" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#009846"/>
+                                                <stop offset="1" stop-color="#009A9C"/>
+                                                </linearGradient>
+                                                </defs>
+                                            </svg>   
+                                        </a>
+    
+                                        <div class="context-menu">
+                                            <ul>
+                                                <li>ВК</li>
+                                                <li>ИНСТА(не самка)</li>
+                                                <li>ПОДПИВОСНИКИ</li>
+                                                <li>ФИГИТЕР</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </main>
+
+                    <aside class="col-lg-4">
+                        <!-- Популярные публикации -->
+                        <section class="popular-section">
+                            <div class="aside-wrap">
+                                <span class="section-head">Популярные публикации</span>
+
+                                <div class="article">
+                                    <a href="currentarticle.html">
+                                        Как в бухучете отразить возмещение покупателю НДС по системе tax free
+                                    </a>
+
+                                    <div class="info">
+                                        <span>
+                                            <img src="/Img/articleviews.png" alt="">
+                                            123456
+                                        </span>
+
+                                        <span>
+                                            <img src="/Img/articlelikes.png" alt="">
+                                            643
+                                        </span>
+
+                                        <span>
+                                            <img src="/Img/asidecomments.png" alt="">
+                                            123
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="article">
+                                    <a href="currentarticle.html">
+                                        Как в бухучете отразить возмещение покупателю НДС по системе tax free
+                                    </a>
+
+                                    <div class="info">
+                                        <span>
+                                            <img src="/Img/articleviews.png" alt="">
+                                            123456
+                                        </span>
+
+                                        <span>
+                                            <img src="/Img/articlelikes.png" alt="">
+                                            643
+                                        </span>
+
+                                        <span>
+                                            <img src="/Img/asidecomments.png" alt="">
+                                            123
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="article">
+                                    <a href="currentarticle.html">
+                                        Как в бухучете отразить возмещение покупателю НДС по системе tax free
+                                    </a>
+
+                                    <div class="info">
+                                        <span>
+                                            <img src="/Img/articleviews.png" alt="">
+                                            123456
+                                        </span>
+
+                                        <span>
+                                            <img src="/Img/articlelikes.png" alt="">
+                                            643
+                                        </span>
+
+                                        <span>
+                                            <img src="/Img/asidecomments.png" alt="">
+                                            123
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="article">
+                                    <a href="currentarticle.html">
+                                        Как в бухучете отразить возмещение покупателю НДС по системе tax free
+                                    </a>
+
+                                    <div class="info">
+                                        <span>
+                                            <img src="/Img/articleviews.png" alt="">
+                                            123456
+                                        </span>
+
+                                        <span>
+                                            <img src="/Img/articlelikes.png" alt="">
+                                            643
+                                        </span>
+
+                                        <span>
+                                            <img src="/Img/asidecomments.png" alt="">
+                                            123
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Последние комментарии -->
+                        <section class="lastcomments-section">
+                            <div class="aside-wrap">
+                                <span class="section-head">Последние комментарии</span>
+
+                                <div class="comment">
+                                    <div class="head">
+                                        <div class="usericon">
+                                        </div>
+                                        Вячеслав Гавриленков
+                                    </div>
+
+                                    <div class="text">
+                                        Добрый день! Ситуация следующая - ИП на УСН (доходы минус расходы), зарегистрирован 25.05.2020....
+                                    </div>
+
+                                    <a href="currentarticle.html">
+                                        <b>Как в бухучете отразить возмещение...</b>
+                                    </a>
+                                </div>
+
+                                <div class="comment">
+                                    <div class="head">
+                                        <div class="usericon">
+                                        </div>
+                                        Вячеслав Гавриленков
+                                    </div>
+
+                                    <div class="text">
+                                        Добрый день! Ситуация следующая - ИП на УСН (доходы минус расходы), зарегистрирован 25.05.2020....
+                                    </div>
+
+                                    <a href="currentarticle.html">
+                                        <b>Как в бухучете отразить возмещение...</b>
+                                    </a>
+                                </div>
+
+                                <div class="comment">
+                                    <div class="head">
+                                        <div class="usericon">
+                                        </div>
+                                        Вячеслав Гавриленков
+                                    </div>
+
+                                    <div class="text">
+                                        Добрый день! Ситуация следующая - ИП на УСН (доходы минус расходы), зарегистрирован 25.05.2020....
+                                    </div>
+
+                                    <a href="currentarticle.html">
+                                        <b>Как в бухучете отразить возмещение...</b>
+                                    </a>
+                                </div>
+
+                                <div class="comment">
+                                    <div class="head">
+                                        <div class="usericon">
+                                        </div>
+                                        Вячеслав Гавриленков
+                                    </div>
+
+                                    <div class="text">
+                                        Добрый день! Ситуация следующая - ИП на УСН (доходы минус расходы), зарегистрирован 25.05.2020....
+                                    </div>
+
+                                    <a href="currentarticle.html">
+                                        <b>Как в бухучете отразить возмещение...</b>
+                                    </a>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Последние вопросы -->
+                        <section class="bloglastquestions-section">
+                            <div class="aside-wrap">
+                                <span class="section-head">Последние вопросы</span>
+
+                                <div class="question">
+                                    <div class="head">
+                                        <div class="miniroundbtn">
+                                            ?
+                                        </div>
+
+                                        <a href="#">
+                                            <b>Вступительный взнос в СНТ</b>
+                                        </a>
+                                    </div>
+                                    
+                                    <div class="text">
+                                        Для того чтобы вступить в СНТ нам нужно заплатить вступительный взнос...
+                                    </div>
+
+                                    <div class="info">
+                                        <span>
+                                            <img src="/Img/galks.png" alt="">
+                                            Есть ответ
+                                        </span>
+                                        
+                                        <span>
+                                            <img src="/Img/articlelikes.png" alt="">
+                                            643
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="question">
+                                    <div class="head">
+                                        <div class="miniroundbtn">
+                                            ?
+                                        </div>
+
+                                        <a href="#">
+                                            <b>Вступительный взнос в СНТ</b>
+                                        </a>
+                                    </div>
+                                    
+                                    <div class="text">
+                                        Для того чтобы вступить в СНТ нам нужно заплатить вступительный взнос...
+                                    </div>
+
+                                    <div class="info">
+                                        <span>
+                                            <img src="/Img/galks.png" alt="">
+                                            Есть ответ
+                                        </span>
+                                        
+                                        <span>
+                                            <img src="/Img/articlelikes.png" alt="">
+                                            643
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="question">
+                                    <div class="head">
+                                        <div class="miniroundbtn">
+                                            ?
+                                        </div>
+
+                                        <a href="#">
+                                            <b>Вступительный взнос в СНТ</b>
+                                        </a>
+                                    </div>
+                                    
+                                    <div class="text">
+                                        Для того чтобы вступить в СНТ нам нужно заплатить вступительный взнос...
+                                    </div>
+
+                                    <div class="info">
+                                        <span>
+                                            <img src="/Img/galks.png" alt="">
+                                            Есть ответ
+                                        </span>
+                                        
+                                        <span>
+                                            <img src="/Img/articlelikes.png" alt="">
+                                            643
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="question">
+                                    <div class="head">
+                                        <div class="miniroundbtn">
+                                            ?
+                                        </div>
+
+                                        <a href="#">
+                                            <b>Вступительный взнос в СНТ</b>
+                                        </a>
+                                    </div>
+                                    
+                                    <div class="text">
+                                        Для того чтобы вступить в СНТ нам нужно заплатить вступительный взнос...
+                                    </div>
+
+                                    <div class="info">
+                                        <span>
+                                            <img src="/Img/galks.png" alt="">
+                                            Есть ответ
+                                        </span>
+                                        
+                                        <span>
+                                            <img src="/Img/articlelikes.png" alt="">
+                                            643
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </aside>  
+                </div>
+
+                <section class="loadmore-section">
+                    <div class="loadmore">
+                        <button class="btn btn-main">Загрузить еще</button>
+                    </div>
+                    <div class="pagination">
+                        <nav aria-label="Page navigation">
+                            <ul class="pagination">
+                                <li class="page-item">
+                                    <a class="page-link" href="#"><i class="fas fa-angle-left"></i>  Предыдущие</a>
+                                </li>
+                                <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">Следующие  <i class="fas fa-angle-right"></i></a>
+                                </li>
+                            </ul>
+                          </nav>
+                    </div>
+                </section> 
+            </div>
+        </div>
+    </section>
+</div>    
+</main>
+<footer>
+    <!-- MAIN_FOOTER -->
+    <section class="main-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-2 col-lg-1 col-xl-1">
+                    <a href="/">
+                        <img class="img-fluid" src="/Img/Footerlogo.png" alt="">
+                    </a>
+                </div>
+
+                <div class="col-sm-12 col-md-5 col-lg-3 col-xl-3">
+                    <div>
+                        <div class="footer-first-header">
+                            <span>
+                                <a href="index.html">БухАссистент</a>
+                            </span>
+
+                            <span>
+                                Консалтинговые услуги
+                            </span>
+                        </div>
+                        
+                        <ul>
+                            <li>ООО «Компания БухАссистент»</li>
+                            <li>ОГРН 1135038008973</li>
+                            <li>ИНН 5038102480</li>
+                            <li>КПП 503801001</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-5 col-lg-2 col-xl-2">
+                    <div>
+                        <div class="footer-header">Услуги</div>
+
+                        <ul>
+                            <li><a class="footer-nelezet" href="buhuslugi.html">Бухгалтерские услуги</a></li>
+                            <li><a href="#">Юридические услуги</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 col-xl-3">
+                    <div>
+                        <div class="footer-header">
+                            Инофрмация
+                        </div>
+
+                        <div class="footer-double-list">
+                            <ul>
+                                <li><a href="aboutcompany.html">О компании</a></li>
+                                <li><a href="portfolio.html">Портфолио</a></li>
+                                <li><a href="price.html">Прайс-лист</a></li>
+                                <li><a href="feedback.html">Отзывы</a></li>
+                            </ul>
+
+                            <ul>
+                                <li><a href="sales.html">Акции</a></li>
+                                <li><a href="blog">Блог</a></li>
+                                <li><a href="contacts">Контакты</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 col-xl-3">
+                    <div class="footer-header">Контакты</div>
+
+                    <ul>
+                        <li>
+                            <span>
+                                <i class="fas fa-phone-alt"></i>
+                                <a href="tel:89099933773">+ 7 (909) 993-37-73</a>
+                            </span>
+                        </li>
+                        <li>
+                            <span>
+                                <i class="far fa-envelope"></i>
+                                <a href="mailto:info@buhassistent.ru">info@buhassistent.ru</a>
+                            </span>
+                        </li>
+                        <li>
+                            <a class="header-adress" href="https://goo.gl/maps/va3B1hSnr2of3sj78" target="_blank">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.75 7.5C15.75 12.75 9 17.25 9 17.25C9 17.25 2.25 12.75 2.25 7.5C2.25 5.70979 2.96116 3.9929 4.22703 2.72703C5.4929 1.46116 7.20979 0.75 9 0.75C10.7902 0.75 12.5071 1.46116 13.773 2.72703C15.0388 3.9929 15.75 5.70979 15.75 7.5Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M9 9.75C10.2426 9.75 11.25 8.74264 11.25 7.5C11.25 6.25736 10.2426 5.25 9 5.25C7.75736 5.25 6.75 6.25736 6.75 7.5C6.75 8.74264 7.75736 9.75 9 9.75Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <span>МО, Пушкино, Надсоновская 24</span>  
+                            </a>                              
+                        </li>
+                        <li class="mt-1">
+                            <div class="social-icons">
+                                <div class="social-icon">
+                                    <a href="#">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </div>
+                                <div class="social-icon">
+                                    <a href="#">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                </div>
+                                <div class="social-icon">
+                                    <a href="#">
+                                        <i class="fab fa-vk"></i>
+                                    </a>
+                                </div>
+                                <div class="social-icon">
+                                    <a href="#">
+                                        <i class="fab fa-odnoklassniki"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SUBFOOTER -->
+    <section class="sub-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-xl-4">
+                    <span>2014-2022 БухАссистент</span>
+                </div>
+                <div class="col-md-4 col-xl-4 d-flex justify-content-center">
+                    <a href="#">Политика конфиденциальности</a>
+                </div>
+                <div class="col-md-4 col-xl-4 d-flex justify-content-end">
+                    <span>
+                        <img src="/Img/subFooterBizMark.png" alt="">
+                        <a href="https://biz-mark.ru/">Разработано в Biz-Mark</a>
+                    </span> 
+                </div>
+            </div>
+        </div>
+    </section>
+</footer>
+<!-- BS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="/JS/script.js"></script>
+<script src="/JS/mobileMenu.js"></script>
+<script src="/JS/context-menu.js"></script>
+</body>
+</html>

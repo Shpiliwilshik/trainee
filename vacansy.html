@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="/Styles/Style.css">
+  <link rel="stylesheet" href="/Styles/font-face.css">
+  <link rel="shortcut icon" href="/Img/favicon.svg">
+  <title>Вакансии</title>
+</head>
+<body>
+<header>
+    <!-- TOP-HEADER -->
+    <section class="top-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8 col-md-8 col-lg-3 col-xl-3">
+                    <a class="header-adress" href="https://goo.gl/maps/va3B1hSnr2of3sj78" target="_blank">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15.75 7.5C15.75 12.75 9 17.25 9 17.25C9 17.25 2.25 12.75 2.25 7.5C2.25 5.70979 2.96116 3.9929 4.22703 2.72703C5.4929 1.46116 7.20979 0.75 9 0.75C10.7902 0.75 12.5071 1.46116 13.773 2.72703C15.0388 3.9929 15.75 5.70979 15.75 7.5Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9 9.75C10.2426 9.75 11.25 8.74264 11.25 7.5C11.25 6.25736 10.2426 5.25 9 5.25C7.75736 5.25 6.75 6.25736 6.75 7.5C6.75 8.74264 7.75736 9.75 9 9.75Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>МО, Пушкино, Надсоновская 24</span>  
+                    </a>
+                </div>
+
+                <div class="col-sm-4 col-md-4 col-lg-3 col-xl-3">
+                    <div class="social-icons">
+                        <div class="social-icon">
+                            <a href="#">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                        <div class="social-icon">
+                            <a href="#">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </div>
+                        <div class="social-icon">
+                            <a href="#">
+                                <i class="fab fa-vk"></i>
+                            </a>
+                        </div>
+                        <div class="social-icon">
+                            <a href="#">
+                                <i class="fab fa-odnoklassniki"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-lg-6 col-xl-6">
+                    <div class="header-aside-links">
+                        <a href="#">Заказать обратный звонок</a>
+                        <a href="#">Калькулятор и расчет стоимости</a>
+                        <a href=""><i class="fas fa-search"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- MIDDLE-HEADER -->
+    <section class="middle-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <a href="/">
+                        <img src="/Img/Toplogo.png" alt="">
+                    </a>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="header-contacts">
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="contacts-svg-center">
+                                        <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M15.0835 11.6072V13.6395C15.0843 13.8282 15.0455 14.0149 14.9698 14.1878C14.8941 14.3607 14.783 14.5158 14.6437 14.6434C14.5044 14.7709 14.34 14.868 14.1609 14.9285C13.9818 14.9889 13.792 15.0114 13.6038 14.9944C11.5151 14.7679 9.50871 14.0556 7.74593 12.9147C6.10589 11.8746 4.71543 10.4869 3.67328 8.85008C2.52613 7.08279 1.81224 5.07068 1.58943 2.97674C1.57247 2.78941 1.59478 2.60061 1.65493 2.42235C1.71509 2.24409 1.81178 2.08029 1.93884 1.94137C2.06591 1.80245 2.22056 1.69146 2.39296 1.61546C2.56536 1.53946 2.75173 1.50012 2.9402 1.49994H4.97653C5.30594 1.49671 5.6253 1.61313 5.87506 1.8275C6.12483 2.04188 6.28797 2.33958 6.33408 2.66513C6.42003 3.3155 6.57942 3.95409 6.80922 4.56871C6.90055 4.81118 6.92031 5.07469 6.86618 5.32803C6.81204 5.58136 6.68627 5.8139 6.50377 5.99809L5.64173 6.85843C6.608 8.55441 8.01504 9.95865 9.71438 10.923L10.5764 10.0627C10.761 9.88054 10.994 9.75502 11.2478 9.70099C11.5017 9.64696 11.7657 9.66669 12.0086 9.75783C12.6245 9.98718 13.2643 10.1463 13.916 10.232C14.2457 10.2785 14.5469 10.4442 14.7621 10.6978C14.9774 10.9513 15.0918 11.275 15.0835 11.6072Z" stroke="#009846" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+
+                                        <a href="tel:89099933773">+ 7 (909) 993-37-73</a>
+                                </div>                                    
+                            </div>
+
+                            <div class="col-xl-12">
+                                <div>
+                                    с 9.00 до 18.00
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="header-contacts">
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="contacts-svg-center">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M3 3H15C15.825 3 16.5 3.675 16.5 4.5V13.5C16.5 14.325 15.825 15 15 15H3C2.175 15 1.5 14.325 1.5 13.5V4.5C1.5 3.675 2.175 3 3 3Z" stroke="#009846" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M16.5 4.5L9 9.75L1.5 4.5" stroke="#009846" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+
+                                        <a href="mailto:info@buhassistent.ru">info@buhassistent.ru</a>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-12">
+                                <div class="middle-social-icons">
+                                    <a href="#">
+                                        <i class="fab fa-whatsapp"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fab fa-viber"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fab fa-telegram-plane"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-12 col-xl-3">
+                    <div class="header-consult-buttons">
+                        <a class="btn header-consult-button" href="freeconsultation.html">Консультация бухгалтера</a>
+                        <a class="btn header-consult-button" href="freeconsultation.html">Консультация юриста</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- NAVIGATION -->
+    <section class="header-navigation">
+        <div class="container">
+            <nav class="nav navbar-expand-lg">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarToggler">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item dropdown">
+                                <a href="buhuslugi.html" class="nav-link dropdown-toggle" id="navbarDropdown" aria-expanded="false">
+                                    Бухгалтерские услуги
+                                </a>
+                                <ul class="dropdown-custom" aria-labelledby="navbarDropdown">
+                                    <li><a href="catalog.html" class="dropdown-item">Каталог бухгалтерских услуг</a></li>
+                                    <li><a href="buhuslugi.html" class="dropdown-item">Бухгалтерские услуги</a></li>
+                                    <li><a href="#" class="dropdown-item">12345</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown1" aria-expanded="false">
+                                    Юридические услуги
+                                </a>
+                                <ul class="dropdown-custom" aria-labelledby="navbarDropdown1">
+                                    <li><a href="#" class="dropdown-item">1234567890</a></li>
+                                    <li><a href="#" class="dropdown-item">12345</a></li>
+                                    <li><a href="#" class="dropdown-item">12345</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a href="aboutcompany.html" class="nav-link dropdown-toggle" id="navbarDropdown2" aria-expanded="false">
+                                    О компании
+                                </a>
+                                <ul class="dropdown-custom" aria-labelledby="navbarDropdown2">
+                                    <li><a href="aboutcompany.html" class="dropdown-item">О компании</a></li>
+                                    <li><a href="companyhistory.html" class="dropdown-item">История компании</a></li>
+                                    <li><a href="reviews.html" class="dropdown-item">Отзывы</a></li>
+                                    <li><a href="collective.html" class="dropdown-item">Коллектив</a></li>
+                                    <li><a href="license.html" class="dropdown-item">Лицензии</a></li>
+                                    <li><a href="technology.html" class="dropdown-item">Технологии</a></li>
+                                    <li><a href="clients.html" class="dropdown-item">Клиенты</a></li>
+                                    <li><a href="partners.html" class="dropdown-item">Партнеры</a></li>
+                                    <li><a href="questions.html" class="dropdown-item">Вопросы и ответы</a></li>
+                                    <li><a href="requisits.html" class="dropdown-item">Реквизиты</a></li>
+                                    <li><a href="vacansy.html" class="dropdown-item">Вакансии</a></li>
+                                    <li><a href="benefits.html" class="dropdown-item">Преимущетва</a></li>
+                                    <li><a href="onlinepay.html" class="dropdown-item">Оплата услуг онлайн</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="portfolio.html" class="nav-link">Портфолио</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="price.html" class="nav-link">Прайс-лист</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="reviews.html" class="nav-link">Отзывы</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Акции</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="blog.html" class="nav-link">Блог</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="contacts.html" class="nav-link">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="strip">
+            </div>
+        </div>
+    </section>
+    <!-- MOBILE-STICKY-NAVIGATION -->
+    <section class="mobile-navigation">
+        <div class="mobile-menu collapse d-lg-none" id="mobMenu">
+            <ul class="mobile-nav-list">
+                <li class="mobile-nav-item dropdown">
+                    <a class="direct-dropdown-link" href="buhuslugi.html">Бухгалтерские услуги</a>
+
+                    <a class="btn dropdown-toggler" href="#" role="button" id="dropdownMenuLink">
+                        ▼
+                    </a>
+
+                    <ul class="dropdowned-menu" role="menu">
+                        <li class="back-menu-wrapper"><a class="back-menu-btn" href="#">Назад</a></li>
+                        <li><a href="catalog.html" class="dropdown-item">Каталог бухгалтерских услуг</a></li>
+                        <li><a href="buhuslugi.html" class="dropdown-item">Бухгалтерские услуги</a></li>
+                    </ul>
+                </li>
+
+                <li class="mobile-nav-item dropdown">
+                    <a class="direct-dropdown-link" href="#">Юридические услуги</a>
+
+                    <a class="btn dropdown-toggler" href="#" role="button" id="dropdownMenuLink1" aria-expanded="false">
+                        ▼
+                    </a>
+
+                    <ul class="dropdowned-menu" role="menu">
+                        <li class="back-menu-wrapper"><a class="back-menu-btn" href="#">Назад</a></li>
+                        <li><a href="#" class="dropdown-item">Каталог юридических услуг</a></li>
+                        <li><a href="#" class="dropdown-item">Юридические услуги</a></li>
+                    </ul>
+                </li>
+
+                <li class="mobile-nav-item dropdown">
+                    <a class="direct-dropdown-link" href="aboutcompany.html">О компании</a>
+
+                    <a class="btn dropdown-toggler" href="#" role="button" id="dropdownMenuLink2"aria-expanded="false">
+                        ▼
+                    </a>
+                    
+                    <ul class="dropdowned-menu" role="menu">
+                        <li class="back-menu-wrapper"><a class="back-menu-btn" href="#">Назад</a></li>
+                        <li><a href="aboutcompany.html" class="dropdown-item">О компании</a></li>
+                        <li><a href="companyhistory.html" class="dropdown-item">История компании</a></li>
+                        <li><a href="reviews.html" class="dropdown-item">Отзывы</a></li>
+                        <li><a href="collective.html" class="dropdown-item">Коллектив</a></li>
+                        <li><a href="license.html" class="dropdown-item">Лицензии</a></li>
+                        <li><a href="technology.html" class="dropdown-item">Технологии</a></li>
+                        <li><a href="clients.html" class="dropdown-item">Клиенты</a></li>
+                        <li><a href="partners.html" class="dropdown-item">Партнеры</a></li>
+                        <li><a href="questions.html" class="dropdown-item">Вопросы и ответы</a></li>
+                        <li><a href="requisits.html" class="dropdown-item">Реквизиты</a></li>
+                        <li><a href="vacansy.html" class="dropdown-item">Вакансии</a></li>
+                        <li><a href="benefits.html" class="dropdown-item">Преимущетва</a></li>
+                        <li><a href="onlinepay.html" class="dropdown-item">Оплата услуг онлайн</a></li>
+                    </ul>
+                </li>
+                
+                <li class="mobile-nav-item"><a href="portfolio.html" class="nav-link">Портфолио</a></li>
+                <li class="mobile-nav-item"><a href="price.html" class="nav-link">Прайс-лист</a></li>
+                <li class="mobile-nav-item"><a href="reviews.html" class="nav-link">Отзывы</a></li>
+                <li class="mobile-nav-item"><a href="#" class="nav-link">Акции</a></li>
+                <li class="mobile-nav-item"><a href="blog.html" class="nav-link">Блог</a></li>
+                <li class="mobile-nav-item"><a href="contacts.html" class="nav-link">Контакты</a></li>
+            </ul>
+        </div>
+
+        <div class="mobile-nav-strip d-lg-none">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="d-flex justify-content-between">
+                            <button class="btn burger-btn" type="button" data-bs-toggle="collapse" data-bs-target="#mobMenu" aria-expanded="false" aria-controls="mobMenu">
+                                <svg width="23" height="17" viewBox="0 0 23 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.5 16H21.5M1.5 1H21.5H1.5ZM1.5 8.5H21.5H1.5Z" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                                <span>Меню Сайта</span>
+                            </button>
+    
+                            <div class="mobile-search">
+                                <a href="searchresult.html"><i class="fas fa-search"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</header>
+<main>
+<div class="container">
+    <!-- КРОШКИ -->
+    <section class="breadcrumbs-section">
+        <div class="breadcrumbs">
+            <nav style="--bs-breadcrumb-divider: '&#183';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+                  <li class="breadcrumb-item"><a href="aboutcompany.html">О компании</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Вакансии</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+    <!-- Вакансии -->
+    <section class="vacansy-section">
+        <h1 class="title">Вакансии</h1>
+        <div class="extendedaboutcompany">
+            <div class="list">
+                <a href="companyhistory.html" class="btn">История компании</a>
+
+                <a href="reviews.html" class="btn">Отзывы</a>
+
+                <a href="collective.html" class="btn">Коллектив</a>
+
+                <a href="license.html" class="btn">Лицензии</a>
+
+                <a href="technology.html" class="btn">Технологии</a>
+                
+                <a href="clients.html" class="btn">Клиенты</a>
+
+                <a href="partners.html" class="btn">Партнеры</a>
+                
+                <a href="questions.html" class="btn">Вопросы и ответы</a>
+                
+                <a href="requisits.html" class="btn">Реквизиты</a>
+                
+                <a href="#" class="btn active">Вакансии</a>
+                
+                <a href="benefits.html" class="btn">Преимущетва</a>
+                
+                <a href="onlinepay.html" class="btn">Оплата услуг онлайн</a>
+            </div>
+
+            <a href="pomoshnikbuh.html" class="wrap wrapshadow">
+              <span>Помощник Бухгалтера</span>
+              <span>от 45 000 руб.</span>
+            </a>
+
+            <a href="#" class="wrap wrapshadow">
+              <span>Помощник Юриста</span>
+              <span>от 45 000 руб.</span>
+            </a>
+        </div>
+    </section>
+    <!-- Остались вопросы? Нужна консультация? -->
+    <section class="needconsult-section" id="consult">
+        <div class="container">
+            <h2 class="title">Остались вопросы? Нужна консультация?</h2>
+            <div class="row">
+                <div class="col-md-12 col-lg-5 col-xl-4">
+                    <form action="">
+                        <div class="wrap wrapshadow">
+                            <b>Получить консультацию</b>
+                            <span class="subtext">Перезвоним в течение 15 минут</span>
+                            <input class="maininput form-control phonemask" type="tel" name="" id="needconsultTel" placeholder="Введите номер телефона">
+                            <button class="btn btn-main form-control" id="needconsultBtn" type="submit">Заказать звонок</button>
+                            <small>Отправляя заявку, вы даете согласие на обработку своих персональных данных</small>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-xl-4">
+                    <div class="list">
+                        <span>После заявки с вами свяжется</span>
+                        <b>Полева Анна Сергеевна</b>
+                        <span>Вы получите:</span>
+                        <ul>
+                            <li>Профессиональную консультацию</li>
+                            <li>Предварительную стоимость</li>
+                            <li>Сроки реализации</li>
+                        </ul>
+                        <span class="subtext">
+                            Неудобно созвониться? <br>
+                            Напишите нам в мессенджер:
+                        </span>
+
+                        <div class="needconsult-socicons">
+                            <a href="#">
+                                <i class="fab fa-viber"></i>
+                            </a>
+
+                            <a href="#">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+
+                            <a href="#">
+                                <i class="fab fa-telegram-plane"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 col-xl-4">
+                    <div class="needconsult-image">
+                        <img class="img-fluid" src="/Img/needconsultwoman.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>    
+</main>
+<footer>
+    <!-- MAIN_FOOTER -->
+    <section class="main-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-2 col-lg-1 col-xl-1">
+                    <a href="/">
+                        <img class="img-fluid" src="/Img/Footerlogo.png" alt="">
+                    </a>
+                </div>
+
+                <div class="col-sm-12 col-md-5 col-lg-3 col-xl-3">
+                    <div>
+                        <div class="footer-first-header">
+                            <span>
+                                <a href="index.html">БухАссистент</a>
+                            </span>
+
+                            <span>
+                                Консалтинговые услуги
+                            </span>
+                        </div>
+                        
+                        <ul>
+                            <li>ООО «Компания БухАссистент»</li>
+                            <li>ОГРН 1135038008973</li>
+                            <li>ИНН 5038102480</li>
+                            <li>КПП 503801001</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-5 col-lg-2 col-xl-2">
+                    <div>
+                        <div class="footer-header">Услуги</div>
+
+                        <ul>
+                            <li><a class="footer-nelezet" href="buhuslugi.html">Бухгалтерские услуги</a></li>
+                            <li><a href="#">Юридические услуги</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 col-xl-3">
+                    <div>
+                        <div class="footer-header">
+                            Инофрмация
+                        </div>
+
+                        <div class="footer-double-list">
+                            <ul>
+                                <li><a href="aboutcompany.html">О компании</a></li>
+                                <li><a href="portfolio.html">Портфолио</a></li>
+                                <li><a href="price.html">Прайс-лист</a></li>
+                                <li><a href="feedback.html">Отзывы</a></li>
+                            </ul>
+
+                            <ul>
+                                <li><a href="sales.html">Акции</a></li>
+                                <li><a href="blog">Блог</a></li>
+                                <li><a href="contacts">Контакты</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 col-xl-3">
+                    <div class="footer-header">Контакты</div>
+
+                    <ul>
+                        <li>
+                            <span>
+                                <i class="fas fa-phone-alt"></i>
+                                <a href="tel:89099933773">+ 7 (909) 993-37-73</a>
+                            </span>
+                        </li>
+                        <li>
+                            <span>
+                                <i class="far fa-envelope"></i>
+                                <a href="mailto:info@buhassistent.ru">info@buhassistent.ru</a>
+                            </span>
+                        </li>
+                        <li>
+                            <a class="header-adress" href="https://goo.gl/maps/va3B1hSnr2of3sj78" target="_blank">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.75 7.5C15.75 12.75 9 17.25 9 17.25C9 17.25 2.25 12.75 2.25 7.5C2.25 5.70979 2.96116 3.9929 4.22703 2.72703C5.4929 1.46116 7.20979 0.75 9 0.75C10.7902 0.75 12.5071 1.46116 13.773 2.72703C15.0388 3.9929 15.75 5.70979 15.75 7.5Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M9 9.75C10.2426 9.75 11.25 8.74264 11.25 7.5C11.25 6.25736 10.2426 5.25 9 5.25C7.75736 5.25 6.75 6.25736 6.75 7.5C6.75 8.74264 7.75736 9.75 9 9.75Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <span>МО, Пушкино, Надсоновская 24</span>  
+                            </a>                              
+                        </li>
+                        <li class="mt-1">
+                            <div class="social-icons">
+                                <div class="social-icon">
+                                    <a href="#">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </div>
+                                <div class="social-icon">
+                                    <a href="#">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                </div>
+                                <div class="social-icon">
+                                    <a href="#">
+                                        <i class="fab fa-vk"></i>
+                                    </a>
+                                </div>
+                                <div class="social-icon">
+                                    <a href="#">
+                                        <i class="fab fa-odnoklassniki"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SUBFOOTER -->
+    <section class="sub-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-xl-4">
+                    <span>2014-2022 БухАссистент</span>
+                </div>
+                <div class="col-md-4 col-xl-4 d-flex justify-content-center">
+                    <a href="#">Политика конфиденциальности</a>
+                </div>
+                <div class="col-md-4 col-xl-4 d-flex justify-content-end">
+                    <span>
+                        <img src="/Img/subFooterBizMark.png" alt="">
+                        <a href="https://biz-mark.ru/">Разработано в Biz-Mark</a>
+                    </span> 
+                </div>
+            </div>
+        </div>
+    </section>
+</footer>
+<!-- BS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="/JS/script.js"></script>
+<script src="/JS/mobileMenu.js"></script>
+<!-- jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- MASK NOT ELON!!! -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js" integrity="sha512-0XDfGxFliYJPFrideYOoxdgNIvrwGTLnmK20xZbCAvPfLGQMzHUsaqZK8ZoH+luXGRxTrS46+Aq400nCnAT0/w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+    $(function() {
+      $('.phonemask').mask('+7(000)000-00-00');
+    });
+</script>
+</body>
+</html>
